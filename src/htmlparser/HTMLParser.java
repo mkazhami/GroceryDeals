@@ -33,13 +33,13 @@ public class HTMLParser {
                 System.out.println("Testing page " + page + "\n\n");
                 response = Jsoup.connect("https://www.sobeys.com/en/flyer?&page=" + page)
                         .userAgent("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/535.21 (KHTML, like Gecko) Chrome/19.0.1042.0 Safari/535.21")
-                        .timeout(10000)
+                        .timeout(20000)
                         .ignoreHttpErrors(true)
                         .execute();
                 int statusCode = response.statusCode();
                 if(statusCode != 200) { isPageThere = false; }
                 else {
-                    doc = Jsoup.connect("https://www.sobeys.com/en/flyer?&page=" + page).get();
+                    doc = Jsoup.connect("https://www.sobeys.com/en/flyer?&page=" + page).timeout(20000).get();
                     Elements body = doc.getElementsByClass("card-inset");
                     boolean isBodyEmpty = true;
                     for ( Element e : body ) {
@@ -50,9 +50,12 @@ public class HTMLParser {
                         	Element priceAmount = eDoc.select("div.price > div.price-amount").first();
                         	Element productName = eDoc.select("h6.x-small-bottom").first();
                         	Element productDesc = eDoc.select("p").first();
+                        	Element productPromo = eDoc.select("div.price > ul.price-promos > li.price-promos-air-miles").first();
                         	String price = Jsoup.parse(priceAmount.html()).text();
                         	String name = Jsoup.parse(productName.html()).text();
                         	String desc = Jsoup.parse(productDesc.html()).text();
+                        	String promo = null;
+                        	if(productPromo != null) promo = Jsoup.parse(productPromo.html()).text();
                         	String[] split = null;
                         	if(!price.equals("")) {
                         		split = price.split("/");
@@ -68,12 +71,16 @@ public class HTMLParser {
                         		System.out.println(name + " is $" + split[0].replace(" ", ".") + " per " + split[1].replace("g", "") + " grams.");
                         	}
                         	else if(split != null){ // of the form '2/1 00' meaning 2 for $1.00
-                        		System.out.println(name + " is " + split[1].replace(" ", ".") + " for $" + split[0]);
+                        		System.out.println(name + " is $" + split[1].replace(" ", ".") + " for " + split[0]);
                         	}
-                        	else if(desc.contains("BUY") && desc.contains("EARN")){ // has a points promotion rather than sale
+                        	else if(promo != null && desc.contains("BUY") && desc.contains("EARN")) { // has a points promotion rather than sale
                         		String promotion = desc.substring(desc.indexOf("BUY"), desc.length());
                         		System.out.println(name + " has a promotion: " + promotion);
                         	}
+                        	else {
+                        		System.out.println("\n\n\n\nNOTHING FOUND\n\n\n\n");
+                        	}
+                        	//System.out.println(e.html());
                             isBodyEmpty = false;
                         }
                     }
