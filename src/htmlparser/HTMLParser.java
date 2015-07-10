@@ -6,12 +6,32 @@
 package htmlparser;
 
 import java.io.IOException;
+import java.io.PrintWriter;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.jsoup.nodes.Document;
 import org.jsoup.*;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
+
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.FailingHttpStatusCodeException;
+import com.gargoylesoftware.htmlunit.HttpWebConnection;
+import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.WebRequest;
+import com.gargoylesoftware.htmlunit.WebResponse;
+import com.gargoylesoftware.htmlunit.WebWindow;
+import com.gargoylesoftware.htmlunit.html.HtmlAnchor;
+import com.gargoylesoftware.htmlunit.html.HtmlDivision;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
+import com.gargoylesoftware.htmlunit.javascript.background.JavaScriptJobManager;
+import com.gargoylesoftware.htmlunit.util.NameValuePair;
+import com.gargoylesoftware.htmlunit.Page;
+
 
 /**
  *
@@ -21,9 +41,54 @@ public class HTMLParser {
 
     /**
      * @param args the command line arguments
+     * @throws InterruptedException 
      */
-    public static void main(String[] args) {
-        Document doc = null;
+    public static void main(String[] args) throws InterruptedException {
+    	WebClient wc = new WebClient();
+    	Document zehrsDoc = null;
+    	try {
+			//zehrsDoc = Jsoup.connect("http://www.zehrs.ca/en_CA/flyers.banner@ZEHRS.storenum@550.html").userAgent("Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.120 Safari/535.2").get();
+    		//String zehrsPage = new WebClient(BrowserVersion.CHROME).getPage("http://www.zehrs.ca/en_CA/flyers.banner@ZEHRS.storenum@550.html").getWebResponse().getContentAsString();
+    		WebClient webClient = new WebClient(BrowserVersion.FIREFOX_38);
+    		webClient.getOptions().setJavaScriptEnabled(true);
+    		webClient.getOptions().setCssEnabled(false);
+    		webClient.getOptions().setThrowExceptionOnScriptError(false);
+    		webClient.setJavaScriptTimeout(30000);
+    		webClient.getCookieManager().setCookiesEnabled(true);
+    		webClient.setAjaxController(new NicelyResynchronizingAjaxController());
+    		webClient.getWebConnection().
+    		
+    		WebWindow ww = webClient.openWindow(new URL("http://www.zehrs.ca/en_CA/flyers.accessibleview.banner@ZEHRS.storenum@550.week@current.html"), "zehrs");
+    		Thread.sleep(10000);
+    		HtmlPage p = (HtmlPage) ww.getEnclosedPage();
+    		//System.out.println(p.asXml());
+    		HtmlPage page = webClient.getPage("http://www.zehrs.ca/en_CA/flyers.accessibleview.banner@ZEHRS.storenum@550.week@current.html");
+
+    		webClient.waitForBackgroundJavaScript(10000);
+    		
+    		List<NameValuePair> response = page.getWebResponse().getResponseHeaders();
+    		for (NameValuePair header : response) {
+    			System.out.println(header.getName() + " = " + header.getValue());
+    		}
+    		
+    		PrintWriter writer = new PrintWriter("zehrsPage.txt", "UTF-8");
+    		writer.println(page.asXml());
+    		//writer.println(zehrsDoc.html());
+    		writer.close();
+    		//System.out.println(page.asXml());
+		} catch (FailingHttpStatusCodeException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (MalformedURLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+    	
+    	/*
+        Document sobeysDoc = null;
         int pageCount = 1;
         boolean isPageThere = true;
         while(isPageThere) {
@@ -39,8 +104,8 @@ public class HTMLParser {
                 int statusCode = response.statusCode();
                 if(statusCode != 200) { isPageThere = false; }
                 else {
-                    doc = Jsoup.connect("https://www.sobeys.com/en/flyer?&page=" + page).timeout(20000).get();
-                    Elements body = doc.getElementsByClass("card-inset");
+                    sobeysDoc = Jsoup.connect("https://www.sobeys.com/en/flyer?&page=" + page).timeout(20000).get();
+                    Elements body = sobeysDoc.getElementsByClass("card-inset");
                     boolean isBodyEmpty = true;
                     for ( Element e : body ) {
                     	// only consider classes that contain the subclass 'price'
@@ -91,7 +156,7 @@ public class HTMLParser {
                 Logger.getLogger(HTMLParser.class.getName()).log(Level.SEVERE, null, ex);
                 isPageThere = false;
             }
-        }
+        }*/
     }
     
 }
