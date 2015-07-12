@@ -17,22 +17,29 @@ driver = webdriver.Firefox()
 driver.get("http://www.zehrs.ca/en_CA/store-list-page.ON.html")
 # let javascript load
 time.sleep(5)
-storeLists = driver.find_elements_by_xpath(".//div[@class='content']//div[@class='column-layout col-4']//div")
-storeURLs = []
-for storeList in storeLists:
-    urls = storeList.find_elements_by_xpath(".//ul[@class='store-select']//li//a")
+# get list columns of stores
+cityLists = driver.find_elements_by_xpath(".//div[@class='content']//div[@class='column-layout col-4']//div")
+cityURLs = []
+# extracts the urls for each city
+for cityList in cityLists:
+    urls = cityList.find_elements_by_xpath(".//ul[@class='store-select']//li//a")
     for url in urls:
-        storeURLs.append(str(url.get_attribute("href").encode('ascii', 'ignore')))
+        cityURLs.append(str(url.get_attribute("href").encode('ascii', 'ignore')))
 
-for url in storeURLs:
+# goes through each city, opens each store's flyers
+for url in cityURLs:
+    # open link to city's page
     driver.get(url)
     time.sleep(5)
+    # get all the store 'view flyer' buttons
     viewFlyerButtons = driver.find_elements_by_xpath(".//a[@class='button view-flyer']")
     viewFlyerLinks = []
+    # get all the store 'view flyer' urls from the buttons
     for button in viewFlyerButtons:
         viewFlyerLinks.append(str(button.get_attribute("href").encode('ascii', 'ignore')))
 
     for link in viewFlyerLinks:
+        # open specific store's flyer
         driver.get(link)
         time.sleep(3)
         # loop will break once the 'next' button is no longer on the screen
@@ -56,7 +63,7 @@ for url in storeURLs:
                     # this is super hard-coded but it's unlikely that there's a better way
                     cleanPrice = str((price.get_attribute("innerHTML")).encode('ascii', 'ignore'))
                     cleanPrice = cleanPrice.replace("<sup>$</sup>", "$").replace("<sup>", ".").replace("</sup>", "")
-	                # print the price (clean version), followed by the html text of the name and price elements (not clean version)
+	            # print the price (clean version), followed by the html text of the name and price elements (not clean version)
                     # this is just for testing purposes, info will be stored somehow
                     print(cleanPrice)
                     print(str((name.text).encode('ascii', 'ignore')) + "     " + str((price.text).encode('ascii', 'ignore')))
