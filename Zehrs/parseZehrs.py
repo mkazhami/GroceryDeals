@@ -49,6 +49,15 @@ for url in cityURLs:
                 elements = driver.find_elements_by_xpath(".//div[@class='card product']")
                 # iterate over each product
                 for element in elements:
+                    # get points if applicable
+                    pointsAmount = ""
+                    try:
+                        pointsDiv = element.find_element_by_xpath(".//span[@class='sticker card-points']")
+                        if pointsDiv is not None:
+                            pointsAmount = pointsDiv.find_element_by_xpath(".//span[@class='amt']")
+                            pointsAmount = str((pointsAmount.get_attribute("innerHTML")).encode('ascii', 'ignore'))
+                    except Exception as e:
+                        pass
                     # get the child html element that contains the details (price and name)
                     div = element.find_element_by_xpath(".//div[@class='footer']//div[@class='details more']")
                     # get the actual child html element that contains the price
@@ -65,8 +74,10 @@ for url in cityURLs:
                     cleanPrice = cleanPrice.replace("<sup>$</sup>", "$").replace("<sup>", ".").replace("</sup>", "")
 	            # print the price (clean version), followed by the html text of the name and price elements (not clean version)
                     # this is just for testing purposes, info will be stored somehow
-                    print(cleanPrice)
-                    print(str((name.text).encode('ascii', 'ignore')) + "     " + str((price.text).encode('ascii', 'ignore')))
+                    #print(cleanPrice)
+                    #print(str((name.text).encode('ascii', 'ignore')) + "     " + str((price.text).encode('ascii', 'ignore')))
+                    if not pointsAmount == "":
+                        print(str(name.text.encode('ascii','ignore')) + " gives " + pointsAmount + " points")
 
                 try:
                     # get the 'next' button element if it exists
