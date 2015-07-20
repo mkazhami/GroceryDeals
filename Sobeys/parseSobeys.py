@@ -1,9 +1,11 @@
 from selenium import webdriver
 import time
 import re
+import os
 
 
-driver = webdriver.Firefox()
+driver = webdriver.PhantomJS()
+driver.set_window_size(1400,1000)
 driver.get("https://www.sobeys.com/en/stores")
 time.sleep(8)
 
