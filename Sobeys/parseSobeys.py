@@ -56,7 +56,7 @@ for link in saveMyStoreLinks:
     fullAddress = str(fullAddress.text.encode('ascii', 'ignore')).splitlines()
     address = fullAddress[0]
     postalSubstringStart = re.search("[A-Z][0-9][A-Z]( )*[0-9][A-Z][0-9]" , fullAddress[1]).start()
-    postalCode = fullAddress[1][postalSubstringStart:].strip()
+    postalCode = fullAddress[1][postalSubstringStart:].strip().replace(" ", "")
     cityAndProvince = fullAddress[1][:postalSubstringStart].split(",")
     city = cityAndProvince[0].strip()
     province = cityAndProvince[1].strip()
