@@ -55,7 +55,7 @@ for link in saveMyStoreLinks:
     fullAddress = driver.find_element_by_xpath(".//p[@class='palm--hide']")
     fullAddress = str(fullAddress.text.encode('ascii', 'ignore')).splitlines()
     address = fullAddress[0]
-    postalSubstringStart = re.search("[A-Z][1-9][A-Z]( )*[1-9][A-Z][1-9]" , fullAddress[1]).start()
+    postalSubstringStart = re.search("[A-Z][0-9][A-Z]( )*[0-9][A-Z][0-9]" , fullAddress[1]).start()
     postalCode = fullAddress[1][postalSubstringStart:].strip()
     cityAndProvince = fullAddress[1][:postalSubstringStart].split(",")
     city = cityAndProvince[0].strip()
