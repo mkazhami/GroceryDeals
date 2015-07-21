@@ -3,8 +3,8 @@ import time
 import re
 import os
 
-
-driver = webdriver.PhantomJS()
+# phantomjs.exe is located in the root directory
+driver = webdriver.PhantomJS(executable_path="../phantomjs.exe", service_log_path=os.path.devnull)
 driver.set_window_size(1400,1000)
 driver.get("https://www.sobeys.com/en/stores")
 time.sleep(8)
@@ -17,6 +17,13 @@ for i in range(10):
 time.sleep(2) # just in case
 stores = driver.find_elements_by_xpath(".//div[@class='card-inset normal-hr box_item']")
 saveMyStoreLinks = []
+storeNames = []
+storeAddresses = []
+storeCitys = []
+storeProvinces = []
+storePostalCodes = []
+storeNumbers = []
+
 for store in stores:
     button = store.find_element_by_xpath(".//a[@class='button']")
     saveStoreLink = str(button.get_attribute("href").encode('ascii', 'ignore'))
@@ -38,6 +45,29 @@ for link in saveMyStoreLinks:
     except:
         # if previous link fails, try just the relative path instead of full link
         driver.find_element_by_xpath(".//a[@href='" + link.split(".com")[1] + "']").click()
+    # get the store number
+    storeNumberElement = driver.find_elements_by_xpath(".//div[@class='grid__item one-quarter lap--one-half palm--one-whole normal-bottom']//p[not(@*)]")[1] # ugly class name
+    storeNumber = str(storeNumberElement.get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
+    # get the name of the store
+    nameElement = driver.find_element_by_xpath(".//h3[@class='h3-sobeys no-bottom']")
+    name = str(nameElement.text.encode('ascii', 'ignore')).strip()
+    # get address of store
+    fullAddress = driver.find_element_by_xpath(".//p[@class='palm--hide']")
+    fullAddress = str(fullAddress.text.encode('ascii', 'ignore')).splitlines()
+    address = fullAddress[0]
+    postalSubstringStart = re.search("[A-Z][1-9][A-Z]( )*[1-9][A-Z][1-9]" , fullAddress[1]).start()
+    postalCode = fullAddress[1][postalSubstringStart:].strip()
+    cityAndProvince = fullAddress[1][:postalSubstringStart].split(",")
+    city = cityAndProvince[0].strip()
+    province = cityAndProvince[1].strip()
+    print("\n\n\nname       " + name)
+    print("store number  " + storeNumber)
+    print("address      " + address)
+    print("postal code      " + postalCode)
+    print("city      " + city)
+    print("province    " + province)
+        
+    continue
     # go to flyer with new preferred store
     driver.get("https://www.sobeys.com/en/flyer")
     time.sleep(2)
