@@ -1,6 +1,7 @@
 from selenium import webdriver
 import time
 import os
+import re
 
 # Authors: e4 + m7
 #
@@ -14,9 +15,9 @@ import os
 
 # opens phantom browser
 # phantomjs.exe is located in the root directory
-#driver = webdriver.PhantomJS(executable_path="../phantomjs.exe", service_log_path=os.path.devnull)
-#driver.set_window_size(1400,1000)
-driver = webdriver.Firefox()
+driver = webdriver.PhantomJS(executable_path="../phantomjs.exe", service_log_path=os.path.devnull)
+driver.set_window_size(1400,1000)
+#driver = webdriver.Firefox()
 # go to the list page of all stores in ontario
 driver.get("http://www.zehrs.ca/en_CA/store-list-page.ON.html")
 # let javascript load
@@ -61,7 +62,7 @@ for url in cityURLs:
         print("flyer buttons: " + str(len(viewFlyerButtons)) + "  names: " + str(len(names)) + "  addresses: " + str(len(addresses)) + "  store numbers: " + len(storeNumberElements))
         raise Exception("exiting due to error in parsing")
 
-    # get all the store 'view flyer' urls from the buttons
+    # get all the store 'view flyer' urls from the buttons as well as each store's info
     for i in range(len(viewFlyerButtons)):
         viewFlyerLinks.append(str(viewFlyerButtons[i].get_attribute("href").encode('ascii', 'ignore')))
         # store title tag just contains the name
@@ -80,9 +81,15 @@ for url in cityURLs:
         # get the store number
         storeNumbers.append(str(storeNumberElements[i].get_attribute("data-store-number").encode('ascii', 'ignore')))
         storeAddresses.append(address)
-
-    continue # FOR TESTING, REMOVE LATER!
         
+        print("\n\n\nname       " + str(names[i].text.encode('ascii', 'ignore')))
+        print("store number  " + str(storeNumberElements[i].get_attribute("data-store-number").encode('ascii', 'ignore')))
+        print("address      " + address)
+        print("postal code      " + cityAndPostal[1].replace(" ", ""))
+        print("city      " + cityAndPostal[0].split(",")[0].strip())
+        print("province    " + cityAndPostal[0].split(",")[1].strip())
+
+    # get product info
     for link in viewFlyerLinks:
         # open specific store's flyer
         driver.get(link)
@@ -105,11 +112,30 @@ for url in cityURLs:
                         pass
                     # get the child html element that contains the details (price and name)
                     div = element.find_element_by_xpath(".//div[@class='footer']//div[@class='details more']")
+                    
                     # get the actual child html element that contains the price
                     # could've been done in one step (without getting 'div'), but this way is cleaner
                     price = div.find_element_by_xpath("./p[@class='price']")
+                    
+                    # quantity is how many for the price - eg. 2 for $5
+                    # weight is how much you get for the price
+                    # only one of these can be used for a product
+                    quantity = "1"
+                    weight = ""
+                    limit = ""
+                    each = ""
+                    # additional info is other facts about the product/pricing - start with the 'more' section
+                    additionalInfo = str(div.find_element_by_xpath(".//div[@class='more']").get_attribute("innerHTML").encode('ascii', 'ignore'))
+                    additionalTag = re.search("<span.*?>", additionalInfo)
+                    # sometimes it won't have an additional span tag, check for that
+                    if additionalTag is not None:
+                        additionalInfo = additionalInfo[additionalTag.end():].replace("</span>", "").strip()
+                    additionalInfo = additionalInfo.replace("<br>", "").replace("</br>", "") # remove these tags if possible
+                    additionalInfo = additionalInfo.replace("\n", " ")
+                    
                     # get the actual child html element that contains the name
                     name = div.find_element_by_xpath("./h3[@class='title']")
+                    
                     # clean up the price string - it contains some html tags like <sup>
                     #
                     # this is just used for testing to be able to print the price cleanly,
@@ -117,12 +143,75 @@ for url in cityURLs:
                     # this is super hard-coded but it's unlikely that there's a better way
                     cleanPrice = str((price.get_attribute("innerHTML")).encode('ascii', 'ignore'))
                     cleanPrice = cleanPrice.replace("<sup>$</sup>", "$").replace("<sup>", ".").replace("</sup>", "")
-	            # print the price (clean version), followed by the html text of the name and price elements (not clean version)
+                    
+                    # get rid of 'limit of x' text
+                    limitX = re.search("LIMIT", additionalInfo)
+                    if limitX is not None:
+                        limit = additionalInfo[limitX.start():].split("after limit")[0]
+                        limit = limit[re.search("LIMIT", limit).end():].strip()
+                        each = additionalInfo[limitX.start():].split("after limit")[1]
+                        each = each[:re.search("ea(\.|ch)", each).start()].strip()
+                        additionalInfo = cleanPrice[limitX.start():] + ",   " +  additionalInfo
+                        cleanPrice = cleanPrice[:limitX.start()]
+                    # get rid of 'less than x, $y each' text
+                    less = re.search("less than [0-9]*", cleanPrice)
+                    if less is not None:
+                        # get the $y and put into 'each'
+                        each = cleanPrice[less.end():]
+                        each = each[:re.search("ea(\.|ch)", each).start()].strip()
+                        additionalInfo = cleanPrice[less.start():] + ",   " +  additionalInfo
+                        cleanPrice = cleanPrice[:less.start()]
+                    # change '$x dozen' to '$x' and update quantity
+                    dozen = re.search("dozen", cleanPrice)
+                    if dozen is not None:
+                        cleanPrice = cleanPrice[:dozen.start()]
+                        quantity = 12
+                    # get the weight that will be used - kg vs lb
+                    kg = re.search("kg", cleanPrice)
+                    if kg is not None:
+                        lb = re.search("lb", cleanPrice)
+                        if lb is not None:
+                            cleanPrice = cleanPrice[:lb.start()].replace("/", "") # get rid of all slashes too
+                            weight = "lb"
+                        else:
+                            cleanPrice = cleanPrice[:kg.start()].replace("/", "")
+                            weight = "kg"
+                    # check if weight is in litres
+                    litre = re.search("[0-9]*( )?L", cleanPrice)
+                    if litre is not None:
+                        cleanPrice = cleanPrice[:litre.start()]
+                        weight = "L"
+                    # check if it's a '2/$x or $y each' type of deal
+                    orX = re.search("or", cleanPrice)
+                    if orX is not None:
+                        orXInfo = cleanPrice[orX.start():]
+                        orEachX = re.search("ea(\.|ch)", orXInfo)
+                        if orEachX is not None:
+                            each = orXInfo[:orEachX.start()].replace("or", "").strip()
+                        additionalInfo = cleanPrice[orX.start():] + ",   " + additionalInfo
+                        cleanPrice = cleanPrice[:orX.start()]
+                    
+                    # get rid of $x each, just set quantity to 1 instead
+                    eachX = re.search("ea(\.|ch)", cleanPrice)
+                    if eachX is not None:
+                        cleanPrice = cleanPrice[:eachX.start()]
+                        quantity = "1"
+
+                    priceSplit = cleanPrice.split("/")
+                    if len(priceSplit) > 1:
+                        quantity = priceSplit[0]
+                        cleanPrice = priceSplit[1]
+                    # clear trailing/leading whitespace
+                    cleanPrice = cleanPrice.strip()
+	                # print the price (clean version), followed by the html text of the name and price elements (not clean version)
                     # this is just for testing purposes, info will be stored somehow
                     #print(cleanPrice)
-                    #print(str((name.text).encode('ascii', 'ignore')) + "     " + str((price.text).encode('ascii', 'ignore')))
-                    if not pointsAmount == "":
-                        print(str(name.text.encode('ascii','ignore')) + " gives " + pointsAmount + " points")
+                    if weight == "":
+                        print(str((name.text).encode('ascii', 'ignore')) + "   price: " + cleanPrice + "    quantity: " + quantity +  "   limit: " + limit + "   each: " + each + "         add. info: " + additionalInfo)
+                    else:
+                        print(str((name.text).encode('ascii', 'ignore')) + "   price: " + cleanPrice + "    weight: " + weight + "   limit: " + limit + "   each: " + each + "      add. info: " + additionalInfo)
+                    #if not pointsAmount == "":
+                    #    print(str(name.text.encode('ascii','ignore')) + " gives " + pointsAmount + " points")
 
                 try:
                     # get the 'next' button element if it exists

@@ -46,8 +46,12 @@ for link in saveMyStoreLinks:
         # if previous link fails, try just the relative path instead of full link
         driver.find_element_by_xpath(".//a[@href='" + link.split(".com")[1] + "']").click()
     # get the store number
-    storeNumberElement = driver.find_elements_by_xpath(".//div[@class='grid__item one-quarter lap--one-half palm--one-whole normal-bottom']//p[not(@*)]")[1] # ugly class name
-    storeNumber = str(storeNumberElement.get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
+    # there are a couple of elements with identical structure, so need to search for 'Store Number' text within them
+    storeNumberElements = driver.find_elements_by_xpath(".//div[@class='grid__item one-quarter lap--one-half palm--one-whole normal-bottom']")
+    for element in storeNumberElements:
+        if "Store Number" in element.get_attribute("innerHTML"):
+            storeNumber = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
+    #storeNumber = str(storeNumberElement.get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
     # get the name of the store
     nameElement = driver.find_element_by_xpath(".//h3[@class='h3-sobeys no-bottom']")
     name = str(nameElement.text.encode('ascii', 'ignore')).strip()

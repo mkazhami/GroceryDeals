@@ -16,8 +16,9 @@ import re
 # opens phantom browser
 # phantomjs.exe is located in the root directory
 #driver = webdriver.PhantomJS(executable_path="/home/mikhail/Documents/htmlparse/phantomjs_linux")
-#driver.set_window_size(1400,1000)
-driver = webdriver.Firefox()
+driver = webdriver.PhantomJS()
+driver.set_window_size(1400,1000)
+#driver = webdriver.Firefox()
 
 # go to the list page of all stores in ontario
 driver.get("http://www.loblaws.ca/en_CA/store-list-page.ON.html")
@@ -69,7 +70,7 @@ for url in cityURLs:
         print("flyer buttons: " + str(len(viewFlyerButtons)) + "  names: " + str(len(names)) + "  addresses: " + str(len(addresses)) + "  store numbers: " + len(storeNumberElements))
         raise Exception("exiting due to error in parsing")
 
-    # get all the store 'view flyer' urls from the buttons
+    # get all the store 'view flyer' urls from the buttons as well as each store's info
     for i in range(len(viewFlyerButtons)):
         viewFlyerLinks.append(str(viewFlyerButtons[i].get_attribute("href").encode('ascii', 'ignore')))
         # store title tag just contains the name
