@@ -14,8 +14,9 @@ import os
 
 # opens phantom browser
 # phantomjs.exe is located in the root directory
-driver = webdriver.PhantomJS(executable_path="../phantomjs.exe", service_log_path=os.path.devnull)
-driver.set_window_size(1400,1000)
+#driver = webdriver.PhantomJS(executable_path="../phantomjs.exe", service_log_path=os.path.devnull)
+#driver.set_window_size(1400,1000)
+driver = webdriver.Firefox()
 # go to the list page of all stores in ontario
 driver.get("http://www.zehrs.ca/en_CA/store-list-page.ON.html")
 # let javascript load
