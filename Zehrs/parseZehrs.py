@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from selenium import webdriver
 import time
 import os
@@ -147,9 +149,15 @@ for url in cityURLs:
                     # get rid of 'limit of x' text
                     limitX = re.search("LIMIT", additionalInfo)
                     if limitX is not None:
-                        limit = additionalInfo[limitX.start():].split("after limit")[0]
+                        # sometimes has all capitals....
+                        # TODO: generalize this
+                        if "after limit" in additionalInfo:
+                            splitStr = "after limit"
+                        elif "AFTER LIMIT" in additionalInfo:
+                            splitStr = "AFTER LIMIT"
+                        limit = additionalInfo[limitX.start():].split(splitStr)[0]
                         limit = limit[re.search("LIMIT", limit).end():].strip()
-                        each = additionalInfo[limitX.start():].split("after limit")[1]
+                        each = additionalInfo[limitX.start():].split(splitStr)[1]
                         each = each[:re.search("ea(\.|ch)", each).start()].strip()
                         additionalInfo = cleanPrice[limitX.start():] + ",   " +  additionalInfo
                         cleanPrice = cleanPrice[:limitX.start()]
@@ -165,7 +173,7 @@ for url in cityURLs:
                     dozen = re.search("dozen", cleanPrice)
                     if dozen is not None:
                         cleanPrice = cleanPrice[:dozen.start()]
-                        quantity = 12
+                        quantity = "12"
                     # get the weight that will be used - kg vs lb
                     kg = re.search("kg", cleanPrice)
                     if kg is not None:
@@ -176,11 +184,6 @@ for url in cityURLs:
                         else:
                             cleanPrice = cleanPrice[:kg.start()].replace("/", "")
                             weight = "kg"
-                    # check if weight is in litres
-                    litre = re.search("[0-9]*( )?L", cleanPrice)
-                    if litre is not None:
-                        cleanPrice = cleanPrice[:litre.start()]
-                        weight = "L"
                     # check if it's a '2/$x or $y each' type of deal
                     orX = re.search("or", cleanPrice)
                     if orX is not None:

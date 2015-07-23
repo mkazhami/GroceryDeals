@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from selenium import webdriver
 import time
 import os
@@ -95,6 +97,8 @@ for url in cityURLs:
         # open specific store's flyer
         driver.get(link)
         time.sleep(3)
+        # increase the items per page to 15
+        driver.find_element_by_xpath(".//select[@class='sortListing']//option[@value='15']").click()
         # loop will break once the 'next' button is no longer on the screen
         while(True):
             try:
@@ -121,6 +125,8 @@ for url in cityURLs:
                     # only one of these can be used for a product
                     quantity = "1"
                     weight = ""
+                    limit = ""
+                    each = ""
                     # additional info is other facts about the product/pricing - start with the 'more' section
                     additionalInfo = str(div.find_element_by_xpath(".//div[@class='more']").get_attribute("innerHTML").encode('ascii', 'ignore'))
                     additionalTag = re.search("<span.*?>", additionalInfo)
@@ -138,21 +144,31 @@ for url in cityURLs:
                     # this is super hard-coded but it's unlikely that there's a better way
                     cleanPrice = str((price.get_attribute("innerHTML")).encode('ascii', 'ignore'))
                     cleanPrice = cleanPrice.replace("<sup>$</sup>", "$").replace("<sup>", ".").replace("</sup>", "")
+                    
                     # get rid of 'limit of x' text
-                    limit = re.search("LIMIT", cleanPrice)
-                    if limit is not None:
-                        additionalInfo = cleanPrice[limit.start():] + ",   " +  additionalInfo
-                        cleanPrice = cleanPrice[:limit.start()]
-                    # get rid of 'less than x' text
-                    less = re.search("less than", cleanPrice)
+                    limitX = re.search("LIMIT", cleanPrice)
+                    if limitX is not None:
+                        splitStr = "AFTER LIMIT"
+                        limit = cleanPrice[limitX.start():].upper().split(splitStr)[0] # convert to upper to ignore case
+                        limit = limit[re.search("LIMIT", limit).end():].strip()
+                        each = cleanPrice[limitX.start():].upper().split(splitStr)[1]
+                        each = each[:re.search("EA(\.|CH)", each).start()].strip()
+                        additionalInfo = cleanPrice[limitX.start():] + ",   " +  additionalInfo
+                        cleanPrice = cleanPrice[:limitX.start()]
+                    # get rid of 'less than x, $y each' text
+                    less = re.search("less than [0-9]*", cleanPrice)
                     if less is not None:
+                        # get the $y and put into 'each'
+                        each = cleanPrice[less.end():]
+                        each = each[:re.search("ea(\.|ch)", each).start()].strip()
                         additionalInfo = cleanPrice[less.start():] + ",   " +  additionalInfo
                         cleanPrice = cleanPrice[:less.start()]
                     # change '$x dozen' to '$x' and update quantity
                     dozen = re.search("dozen", cleanPrice)
                     if dozen is not None:
                         cleanPrice = cleanPrice[:dozen.start()]
-                        quantity = 12
+                        quantity = "12"
+                    # get the weight that will be used - kg vs lb
                     kg = re.search("kg", cleanPrice)
                     if kg is not None:
                         lb = re.search("lb", cleanPrice)
@@ -162,16 +178,21 @@ for url in cityURLs:
                         else:
                             cleanPrice = cleanPrice[:kg.start()].replace("/", "")
                             weight = "kg"
+                    # check if it's a '2/$x or $y each' type of deal
                     orX = re.search("or", cleanPrice)
                     if orX is not None:
+                        orXInfo = cleanPrice[orX.start():]
+                        orEachX = re.search("ea(\.|ch)", orXInfo)
+                        if orEachX is not None:
+                            each = orXInfo[:orEachX.start()].replace("or", "").strip()
                         additionalInfo = cleanPrice[orX.start():] + ",   " + additionalInfo
                         cleanPrice = cleanPrice[:orX.start()]
 
 
                     # get rid of $x each, just set quantity to 1 instead
-                    each = re.search("each", cleanPrice)
-                    if each is not None:
-                        cleanPrice = cleanPrice[:each.start()]
+                    eachX = re.search("each", cleanPrice)
+                    if eachX is not None:
+                        cleanPrice = cleanPrice[:eachX.start()]
                         quantity = "1"
 
                     priceSplit = cleanPrice.split("/")
@@ -184,9 +205,9 @@ for url in cityURLs:
                     # this is just for testing purposes, info will be stored somehow
                     #print(cleanPrice)
                     if weight == "":
-                        print(str((name.text).encode('ascii', 'ignore')) + "   price: " + cleanPrice + "    quantity: " + quantity + "      add. info: " + additionalInfo)
+                        print((name.text) + "   price: " + cleanPrice + "    quantity: " + quantity +  "   limit: " + limit + "   each: " + each + "         add. info: " + additionalInfo)
                     else:
-                        print(str((name.text).encode('ascii', 'ignore')) + "   price: " + cleanPrice + "    weight: " + weight + "      add. info: " + additionalInfo)
+                        print((name.text) + "   price: " + cleanPrice + "    weight: " + weight + "   limit: " + limit + "   each: " + each + "      add. info: " + additionalInfo)
                     #if not pointsAmount == "":
                     #    print(str(name.text.encode('ascii','ignore')) + " gives " + pointsAmount + " points")
 
