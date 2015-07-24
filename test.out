@@ -1,227 +1,738 @@
-ZEHRS
+name: chicken breasts      price: $2.99     weight: lb   limit:    each:    info: butcher pack size, fresh bone-in skinless  6.59/kg
 
-Chapman’s Options bars   price: $3.49    quantity: 1   limit:    each:          add. info:  selected varieties frozen pkg of 6/8 
-Johnson’s baby toiletries   price: $3.99    quantity: 1   limit:    each:          add. info:  selected varieties and sizes 
-Haagen-Dazs Gelato   price: $4.99    quantity: 1   limit:    each:          add. info:  500 mL or bars pkg of 3 selected varieties, frozen 
-Perrier or San Pellegrino   price: $4.98    quantity: 3   limit:    each: $1.99         add. info: less than 3 $1.99 ea.,   750 mL/1 L Gatorade or Powerade 710 mL selected varieties
-Del Monte vegetables   price: $4    quantity: 2   limit:    each: $2         add. info: or $2 ea.,    341-398 mL Aylmer tomatoes or Accents 398-796 mL selected varieties 
-aloe vera plant   price: $6.99    quantity: 1   limit:    each:          add. info: 4 inch, in an upgraded pot pot may not be as shown
-no name® apple sauce   price: $1.99    quantity: 1   limit:    each:          add. info:  650 mL PC white tuna 170 g or PC Blue Menu broth 900 mL selected varieties 
-Duncan Hines cake or brownie mix   price: $4    quantity: 2   limit:    each: $2.49         add. info: or $2.49 ea.,   450-515 g or frosting 450 g
-Tropicana Pure Premium orange juice   price: $6.49    quantity: 1   limit:    each:          add. info: 2.63 L or Danone Activia yogurt 12x100 g selected varieties  LIMIT 8 after limit $7.29 ea.
-Dare Breton or Vinta crackers   price: $5    quantity: 2   limit:    each: $2.99         add. info: less than 2 $2.99 ea.,   selected varieties 135-250 g
-PC® Gourmet roast and ground coffee   price: $10.99    quantity: 1   limit:    each:          add. info:  selected varieties 875/930 g 
-white or wheat croissants   price: $1.99    quantity: 1   limit:    each:          add. info:  pkg of 6  BAKED IN-STORE 
-Advil kids chewable tablets   price: $11.99    quantity: 1   limit:    each:          add. info: 40s Nighttime Liqui-Gels 40s or Robax Platinum 18s selected varieties
-Lou’s Quick-N-Easy entrées   price: $5.99    quantity: 1   limit:    each:          add. info:  selected varieties 375/400 g 
-apple or raspberry strip danish   price: $3.99    quantity: 1   limit:    each:          add. info:  425 g 
-McCain hashbrowns, fries   price: $1.99    quantity: 1   limit:    each:          add. info: 900 g or Cavendish patties 600 g selected varieties frozen
-Pedigree Dentastix   price: $9.99    quantity: 1   limit:    each:          add. info:  selected varieties pkg of 5-25 
-Farmer's Market™ lemon meringue or key lime pie   price: $5.99    quantity: 1   limit:    each:          add. info: 1 kg
-Stagg chili   price: $4.44    quantity: 1   limit:    each: $2.22         add. info: or $2.22 ea.,   283-425 g Campbell's Chunky or Ready to Eat soup 540 mL selected varieties
-PC® Gourmet whole bean coffee or Melitta traditional coffee   price: $11.99    quantity: 1   limit:    each:          add. info:  selected varieties 907/930 g 
-Plaisirs Gastronomiques duck legs confit   price: $12.99    quantity: 1   limit:    each:          add. info:  500 g 
-chicken breasts   price: $2.99    weight: lb   limit:    each:       add. info: butcher pack size, fresh bone-in skinless
-Nestea, Five Alive, Minute Maid, Fruitopia   price: $11    quantity: 2   limit:    each: $5.99         add. info: less than 2 $5.99 ea.,   12x341 mL Dole 12x340/355 mL or Lipton 12x355 mL selected varieties
-Coca-Cola or Pepsi soft drinks   price: $7    quantity: 2   limit:    each: $3.50         add. info: or $3.50 ea.,   selected varieties 12 x 355 mL, 6 x 710 mL
-Nesfruta liquid water enhancers   price: $2.99    quantity: 1   limit:    each:          add. info:  selected varieties 52 mL 
-Country Harvest, Vitality or veggie bread   price: $5    quantity: 2   limit:    each: $2.99         add. info: or $2.99 ea.,    selected varieties 340-675 g 
-Neilson Trutaste milk   price: $3.99    quantity: 1   limit:    each:          add. info:  1%, 2% or skim 2 L 
-Stouffer’s, Lean Cuisine, Bistro entrées   price: $1.99    quantity: 1   limit:    each:          add. info:  frozen 167-340 g  Astro Original or BioBest yogurt 650/750 g selected varieties  LIMIT 6 after limit $3.39 ea. 
-organic cantaloupe   price: $4.99    quantity: 1   limit:    each:          add. info:  product of U.S.A. 
-grain fed veal loin or rib chops   price: $9.99    weight: lb   limit:    each:       add. info:   
-Schneiders Olde Fashioned ham, smoked turkey or summer sausage   price: from $2 100 g    quantity: 1   limit:    each:          add. info:  deli sliced, selected varieties 
-cap-off prime rib grilling steak   price: $13.99    weight: lb   limit:    each:       add. info:  club size, cut from Certified Ontario Corn Fed Canada AA grade beef 
-Milk 2 Go Sport   price: $3    quantity: 2   limit:    each: $2.19         add. info: or $2.19 ea.,   selected varieties 473 mL
-Romaine, green or red leaf lettuce   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,   product of Ontario
-succulents   price: $9.99    quantity: 1   limit:    each:          add. info: 4 inch, in upgraded ceramic pot assorted varieties
-PC® Appletreet™   price: $4    quantity: 2   limit:    each: $2         add. info: or $2 ea.,   6x100 mL or Christie Bits &amp; Bites snacks 175 g selected varieties
-Reese Snacksters peanut butter chocolate spread   price: $3    quantity: 2   limit:    each: $1.50         add. info: or $1.50 ea.,   51 g or Tic Tac candy 24 g selected varieties
-PC® lamb shoulder chops   price: $8.99    weight: lb   limit:    each:       add. info:  fresh product of Australia, plain or marinated 
-Pure Leaf tea   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,   547 mL Monster or Rockstar energy drinks 473 mL selected varieties
-Plaisirs Gastronomiques half duck confit   price: $17.99    quantity: 1   limit:    each:          add. info: 1 kg
-Italpasta   price: $4    quantity: 2   limit:    each: $2         add. info: or $2 ea.,   selected varieties 900 g
-yellow peaches or nectarines   price: $1.99    weight: lb   limit:    each:       add. info: product of U.S.A., no. 1 grade
-no name® tuna   price: $5    quantity: 4   limit:    each: $1.49         add. info: or $1.49 ea.,   selected varieties 85-170 g
-pork loin centre cut chops   price: $3.49    weight: lb   limit:    each:       add. info: club size bone-in
-Beneful dog food   price: $19.99    quantity: 1   limit:    each:          add. info:  selected varieties 7/8 kg 
-Old Spice Red Zone   price: $3.99    quantity: 1   limit:    each:          add. info:  deodorant 73/85 g spray 123 mL bar soap 6X113 g, body wash 473/532 mL or haircare 355 mL selected varieties 
-Chelsea cod bits   price: $5.99    quantity: 1   limit:    each:          add. info:  boneless, salted, dry, refrigerated 454 g 
-Leclerc Celebration cookies   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,   selected varieties 240 g
-premium bagels   price: 59    quantity: 1   limit:    each:          add. info:  selected varieties each or pre-package of 6 $3.49 Baked FRESH three times daily  BAKED IN-STORE 
-Allen’s fruit juice or cocktail   price: $6    quantity: 3   limit:    each: $2         add. info: or $2 ea.,    selected varieties 8x200 mL 
-whole beef tenderloin premium oven roast   price: $10.99    weight: lb   limit:    each:       add. info:  cut from Canada AA grade beef or higher or USDA select cryovac pkg 
-Love Child organics purée   price: $5    quantity: 4   limit:    each: $1.25         add. info: or $1.25 ea.,    selected varieties 128 mL 
-red, green or black seedless grapes   price: $1.99    weight: lb   limit:    each:       add. info: product of U.S.A., no. 1 grade EXTRA LARGE
-PC® Loads Of™ , World Of or thick cut potato chips   price: $1.67    quantity: 1   limit:    each:          add. info: selected varieties 200 g
-extra large papaya   price: $4.99    quantity: 1   limit:    each:          add. info: product of Mexico
-Kellogg’s family pack cereal   price: $4.99    quantity: 1   limit:    each:          add. info: selected varieties 515-755 g
-PC® Free From® or Blue Menu® Free From® Angus beef burgers   price: $12.99    quantity: 1   limit:    each:          add. info: frozen 1.02 kg
-Vitalux caplets   price: $9.99    quantity: 1   limit:    each:          add. info:  50s or Webber Omega 3 capsules 210s selected varieties 
-large honeydew melons   price: $4.99    quantity: 1   limit:    each:          add. info: Honeydew melons add the perfect sweet flavour compliment to salads. Try pairing with feta or prosciutto.  product of U.S.A.
-Febreze Unstoppables air refresher   price: $4.99    quantity: 1   limit:    each:          add. info: 275 g, 500 mL or  no name scoopable cat litter 7 kg selected varieties
-Huggies or Pampers mega pack training pants   price: $16.99    quantity: 1   limit:    each:          add. info: selected varieties 20-44's
-Enfamil A+   price: $28.99    quantity: 1   limit:    each:          add. info: 550-730 g or Nestl Good Start 600/660 g baby formula with Omega selected varieties
-Grace coconut water with pulp   price: 99    quantity: 1   limit:    each:          add. info: 500 mL
-Chapman’s ice cream Collection   price: $3.49    quantity: 1   limit:    each:          add. info: selected varieties frozen pkg of 4-8
-Ivory   price: $3.49    quantity: 1   limit:    each:          add. info: 10x90 g Olay 4x90 g bar soap or Ivory 621 mL or Olay 400 mL body wash, selected varieties
-SeaQuest® wild Pacific salmon   price: $5.99    quantity: 1   limit:    each:          add. info:  frozen 454 g 
-greenhouse tomatoes on the vine   price: $1.49    weight: lb   limit:    each:       add. info: product of Ontario, Canada no.1 grade
-Becel margarine   price: $1.99    quantity: 1   limit:    each:          add. info:  selected varieties 454 g  LIMIT 6 after limit $3.88 ea. 
-large green kiwi   price: $4    quantity: 5   limit:    each: 80         add. info: or 80 ea.,    product of New Zealand 
-Pampers 9X or Huggies 10X baby wipes   price: $17.49    quantity: 1   limit:    each:          add. info: selected varieties 576-768's
-Farmer’s Market TM Two-bite Brownies® , mini chocolate chip banana bread or PC® Blue Menu® Two-bite Brownies®   price: $8    quantity: 2   limit:    each: $4.29         add. info: or $4.29 ea.,   250-300 g
-Danone Oikos Greek yogurt   price: $3.99    quantity: 1   limit:    each:          add. info: 500 g or General Mills cereal selected varieties 260-500 g
-Crest 3D White Vivid Whitestrips   price: SAVE up to 30%    quantity: 1   limit:    each:          add. info: 10 ct or Oral-B Vitality power toothbrush each or refill heads 3s selected varieties
-PC® facial tissue   price: $5.99    quantity: 1   limit:    each:          add. info:  pkg of 6 or bathroom tissue pkg of 12 rolls selected varieties 
-beef tenderloin grilling steak   price: $19.99    weight: lb   limit:    each:       add. info:  cut from Canada AA grade beef or higher or USDA select 
-Christie cookies   price: $1.99    quantity: 1   limit:    each:          add. info:  selected varieties 280/300 g  LIMIT 12 after limit $3.99 ea. 
-50 4 x 6 prints   price: $5    quantity: 1   limit:    each:          add. info: Available on photoLab.ca or In-Store. Minimum 50 prints. Not available on instant, 1 hour only.
-Carnaby candy   price: $4    quantity: 2   limit:    each: $2.29         add. info: less than 2 $2.29 ea.,   selected varieties 250-400 g
-From Our Chefs beef steak tips   price: $15    quantity: 1   limit:    each:          add. info:  teriyaki or ginger &amp; soy sauce 500 g 
-PC® ground lamb   price: $7.99    weight: lb   limit:    each:       add. info:  fresh product of Australia 
-20 piece chicken wings   price: $10    quantity: 1   limit:    each:          add. info: hot or chilled selected varieties
-Sunchips   price: $3.29    quantity: 1   limit:    each:          add. info: 225 g or Munchies 300 g snacks selected varieties
-Grace corned beef   price: $3.29    quantity: 1   limit:    each:          add. info: selected varieties 340 g
-Schneiders chicken or turkey burgers   price: $7.99    quantity: 1   limit:    each:          add. info:  480/568 g or Country Naturals beef or Angus beef burgers 680/720 g frozen 
-Organix or Marc Anthony shampoo, conditioner or styling   price: $7.99    quantity: 1   limit:    each:          add. info: selected varieties and sizes
-Chapman’s Original ice cream   price: 99    quantity: 1   limit:    each:          add. info:  selected varieties frozen  FLASH SALE 1 DAY ONLY JULY 17TH rest of the week July 18-23 $2.49  LIMIT 3 after limit $3.99 ea. 
-PC® Organics strained baby food pouch   price: $5    quantity: 4   limit:    each: $1.33         add. info: or $1.33 ea.,   selected varieties 128 mL
-Coffee-mate   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,    473 mL or PC Blue Menu soy beverage  1.89 L selected varieties 
-Sensodyne ProNamel   price: $4.99    quantity: 1   limit:    each:          add. info: 110 mL ISOactive 100 mL regular 135 mL toothpaste or Fixodent denture adhesive 57/68 g selected varieties
-Neilson Dairy Oh Milk   price: $4.99    quantity: 1   limit:    each:          add. info: selected varieties 3 L  DHA MILK Supports normal physical development of the brain!
-L’Oréal facial skin care   price: SAVE up to 30 %    quantity: 1   limit:    each:          add. info: selected varieties and sizes
-Herbal Essences or Herbal Essences Naked   price: $2.49    quantity: 1   limit:    each:          add. info:  shampoo conditioner or styling selected varieties and sizes 
-From Our Chefs dijon potato & egg salad   price: $1.99 100 g    quantity: 1   limit:    each:          add. info:   
-Lantic sugar   price: $5    quantity: 2   limit:    each: $2.99         add. info: or $2.99 ea.,   selected varieties 1-2 kg
-PC ® Too Good To Be Wings TM chicken breast chunks   price: $11.99    quantity: 1   limit:    each:          add. info:  Tender, boneless pieces of cooked chicken breast in a delicious glutenfree coating made with rice crisps and yellow corn flour. Toss or dip chicken in the sauce that is included.  selected varieties frozen 800 g 
-Heinz beans or pasta   price: $4    quantity: 3   limit:    each: $1.99         add. info: or $1.99 ea.,   selected varieties 398 mL
-Huggies Little Swimmers   price: $9.99    quantity: 1   limit:    each:          add. info: selected varieties 17-20
-PC® mini hummus or tzatziki   price: $3.99    quantity: 1   limit:    each:          add. info:  selected varieties 144/228 g 
-PC® sugar cones   price: $1.79    quantity: 1   limit:    each:          add. info: 142 g Slush Puppie 25 mL/85 g or Toxic Waste sour candy 48 g selected varieties
-From Our Chefs red quinoa salad   price: $1.99 100 g    quantity: 1   limit:    each:          add. info:   
-PC® pasta sauce   price: $2.99    quantity: 1   limit:    each:          add. info:  410/650 mL or salsa 650 mL selected varieties 
-Weight Watchers thin or sandwich rolls   price: $4.49    quantity: 1   limit:    each:          add. info:  240-450 g 
-PC® Blue Menu® beans   price: $2    quantity: 2   limit:    each: $1.29         add. info: or $1.29 ea.,   no salt added selected varieties 540 mL
-Silk True Almond non dairy beverage   price: $4    quantity: 2   limit:    each: $2         add. info: or $2 ea.,   selected varieties 946 mL
-all Ziploc food storage containers and space bags   price: SAVE 30%    quantity: 1   limit:    each:          add. info: selection may vary by store exlcudes clearance 288439/370255/236691
-PC® lamb loin chops   price: $11.99    weight: lb   limit:    each:       add. info: PC Australian lamb fresh product of Australia, plain or marinated  Mild-tasting and tender Australian lamb raised on a diet of both pasture and grains, giving it a delicate and unforgettable flavour!
-Neilson 1% Chocolate Milk   price: $4.99    quantity: 1   limit:    each:          add. info:  3 L  CHOCOLATE MILK High in protein and provides 15 essential nutrients. 
-PC® boneless lamb leg   price: $7.99    weight: lb   limit:    each:       add. info:  fresh product of Australia 
-green onions   price: 79    quantity: 1   limit:    each:          add. info:  product of Ontario bunch 
-Doritos   price: $7.98    quantity: 3   limit:    each: $3.49         add. info: less than 3 $3.49 ea.,    235-260 g Lay's 255 g or Ruffles 220 g chips selected varieties 
-PC® multi pack batteries   price: $4.97    quantity: 1   limit:    each:          add. info:  AA8/AAA4/9V2/C4/D4 860906/883945/750523 
-New Treasure long grain white or parboiled rice   price: $6.99    quantity: 1   limit:    each:          add. info: 8 kg
-PC® turkey breast   price: $2.99 100 g    quantity: 1   limit:    each:          add. info:  deli sliced, selected varieties pre-packaged 175 g 2/$10 or $5.79 ea. 
-D’Italiano Bake at Home garlic bread, rolls or toast   price: $4.99    quantity: 1   limit:    each:          add. info:  frozen 325-405 g 
-PC® soft drinks   price: $2.99    quantity: 1   limit:    each:          add. info:  selected varieties 12x355 mL 
-lean ground beef and pork blend   price: $3.99    weight: lb   limit:    each:       add. info:  club size fresh 60% beef and 40% pork 
-Lavazza Espresso   price: $3.49    quantity: 1   limit:    each:          add. info: 250 g or Twinings tea pkg of 20 selected varieties
-Grace Island soda   price: 79    quantity: 1   limit:    each:          add. info: 355 mL or The Great Jamaican ginger beer 250 mL
-Schneiders Country Naturals sliced meat   price: $4.99    quantity: 1   limit:    each:          add. info:  selected varieties 175 g 
-PC® or Blue Menu® meatballs   price: $9.99    quantity: 1   limit:    each:          add. info:  selected varieties frozen 800/907 g 
-Cracker Barrel shredded cheese   price: $5.99    quantity: 1   limit:    each:          add. info:  250-320 g or cheese bars 400/460 g selected varieties  LIMIT 10 after limit $8.29 ea. 
-Nestlé Pure Life water   price: $6    quantity: 2   limit:    each: $3.49         add. info: less than 2 $3.49 ea.,   24 x 500 mL or sparkling water 12x355 mL selected varieties
-large whole seedless watermelon   price: $4.99    quantity: 1   limit:    each:          add. info:  Seedless watermelon is a delicious, versatile and affordable fruit that can be enjoyed on its own, in sorbets and beverages or try putting chunks in a blender and use for a new twist on summer beverages. 11 lb average  product of U.S.A. 
-Cheemo perogies   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,   815/907 g or In Cuisin risotto 300 g or mashed potato 350 g selected varieties frozen
-Huggies or Pampers club size plus diapers   price: $29.99    quantity: 1   limit:    each:          add. info:  selected varieties 92-198's 
-large Honey Kiss melon   price: $4.99    quantity: 1   limit:    each:          add. info:  Honey Kiss melons have a lightly netted distinct yellow skin, light salmon colored meat and are oval in shape. They are extremely sweet and a great snack that can be served cut into cubes or melon balls.  product of U.S.A. 
-From Our Chefs croissant sandwich   price: $4.99    quantity: 1   limit:    each:          add. info:  selected varieties 140/175 g 
-CLR cleaner bath & kitchen   price: $7.99    quantity: 1   limit:    each:          add. info: 760 mL or  Glad garbage bags pkg of 20-40 selected varieties
-Dare Bear Paws   price: $1.99    quantity: 1   limit:    each:          add. info:  selected varieties 168-270 g 
-Chapman’s ice cream sundae   price: $2.99    quantity: 1   limit:    each:          add. info:  selected varieties frozen 1 L 
-PC® NUTRITION FIRST® CAT FOOD   price: 69    quantity: 1   limit:    each:          add. info:  selected varieties 85 g 
-fresh tilapia fillets   price: $6.99    weight: lb   limit:    each:       add. info:   
-all Mr.Clean Magic Erasers   price: SAVE 15 %    quantity: 1   limit:    each:          add. info: selection may vary by store 656220/865357/666507
-From Our Chefs baguette sandwich   price: $5.99    quantity: 1   limit:    each:          add. info: selected varieties 200 g
-Kraft salad dressing   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,    475 mL or Bull's-Eye barbecue sauce 425 mL selected varieties 
-PC® Pacific white shrimp   price: $6.99    quantity: 1   limit:    each:          add. info:  large raw Zipperback 31-40 per lb, frozen 400 g 
-Boursin cheese   price: $9    quantity: 2   limit:    each: $4.50         add. info: or $4.50 ea.,   selected varieties 125/150 g
-raspberries   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,    product of U.S.A., no. 1 grade 170 g 
-Cedar Bay salmon   price: $4.99    quantity: 1   limit:    each:          add. info:  selected varieties frozen 141 g 
-garlic   price: 69    quantity: 1   limit:    each:          add. info:  product of China pkg of 3 
-Bounce   price: $6.99    quantity: 1   limit:    each:          add. info: FIGHT STATIC Bounce dryer sheets 105120 count, selected varieties
-PC® Crisp & Thin™ crackers   price: $1.99    quantity: 1   limit:    each:          add. info:  selected varieties 225 g 
-PC® cotton swabs 500’s   price: $2.99    quantity: 1   limit:    each:          add. info:  or Teddy's Choice baby toiletries selected varieties and sizes 
-Plaisirs Gastronomiques duck breast magret   price: $13.99    quantity: 1   limit:    each:          add. info: 330 g
-PC® Frenched rack of lamb   price: $14.99    weight: lb   limit:    each:       add. info:  fresh product of Australia 
-seedless watermelon quarters   price: 99    weight: lb   limit:    each:       add. info: prepared fresh in-store daily may not be available at all locations
-PC® Bay Of Fundy smoked Atlantic salmon   price: $14.99    quantity: 1   limit:    each:          add. info: frozen 300 g
-Nice’n Easy, Root Touch Up or Natural Instincts hair colour   price: $6.99    quantity: 1   limit:    each:          add. info: each selected varieties
-Philadelphia dips   price: $5    quantity: 2   limit:    each: $2.79         add. info: or $2.79 ea.,   selected varieties 227 g
-PC® vegetables   price: $5    quantity: 2   limit:    each: $2.99         add. info: or $2.99 ea.,    selected varieties frozen 500/750 g 
-PC® Amaize® corn   price: $5.99    quantity: 1   limit:    each:          add. info:  product of U.S.A. pkg of 4 
-PC® NUTRITION FIRST® GRAIN-FREE SALMON & POTATO DOG FOOD   price: $34.99    quantity: 1   limit:    each:          add. info: 9 kg
-PC® Splendido® extra virgin olive oil   price: $7.99    quantity: 1   limit:    each:          add. info: 1 L or Nonna Pia's balsamic vinegar selected varieties 250 mL
-Ocean Spray 100% juice blend or cocktail   price: $8    quantity: 3   limit:    each: $2.67         add. info: or $2.67 ea.,   selected varieties 1.89 L/6 x 295 mL
-Farmer’s Market TM loaf cakes   price: $7    quantity: 2   limit:    each: $4.29         add. info: or $4.29 ea.,   selected varieties 390 g
-PC ® Black Label panko seasonin   price: $2.49    quantity: 1   limit:    each:          add. info: 227 g
-Old Mill hamburger or hot dog buns   price: $3    quantity: 2   limit:    each: $1.99         add. info: or $1.99 ea.,   selected varieties pkg of 8
-sunflowers   price: $3.99    quantity: 1   limit:    each:          add. info:  3 stem bunches 
-Febreze Air Effects   price: $3.29    quantity: 1   limit:    each:          add. info:  275 g, CAR 1 count or Mr. Clean 976 mL1.2 L 
-Lindt Excellence chocolate   price: $7    quantity: 2   limit:    each: $3.99         add. info: or ,   less than 2 $3.99 ea.,   selected varieties 50-100 g
-Honeywell fans   price: SAVE 25 %    quantity: 1   limit:    each:          add. info:  selection may vary by store. 748680/273935/714126 
-Neilson chocolate milk   price: $1    quantity: 1   limit:    each:          add. info:  750 mL 
-all Swiffer WetJet   price: SAVE 20 %    quantity: 1   limit:    each:          add. info: selection may vary by store 782376/888441/867591
-Cascade ActionPacs   price: $13.99    quantity: 1   limit:    each:          add. info: 3960 count
-snow or snap peas   price: $2.49    quantity: 1   limit:    each:          add. info:  product of Ontario 200 g 
-Club House La Grille seasoning   price: $3.99    quantity: 1   limit:    each:          add. info:  120-203 g or marinade 237 mL selected varieties 
-Kellogg’s Müslix or All-Bran cereal   price: $3.99    quantity: 1   limit:    each:          add. info:  selected varieties 380-670 g 
-no name® fruit   price: $5    quantity: 2   limit:    each: $2.99         add. info: or $2.99 ea.,   selected varieties 796 mL
-International Delight iced coffee   price: $3.99    quantity: 1   limit:    each:          add. info: selected varieties 1.89 L
-Chapman’s Premium ice cream   price: $5.49    quantity: 1   limit:    each:          add. info: selected varieties frozen 2 L
-Delissio Thin Crispy or Rustico pizza   price: $3.99    quantity: 1   limit:    each:          add. info:  selected varieties frozen 340-630 g 
-hothouse Boston lettuce   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,   product of Ontario
-Hair Expertise shampoo, conditioner or treatment   price: $3.99    quantity: 1   limit:    each:          add. info: Selected varieties and sizes
-okra   price: $2.99    weight: lb   limit:    each:       add. info: product of U.S.A., Nicaragua or Honduras
-Aerius allergy tablet   price: $9.99    quantity: 1   limit:    each:          add. info:  10s child forumula syrup 100 mL exact allergy formula tablet 100s or HydraSense nasal spray 100 mL  selected varieties 
-PC® chicken drumsticks or thighs   price: $2.99    weight: lb   limit:    each:       add. info:  fresh Air chilled 
-Old El Paso seasoning mix   price: $4    quantity: 3   limit:    each: $1.49         add. info: or $1.49 ea.,   selected varieties 35/39 g
-fresh Atlantic salmon steaks   price: $8.99    weight: lb   limit:    each:       add. info:   
-grain fed veal cutlets   price: $10.99    weight: lb   limit:    each:       add. info:   
-From Our Chefs wrap sandwiches   price: $4.99    quantity: 1   limit:    each:          add. info:  selected varieties 220 g 
-Anmol pistachio cookie   price: $1.79    quantity: 1   limit:    each:          add. info: 400 g
-green kale   price: $4    quantity: 2   limit:    each: $2         add. info: or $2 ea.,   product of Ontario bunch
-clementines   price: $4.99    quantity: 1   limit:    each:          add. info: product of South Africa 2lb BAG
-Neilson Trutaste milk 1%, 2% or skim   price: $8    quantity: 2   limit:    each: $4.49         add. info: or $4.49 ea.,    3 L  MICROFILTERED MILK Naturally stays fresher longer. Taste the difference! 
-From Our Chefs Turkish pearl couscous salad   price: $1.99 100 g    quantity: 1   limit:    each:          add. info:   
-Lay’s or Ruffles potato chips   price: $7.98    quantity: 3   limit:    each:          add. info:  selected varieties 220-255 g  less than 3 $3.49 each 
-Heinz baby cereal   price: $3    quantity: 1   limit:    each:          add. info:  selected varieties 227 g 
-beets   price: $2.99    quantity: 1   limit:    each:          add. info: product of Ontario bunch
-Magnum   price: $4.99    quantity: 1   limit:    each:          add. info: pkg of 3 or 4 or Ben &amp; Jerry's 500 mL ice cream selected varieties frozen
-yellow onions   price: $1.99    quantity: 1   limit:    each:          add. info:  product of Ontario, Canada no. 1 grade 3 lb BAG 
-Que Pasa tortilla chips   price: $7    quantity: 2   limit:    each: $3.50         add. info: or $3.50 ea.,   selected varieties 425 g
-Nesquik syrup   price: $4.49    quantity: 1   limit:    each:          add. info: 460-700 mL or Carnation hot chocolate 225/500 g selected varieties
-extra large cantaloupe   price: $3.99    quantity: 1   limit:    each:          add. info: no. 1 grade or Sugar Kiss melon product of U.S.A.
-Coca-Cola or Pepsi soft drinks   price: $4.98    quantity: 3   limit:    each: $1.99         add. info: less than 3 $1.99 ea.,   selected varieties 2 L
-Dentyne, Trident or Clorets gum   price: $2.99    quantity: 1   limit:    each:          add. info:  pkg of 3/4 or Cadbury Dairy Milk Creations chocolate bar  200 g selected varieties 
-Tide   price: $14.99    quantity: 1   limit:    each:          add. info: liquid laundry detergent 4864 loads Downy fabric softener 120150 loads, selected varieties
-pork loin combination chops   price: $1.99    weight: lb   limit:    each:       add. info: rib and sirloin portions, club size,bone-in or pork boneless half loins cryovac pkg
-Farmer’s Market™ mini cucumbers   price: $5    quantity: 2   limit:    each: $2.50         add. info: or $2.50 ea.,   product of Ontario, Canada no. 1 grade pkg of 8
-Santa Cruz organic lemonade   price: $4    quantity: 2   limit:    each: $2.99         add. info: or $2.99 ea.,    946 mL 
-Ziggy’s® Black Forest or honey maple ham   price: $1.79 100 g    quantity: 1   limit:    each:          add. info: deli sliced, selected varieties
-PC® Ultra Shake   price: $7.99    quantity: 1   limit:    each:          add. info: 6 x 237 mL PC Nutri-Total TM 6 x 235 mL PC Trim Plan bars 6 x 60 g or PC Trim Plan powder 530 g selected varieties
-ACE Bakery rosemary focaccia triangle or ciabatta piccola rolls   price: $4.49    quantity: 1   limit:    each:          add. info:  pkg of 8 or ciabatta pezzetti rolls pkg of 24 
-PC® Premium long stem roses with greens and baby's breath   price: $12    quantity: 1   limit:    each:          add. info:  assorted colours 50 cm dozen 
-Marc Angelo smoked chicken sausage   price: $4.99    quantity: 1   limit:    each:          add. info: selected varieties 375 g
-Downy UNSTOPABLES, Gain fireworks, Bounce BURSTS   price: $5.99    quantity: 1   limit:    each:          add. info:  scent boosters 275 g 
-Grimmway True organic juice   price: $7    quantity: 2   limit:    each: $3.50         add. info: or $3.50 ea.,   product of U.S.A. selected varieties 828 mL
-no name® paper towels   price: $4.99    quantity: 1   limit:    each:          add. info:  pkg of 6 rolls or bathroom tissue pkg of 24 rolls 
-Banana Boat or Hawaiian Tropic suncare   price: $7.99    quantity: 1   limit:    each:          add. info: selected varieties and sizes
-Always   price: $8.99    quantity: 1   limit:    each:          add. info: pads 28-48's liners 108/162's or Tampax tampons 32-54's Includes Infinity, Radiant or Pearl selected varieties
-Royal Chinet dinner plate   price: $17.97    quantity: 1   limit:    each:          add. info: 125 count also save 10% on all other Royal Chinet plates and bowls
-fresh sockeye salmon fillets   price: $10.99    weight: lb   limit:    each:       add. info:   
-Gillette Venus Swirl or Proglide Flexball   price: $12.99    quantity: 1   limit:    each:          add. info:  manual or power razor 1's selected varieties 
-PC® NUTRITION FIRST® CAT FOOD   price: $9.99    quantity: 1   limit:    each:          add. info:  selected varieties 2 kg 
-Yoplait Minigo   price: $2.49    quantity: 1   limit:    each:          add. info:   LIMIT 8 after limit $3.19 ea.
-Pantene shampoo, conditioner or styling   price: $3.99    quantity: 1   limit:    each:          add. info: selected varieties and sizes
-PC® NUTRITION FIRST® DOG FOOD   price: $20.99    quantity: 1   limit:    each:          add. info: selected varieties 7 kg
-Allen’s   price: $8    quantity: 3   limit:    each: $2.67         add. info: or $2.67 ea.,    1.89 L Rougemont 2 L Oasis Nutrisource 1.36 L Fruitzoo or Del Monte 8x200 mL juice blends selected varieties 
-Colgate Optic White toothbrush plus built-in whitening pen   price: $12.99    quantity: 1   limit:    each:          add. info: selected varieties  LIMIT 4 after limit $15.99 ea.
-Butter First gourmet cookies   price: $5.49    quantity: 1   limit:    each:          add. info: selected varieties 350/360 g  BAKED IN-STORE
-Made Good granola bars   price: $8    quantity: 2   limit:    each: $4         add. info: or $4 ea.,    selected varieties 96-120 g 
-fresh donuts   price: 79    quantity: 1   limit:    each:          add. info:  selected varieties 
-PC® NUTRITION FIRST® DOG FOOD   price: $36.99    quantity: 1   limit:    each:          add. info: selected varieties 13.5 kg
-Gaviscon liquid or tabs   price: $11.99    quantity: 1   limit:    each:          add. info:  600 mL/60's or Restoralax powder sachets 10/14s selected varieties 
-CADBURY Bags   price: $3.49    quantity: 1   limit:    each:          add. info: 150-200 g selected varieties
-Similac non-omega   price: $20.99    quantity: 1   limit:    each:          add. info:  850 g or PC Organics with Omega 658/730 g powder baby formula selected varieties 
+
+name: Christie cookies      price: $1.99     quantity: 1   limit: 12   each: $3.99   info: selected varieties 280/300 g
+
+
+name: Coca-Cola or Pepsi soft drinks      price: $7     quantity: 2   limit:    each: $3.50   info: selected varieties 12 x 355 mL, 6 x 710 mL
+
+
+name: Country Harvest, Vitality or veggie bread      price: $5     quantity: 2   limit:    each: $2.99   info: selected varieties 340-675 g
+
+
+name: Huggies or Pampers club size plus diapers      price: $29.99     quantity: 1   limit:    each:    info: selected varieties 92-198's
+
+
+name: Neilson chocolate milk      price: $1     quantity: 1   limit:    each:    info: 750 mL
+
+
+name: Neilson or Lactantia butter      price: $3.33     quantity: 1   limit: 6   each: $5.99   info: selected varieties 454 g
+
+
+name: PC® or Free From® naturally smoked bacon      price: $3.44     quantity: 1   limit:    each:    info: selected varieties or PC® naturally smoked bacon rounds 375/500 g
+
+
+name: PC® Pacific white shrimp      price: $6.99     quantity: 1   limit:    each:    info: large raw Zipperback® 31-40 per lb, frozen 400 g
+
+
+name: PC® Premium long stem roses with greens and baby's breath      price: $12     quantity: 12   limit:    each:    info: assorted colours 50 cm
+
+
+name: red, green or black seedless grapes      price: $1.99     weight: lb   limit:    each:    info: product of U.S.A., no. 1 grade  4.39/kg
+
+
+name: whole beef tenderloin premium oven roast      price: $10.99     weight: lb   limit:    each:    info: cut from Canada AA grade beef or higher or USDA select, cryovac pkg  24.23/kg
+
+
+name: beef tenderloin grilling steak      price: $19.99     weight: lb   limit:    each:    info: cut from Canada AA grade beef or higher or USDA select 44.07/kg
+
+
+name: Butterball turkey franks      price: $3.99     quantity: 1   limit:    each:    info: 450 g or bacon style turkey 375 g
+
+
+name: grain fed veal cutlets      price: $10.99     weight: lb   limit:    each:    info: 24.23/kg
+
+
+name: grain fed veal loin or rib chops      price: $9.99     weight: lb   limit:    each:    info: 22.02/kg
+
+
+name: Lou’s Quick-N-Easy entrées      price: $5.99     quantity: 1   limit:    each:    info: selected varieties 375/400 g
+
+
+name: Marc Angelo smoked chicken sausage      price: $4.99     quantity: 1   limit:    each:    info: selected varieties 375 g
+
+
+name: medium ground beef      price: $5.49     weight: lb   limit:    each:    info: fresh  12.10/kg
+
+
+name: PC® Blue Menu® turkey breast, scaloppine or fillets      price: $8.99     weight: lb   limit:    each:    info: fresh Air Chilled, boneless skinless  19.82/kg
+
+
+name: PC® boneless lamb leg      price: $7.99     weight: lb   limit:    each:    info: fresh product of Australia  17.61/kg
+
+
+name: PC® Free From® chicken drumsticks or thighs      price: $3.99     weight: lb   limit:    each:    info: fresh air chilled  8.80/kg
+
+
+name: PC® Free From® or Blue Menu® Free From® Angus beef burgers      price: $12.99     quantity: 1   limit:    each:    info: frozen 1.02 kg
+
+
+name: PC® Frenched rack of lamb      price: $14.99     weight: lb   limit:    each:    info: fresh product of Australia  33.05/kg
+
+
+name: PC® ground lamb      price: $7.99     weight: lb   limit:    each:    info: fresh product of Australia  17.61/kg
+
+
+name: PC® lamb loin chops      price: $11.99     weight: lb   limit:    each:    info: fresh product of Australia, plain or marinated  26.43/kg
+
+
+name: PC® lamb shoulder chops      price: $8.99     weight: lb   limit:    each:    info: fresh product of Australia, plain or marinated  19.82/kg
+
+
+name: PC® or Blue Menu® meatballs      price: $9.99     quantity: 1   limit:    each:    info: selected varieties frozen 800/907 g
+
+
+name: pork loin centre cut chops      price: $5.99     weight: lb   limit:    each:    info: club pack, bone-in  13.21/kg
+
+
+name: pork side ribs      price: $3.99     weight: lb   limit:    each:    info: cryovac package  8.80/kg
+
+
+name: Schneiders chicken or turkey burgers      price: $7.99     quantity: 1   limit:    each:    info: 480/568 g or Country Naturals beef or Angus beef burgers 680/720 g frozen
+
+
+name: Schneiders Country Naturals sliced meat      price: $4.99     quantity: 1   limit:    each:    info: selected varieties 175 g
+
+
+name: Cedar Bay salmon      price: $4.99     quantity: 1   limit:    each:    info: selected varieties frozen 141 g
+
+
+name: fresh Atlantic salmon steaks      price: $8.99     weight: lb   limit:    each:    info: 19.82/kg
+
+
+name: fresh sockeye salmon fillets      price: $10.99     weight: lb   limit:    each:    info: 24.23/kg
+
+
+name: From Our Chefs baguette sandwich      price: $5.99     quantity: 1   limit:    each:    info: selected varieties 200 g
+
+
+name: From Our Chefs croissant sandwich      price: $4.99     quantity: 1   limit:    each:    info: selected varieties 140/175 g
+
+
+name: From Our Chefs dijon potato & egg salad      price: $1.99     weight: 100g   limit:    each:    info: 
+
+
+name: From Our Chefs red quinoa salad      price: $1.99     weight: 100g   limit:    each:    info: 
+
+
+name: From Our Chefs Turkish pearl couscous salad      price: $1.99     weight: 100g   limit:    each:    info: 
+
+
+name: From Our Chefs wrap sandwiches      price: $4.99     quantity: 1   limit:    each:    info: selected varieties 220 g
+
+
+name: PC® Bay Of Fundy smoked Atlantic salmon      price: $14.99     quantity: 1   limit:    each:    info: frozen 300 g
+
+
+name: PC® Black Label panko seasoning      price: $2.49     quantity: 1   limit:    each:    info: selected varieties 227 g
+
+
+name: Plaisirs Gastronomiques cassoulet      price: $16.99     quantity: 1   limit:    each:    info: with duck confit 1 kg
+
+
+name: Plaisirs Gastronomiques duck breast magret      price: $13.99     quantity: 1   limit:    each:    info: 330 g
+
+
+name: Plaisirs Gastronomiques duck legs confit      price: $12.99     quantity: 1   limit:    each:    info: 500 g
+
+
+name: Plaisirs Gastronomiques half duck confit      price: $17.99     quantity: 1   limit:    each:    info: 1 kg
+
+
+name: Plaisirs Gastronomiques pork in rib sauce      price: $9.99     quantity: 1   limit:    each:    info: 950 g or guinea fowl leg 500 g
+
+
+name: SeaQuest® wild Pacific salmon      price: $5.99     quantity: 1   limit:    each:    info: frozen 454 g
+
+
+name: baking potatoes      price: $2.79     quantity: 1   limit:    each:    info: product of U.S.A., no. 1 grade pkg of 3
+
+
+name: clementines      price: $4.99     quantity: 1   limit:    each:    info: product of South Africa
+
+
+name: Divine, Envy, Eve or Jazz apples      price: $2.49     weight: lb   limit:    each:    info: product of New Zealand, extra fancy grade  5.49/kg
+
+
+name: Dole Chef en route salad kit      price: $4.49     quantity: 1   limit:    each:    info: product of U.S.A., selected varieties 227 g
+
+
+name: extra large cantaloupe      price: $3.99     quantity: 1   limit:    each:    info: no. 1 grade or Sugar Kiss melon product of U.S.A.
+
+
+name: extra large honeydew melons      price: $4.99     quantity: 1   limit:    each:    info: product of U.S.A.
+
+
+name: jumbo whole seeded watermelon      price: $8.99     quantity: 1   limit:    each:    info: product of U.S.A.
+
+
+name: large bulk green kiwi      price: $4     quantity: 5   limit:    each: 80¢   info: product of New Zealand
+
+
+name: large canary melon      price: $4.99     quantity: 1   limit:    each:    info: product of U.S.A.
+
+
+name: large Honey Kiss melon      price: $4.99     quantity: 1   limit:    each:    info: product of U.S.A.
+
+
+name: large whole seedless watermelon      price: $4.99     quantity: 1   limit:    each:    info: product of U.S.A.
+
+
+name: mini watermelon      price: $3.99     quantity: 1   limit:    each:    info: product of U.S.A.
+
+
+name: organic cantaloupe      price: $4.99     quantity: 1   limit:    each:    info: product of U.S.A.
+
+
+name: PC® Amaize® corn      price: $5.99     quantity: 1   limit:    each:    info: product of U.S.A. pkg of 4
+
+
+name: pomegranates      price: $3.49     quantity: 1   limit:    each:    info: product of Peru
+
+
+name: seedless watermelon quarters      price: $0.99     weight: lb   limit:    each:    info: prepared fresh in-store daily may not be available at all locations  2.18/kg
+
+
+name: yellow peaches or nectarines      price: $3.49     weight: lb   limit:    each:    info: product of U.S.A., no. 1 grade  7.69/kg
+
+
+name: beets      price: $2.99     quantity: 1   limit:    each:    info: product of Ontario   bunch
+
+
+name: Casa Mendosa tortillas 10 inch      price: $3.99     quantity: 1   limit:    each:    info: selected varieties pkg of 6/10
+
+
+name: Farmer’s Market™ mini cucumbers      price: $5     quantity: 2   limit:    each: $2.50   info: product of Ontario, Canada no. 1 grade pkg of 8
+
+
+name: green kale      price: $4     quantity: 2   limit:    each: $2   info: product of Ontario bunch
+
+
+name: green onions      price: $0.79     quantity: 1   limit:    each:    info: product of Ontario   bunch
+
+
+name: greenhouse tomatoes on the vines      price: $1.49     weight: lb   limit:    each:    info: product of Ontario, Canada, no.1 grade  3.28/kg
+
+
+name: hothouse Boston lettuce      price: $5     quantity: 2   limit:    each: $2.50   info: product of Ontario
+
+
+name: large white cauliflower      price: $2.99     quantity: 1   limit:    each:    info: product of Ontario
+
+
+name: Lays or Ruffles potato chips      price: $7.98     quantity: 3   limit:    each: $3.49   info: selected varieties 220-255 g
+
+
+name: Old Mill hamburger or hot dog buns      price: $3     quantity: 2   limit:    each: $1.99   info: selected varieties pkg of 8
+
+
+name: PC® grape tomatoes      price: $3.49     quantity: 1   limit:    each:    info: product of Ontario, Canada no. 1 grade 255 g
+
+
+name: Pepsi soft drinks      price: $7     quantity: 2   limit:    each: $3.50   info: selected varieties 12 x 355 mL
+
+
+name: Romaine, green or red leaf lettuce      price: $5     quantity: 2   limit:    each: $2.50   info: product of Ontario
+
+
+name: Schneiders Olde Fashioned ham, smoked turkey or summer sausage      price: $2     weight: 100g   limit:    each:    info: deli sliced, selected varieties from
+
+
+name: snow or snap peas      price: $2.49     quantity: 1   limit:    each:    info: product of Ontario 200 g
+
+
+name: Weight Watchers thin or sandwich rolls      price: $4.49     quantity: 1   limit:    each:    info: 240-450 g
+
+
+name: yellow onions      price: $1.99     quantity: 1   limit:    each:    info: product of Ontario, Canada no. 1 grade
+
+
+name: ACE Bakery baguette      price: $2.99     quantity: 1   limit:    each:    info: white, country wheat, harvest multigrain or ciabatta lunga 350-400 g
+
+
+name: ACE Bakery rosemary focaccia triangle or ciabatta piccola rolls      price: $4.49     quantity: 1   limit:    each:    info: pkg of 8 or ciabatta pezzetti rolls, pkg of 24
+
+
+name: aloe vera plant      price: $6.99     quantity: 1   limit:    each:    info: 4 inch, pot may not be as shown
+
+
+name: Annette’s mini sugar donuts      price: $3.49     quantity: 1   limit:    each:    info: pkg of 40
+
+
+name: apple or raspberry strip danish      price: $3.99     quantity: 1   limit:    each:    info: 425 g
+
+
+name: Boursin cheese      price: $9     quantity: 2   limit:    each: $4.50   info: selected varieties 125/150 g
+
+
+name: Butter First gourmet cookies      price: $5.49     quantity: 1   limit:    each:    info: selected varieties 350/360 g
+
+
+name: D’Italiano Bake at Home garlic bread, rolls or toast      price: $4.99     quantity: 1   limit:    each:    info: frozen 325-405 g
+
+
+name: Farmer’s Market™ loaf cakes      price: $7     quantity: 2   limit:    each: $4.29   info: selected varieties 390 g
+
+
+name: Farmer’s Market™ Two-bite Brownies®, mini chocolate chip banana bread or PC® Blue Menu® Two-bite Brownies®      price: $8     quantity: 2   limit:    each: $4.29   info: 250-300 g
+
+
+name: PC® mini hummus or tzatziki      price: $3.99     quantity: 1   limit:    each:    info: selected varieties 144/228 g
+
+
+name: PC® triple cream brie      price: $3.29     weight: 100g   limit:    each:    info: 
+
+
+name: PC® turkey breast      price: $10     quantity: 2   limit:    each: $5.79   info: deli sliced, selected varieties pre-packaged 175 g  $2.99  /100 g
+
+
+name: Piller’s Simply Free sliced meat      price: $5.29     quantity: 1   limit:    each:    info: selected varieties 125/175 g
+
+
+name: premium bagels      price: $3.49     quantity: 1   limit:    each: $0.59   info: selected varieties or pre-package of 6  Baked FRESH three times daily
+
+
+name: strawberry shortcake      price: $19.99     quantity: 1   limit:    each:    info: 8 inch 1 kg
+
+
+name: succulents      price: $9.99     quantity: 1   limit:    each:    info: 4 inch, in upgraded ceramic pot assorted varieties
+
+
+name: sunflowers      price: $3.99     quantity: 1   limit:    each:    info: 3 stem bunches
+
+
+name: Tre Stelle bocconcini      price: $4.99     quantity: 1   limit:    each:    info: selected varieties 200 g
+
+
+name: white or wheat croissants      price: $1.99     quantity: 1   limit:    each:    info: pkg of 6
+
+
+name: Ziggy’s® Black Forest or honey maple ham      price: $1.79     weight: 100g   limit:    each:    info: deli sliced, selected varieties
+
+
+name: Alcan foil wrap      price: $4.99     quantity: 1   limit:    each:    info: 100 ft or Ziploc freezer bags pkg of 10-38 selected varieties
+
+
+name: Anmol pistachio cookie      price: $1.79     quantity: 1   limit:    each:    info: 400 g
+
+
+name: beef oxtail      price: $7.99     weight: lb   limit:    each:    info: pre-packaged  17.61/kg
+
+
+name: Betty K plantain chips      price: $1.99     quantity: 1   limit:    each:    info: 142 g
+
+
+name: Chelsea cod bits      price: $5.99     quantity: 1   limit:    each:    info: boneless, salted, dry, refrigerated 454 g
+
+
+name: extra large papaya      price: $4.99     quantity: 1   limit:    each:    info: product of Mexico
+
+
+name: Febreze Unstoppables air refresher      price: $4.99     quantity: 1   limit:    each:    info: 275 g, 500 mL or no name® scoopable cat litter 7 kg selected varieties
+
+
+name: garlic      price: $0.69     quantity: 1   limit:    each:    info: product of China pkg of 3
+
+
+name: Grace coconut water with pulp      price: $0.99     quantity: 1   limit:    each:    info: 500 mL
+
+
+name: Grace corned beef      price: $3.29     quantity: 1   limit:    each:    info: selected varieties 340 g
+
+
+name: Grace Island soda      price: $0.79     quantity: 1   limit:    each:    info: 355 mL or The Great Jamaican ginger beer 250 mL
+
+
+name: Lysol cleaners      price: $3.79     quantity: 1   limit:    each:    info: 650 mL-1.2 L, Windex 765 mL, wipes pkg of 28 sheets, Scrubbing Bubbles 567/623 g or Fantastik multipurpose cleaners 650/765 mL selected varieties
+
+
+name: New Treasure long grain parboiled rice      price: $6.99     quantity: 1   limit:    each:    info: 8 kg
+
+
+name: no name® paper towels      price: $4.99     quantity: 1   limit:    each:    info: pkg of 6 rolls or bathroom tissue pkg of 24 rolls
+
+
+name: okra      price: $2.99     weight: lb   limit:    each:    info: product of U.S.A., Nicaragua or Honduras  6.59/kg
+
+
+name: Pedigree Dentastix      price: $9.99     quantity: 1   limit:    each:    info: selected varieties pkg of 5-25
+
+
+name: Que Pasa tortilla chips      price: $7     quantity: 2   limit:    each: $3.50   info: selected varieties 425 g
+
+
+name: Santa Cruz organic lemonade      price: $4     quantity: 2   limit:    each: $2.99   info: 946 mL
+
+
+name: Seventh Generation baby diapers      price: $22.99     quantity: 1   limit:    each:    info: selected varieties pkg of 40-62's
+
+
+name: So Delicious coconut milk      price: $7     quantity: 2   limit:    each: $3.50   info: 1.89 L or cultured milk 454 g selected varieties
+
+
+name: Sunlight laundry detergent liquid      price: $5.99     quantity: 1   limit:    each:    info: 1.47 L, powder 1.47 kg, pacs 20/24's, Snuggle fabric softener liquid 20/24's or sheets 105/120's selected varieties
+
+
+name: Whiskas cat food      price: $13.99     quantity: 1   limit:    each:    info: selected varieties 3/4 kg
+
+
+name: Woolite      price: $8.99     quantity: 1   limit:    each:    info: 1.8 L or Glad garbage bags pkg of 20-40 selected varieties
+
+
+name: Cheemo perogies      price: $5     quantity: 2   limit:    each: $2.50   info: 815/907 g or In Cuisin risotto 300 g or mashed potato 350 g selected varieties frozen
+
+
+name: Dare Bear Paws      price: $1.99     quantity: 1   limit:    each:    info: selected varieties 168-270 g
+
+
+name: Delissio Rising Crust or Pizzeria Vintage      price: $5.99     quantity: 1   limit:    each:    info: selected varieties frozen 519-888 g
+
+
+name: Häagen-Dazs ice cream      price: $4.99     quantity: 1   limit:    each:    info: 500 mL or bars pkg of 3/4's selected varieties frozen
+
+
+name: Heinz beans or pasta      price: $4     quantity: 3   limit:    each: $1.99   info: selected varieties 398 mL
+
+
+name: High Liner fish battered or breaded      price: $5.49     quantity: 1   limit:    each:    info: selected varieties frozen 350-700 g
+
+
+name: International Delight iced coffee      price: $3.99     quantity: 1   limit:    each:    info: selected varieties 1.89 L
+
+
+name: Italpasta      price: $4     quantity: 2   limit:    each: $2   info: selected varieties 900 g
+
+
+name: Kellogg’s family pack cereal      price: $4.99     quantity: 1   limit:    each:    info: selected varieties 515-755 g
+
+
+name: Kellogg’s Müslix or All-Bran cereal      price: $3.99     quantity: 1   limit:    each:    info: selected varieties 380-670 g
+
+
+name: Kellogg’s Nutri-Grain bars      price: $5     quantity: 2   limit:    each: $2.50   info: 175-295 g or Rice Krispies Squares 176 g selected varieties
+
+
+name: Lavazza Espresso      price: $3.49     quantity: 1   limit:    each:    info: 250 g or Twinings tea pkg of 20 selected varieties
+
+
+name: Magnum      price: $4.99     quantity: 1   limit:    each:    info: pkg of 3 or 4 or Ben & Jerry's 500 mL ice cream selected varieties frozen
+
+
+name: McCafé Tassimo or coffee pods      price: $10.99     quantity: 1   limit:    each:    info: selected varieties pkg of 12-14
+
+
+name: McCain hashbrowns, fries      price: $1.99     quantity: 1   limit:    each:    info: 900 g or Cavendish patties 600 g selected varieties frozen
+
+
+name: Neilson Trutaste milk      price: $3.99     quantity: 1   limit:    each:    info: 1%, 2% or skim 2 L
+
+
+name: Nestlé confectionary frozen desserts      price: $4.99     quantity: 1   limit:    each:    info: selected varieties frozen 1.5 L
+
+
+name: Nestlé Drumstick cones      price: $4.99     quantity: 1   limit:    each:    info: selected varieties frozen pkg of 4
+
+
+name: Nestlé ice pops      price: $4.99     quantity: 1   limit:    each:    info: selected varieties frozen pkg of 4-8
+
+
+name: PC® Gourmet whole bean coffee or Melitta traditional coffee      price: $11.99     quantity: 1   limit:    each:    info: selected varieties 907/930 g
+
+
+name: PC® Splendido® extra virgin olive oil      price: $7.99     quantity: 1   limit:    each:    info: 1 L or Nonna Pia's balsamic vinegar selected varieties 250 mL
+
+
+name: Planters peanut butter      price: $3.99     quantity: 1   limit:    each:    info: smooth or crunchy 1 kg
+
+
+name: Stagg chili      price: $4.44     quantity: 2   limit:    each: $2.22   info: 283-425 g, Campbell's Chunky or Ready to Eat soup 540 mL selected varieties
+
+
+name: Tropicana Pure Premium orange juice      price: $6.49     quantity: 1   limit: 8   each: $7.29   info: 2.63 L or Danone Activia yogurt 12x100 g selected varieties
+
+
+name: Yoplait Minigo      price: $2.49     quantity: 1   limit: 8   each: $3.69   info: 6x60 g or Tubes 8x60 g yogurt selected varieties
+
+
+name: Allen’s fruit juice or cocktail      price: $6     quantity: 3   limit:    each: $2   info: selected varieties 8x200 mL
+
+
+name: Allen's      price: $8     quantity: 3   limit:    each: $2.67   info: 1.89 L, Rougemont 2 L, Oasis Nutrisource 1.36 L, Fruitzoo or Del Monte 8x200 mL juice blends selected varieties
+
+
+name: Beneful dog food      price: $19.99     quantity: 1   limit:    each:    info: selected varieties 7/8 kg
+
+
+name: Black Diamond Slices process cheese product      price: $3.99     quantity: 1   limit: 10   each: $4.79   info: 450 g or Cheestrings pkg of 8 selected varieties
+
+
+name: Club House La Grille seasoning      price: $3.99     quantity: 1   limit:    each:    info: 120-203 g or marinade 237 mL selected varieties
+
+
+name: Coffee-mate      price: $5     quantity: 2   limit:    each: $2.50   info: 473 mL or PC® Blue Menu® soy beverage 1.89 L selected varieties
+
+
+name: Dentyne, Trident or Clorets gum      price: $2.99     quantity: 1   limit:    each:    info: pkg of 3/4 or Cadbury Dairy Milk Creations chocolate bar 200 g selected varieties
+
+
+name: Duncan Hines cake or brownie mix      price: $4     quantity: 2   limit:    each: $2.49   info: 450-515 g or frosting 450 g selected varieties
+
+
+name: Leclerc Celebration cookies      price: $5     quantity: 2   limit:    each: $2.50   info: selected varieties 240 g
+
+
+name: Lindt Excellence chocolate      price: $7     quantity: 2   limit:    each: $3.99   info: selected varieties 50-100 g   or
+
+
+name: no name® apple sauce      price: $1.99     quantity: 1   limit:    each:    info: 650 mL, PC® white tuna 170 g or PC® Blue Menu® broth 900 mL selected varieties
+
+
+name: PC® Appletreet™      price: $4     quantity: 2   limit:    each: $2   info: 6x100 mL or Christie Bits & Bites snacks 175 g selected varieties
+
+
+name: PC® Crisp & Thin™ crackers      price: $1.99     quantity: 1   limit:    each:    info: selected varieties 225 g
+
+
+name: PC® facial tissue      price: $5.99     quantity: 1   limit:    each:    info: pkg of 6 or bathroom tissue pkg of 12 rolls selected varieties
+
+
+name: PC® Gourmet roast and ground coffee      price: $10.99     quantity: 1   limit:    each:    info: selected varieties 875/930 g
+
+
+name: PC® Loads Of™, World Of or thick cut potato chips      price: $1.67     quantity: 1   limit:    each:    info: selected varieties 200 g
+
+
+name: PC® or Blue Menu® entrées      price: $2.99     quantity: 1   limit:    each:    info: selected varieties frozen 275-380 g
+
+
+name: PC® pasta sauce      price: $2.99     quantity: 1   limit:    each:    info: 410/650 mL or salsa 650 mL selected varieties
+
+
+name: PC® soft drinks      price: $2.99     quantity: 1   limit:    each:    info: selected varieties 12x355 mL
+
+
+name: PC® sugar cones      price: $1.79     quantity: 1   limit:    each:    info: 142 g, Slush Puppie 25 mL/85 g or Toxic Waste sour candy 48 g selected varieties
+
+
+name: Pure Leaf tea      price: $5     quantity: 2   limit:    each: $2.50   info: 547 mL, Monster or Rockstar energy drinks 473 mL selected varieties
+
+
+name: Reese Snacksters peanut butter chocolate spread      price: $3     quantity: 2   limit:    each: $1.50   info: 51 g or Tic Tac candy 24 g selected varieties
+
+
+name: SunChips      price: $3.29     quantity: 1   limit:    each:    info: 225 g or Munchies 300 g snacks selected varieties
+
+
+name: Twistos baked snack bites      price: $5     quantity: 2   limit:    each: $2.50   info: 150 g or Riceworks baked snacks 156 g selected varieties
+
+
+name: Barbara's Snackimals cookies or cereal      price: $7     quantity: 2   limit:    each: $3.50   info: selected varieties 168-255 g
+
+
+name: Carnaby candy      price: $4     quantity: 2   limit:    each: $2.29   info: selected varieties 250-400 g
+
+
+name: Club House sauce, gravy or seasoning mix      price: $3     quantity: 2   limit:    each: $1.99   info: selected varieties 21-47 g
+
+
+name: Coca-Cola or Pepsi soft drinks      price: $4.98     quantity: 3   limit:    each: $1.99   info: selected varieties 2 L
+
+
+name: Dare Breton or Vinta crackers      price: $5     quantity: 2   limit:    each: $2.99   info: selected varieties 135-250 g
+
+
+name: Doritos      price: $7.98     quantity: 3   limit:    each: $3.49   info: 235-260 g, Lay's 255 g or Ruffles 220 g chips selected varieties
+
+
+name: Lantic sugar      price: $5     quantity: 2   limit:    each: $2.99   info: selected varieties 1-2 kg
+
+
+name: Love Child organics purée      price: $5     quantity: 4   limit:    each: $1.25   info: selected varieties 128 mL
+
+
+name: Made Good granola bars or minis      price: $8     quantity: 2   limit:    each: $4   info: selected varieties 96-120 g
+
+
+name: Milk 2 Go Sport      price: $3     quantity: 2   limit:    each: $2.19   info: selected varieties 473 mL
+
+
+name: Nestea, Five Alive, Minute Maid, Fruitopia      price: $11     quantity: 2   limit:    each: $5.99   info: 12x341 mL, Dole 12x340/355 mL or Lipton 12x355 mL selected varieties
+
+
+name: no name® fruit      price: $5     quantity: 2   limit:    each: $2.99   info: selected varieties 796 mL
+
+
+name: no name® tuna      price: $5     quantity: 4   limit:    each: $1.49   info: selected varieties 85-170 g
+
+
+name: Old El Paso seasoning mix      price: $4     quantity: 3   limit:    each: $1.49   info: selected varieties 35/39 g
+
+
+name: PC® Blue Menu® beans      price: $2     quantity: 2   limit:    each: $1.29   info: no salt added selected varieties 540 mL
+
+
+name: PC® or Blue Menu® cocktail beverages      price: $5     quantity: 2   limit:    each: $2.79   info: selected varieties 1.89 L
+
+
+name: PC® vegetables      price: $5     quantity: 2   limit:    each: $2.99   info: selected varieties frozen 500/750 g
+
+
+name: Perrier or San Pellegrino      price: $4.98     quantity: 3   limit:    each: $1.99   info: 750 mL/1 L, Gatorade or Powerade 710 mL selected varieties
+
+
+name: Philadelphia dips      price: $5     quantity: 2   limit:    each: $2.79   info: selected varieties 227 g
+
+
+name: Pringles potato chips      price: $4     quantity: 2   limit:    each: $2.49   info: selected varieties 150-187 g
+
+
+name: Purina Friskies cat food      price: $3.96     quantity: 6   limit:    each: 79¢   info: selected varieties 156 g
+
+
+name: Silk True Almond non dairy beverage      price: $4     quantity: 2   limit:    each: $2   info: selected varieties 946 mL
+
+
+name: 50 4 x 6 prints      price: $5     quantity: 1   limit:    each:    info: Available on photoLab.ca or In-Store. Minimum 50 prints. Not available on instant, 1 hour only.
+
+
+name: Advil kids chewable tablets      price: $11.99     quantity: 1   limit:    each:    info: 40's, Nighttime Liqui-Gels 40's or Robax Platinum 18's selected varieties
+
+
+name: Aerius allergy tablet      price: $9.99     quantity: 1   limit:    each:    info: 10's, child formula syrup 100 mL,, exact™ allergy formula tablet 100's or Hydrasense nasal spray 100 mL selected varieties and sizes
+
+
+name: all Mr.Clean Magic Erasers      price:      quantity: 1   limit:    each:    info: selection may vary by store
+
+
+name: all Swiffer WetJet      price:      quantity: 1   limit:    each:    info: selection may vary by store
+
+
+name: all Ziploc food storage containers and space bags      price:      quantity: 1   limit:    each:    info: selection may vary by store excludes clearance
+
+
+name: Banana Boat or Hawaiian Tropic suncare      price: $7.99     quantity: 1   limit:    each:    info: selected varieties and sizes
+
+
+name: Colgate Optic White toothbrush plus built-in whitening pen      price: $12.99     quantity: 1   limit: 4   each: $16.49   info: selected varieties
+
+
+name: Crest 3D White Vivid Whitestrips      price:      quantity: 1   limit:    each:    info: 10 ct or Oral-B Vitality power toothbrush each or refill heads 3's, selected varieties
+
+
+name: Gaviscon liquid or tabs      price: $11.99     quantity: 1   limit:    each:    info: 600 mL/60's or Restoralax powder sachets 10/14's selected varieties
+
+
+name: Heinz baby cereal      price: $3     quantity: 1   limit:    each:    info: selected varieties 227 g
+
+
+name: Honeywell fans      price:      quantity: 1   limit:    each:    info: selection may vary by store.
+
+
+name: Huggies Little Swimmers      price: $9.99     quantity: 1   limit:    each:    info: selected varieties 17-20
+
+
+name: Johnson's baby toiletries      price: $3.99     quantity: 1   limit:    each:    info: selected varieties and sizes
+
+
+name: L'Oréal facial skin care      price:      quantity: 1   limit:    each:    info: selected varieties and sizes
+
+
+name: Nice'n Easy, Root Touch Up or Natural Instincts hair colour      price: $6.99     quantity: 1   limit:    each:    info: selected varieties
+
+
+name: Organix or Marc Anthony shampoo, conditioner or styling      price: $7.99     quantity: 1   limit:    each:    info: selected varieties and sizes
+
+
+name: Pantene shampoo, conditioner or styling      price: $3.99     quantity: 1   limit:    each:    info: selected varieties and sizes
+
+
+name: PC® cotton swabs      price: $2.99     quantity: 1   limit:    each:    info: 500's or Teddy's Choice® baby toiletries selected varieties and sizes
+
+
+name: PC® multi pack batteries      price: $4.97     quantity: 1   limit:    each:    info: AA8/AAA4/9V2/C4/D4
+
+
+name: PC® Organics strained baby food pouch      price: $5     quantity: 4   limit:    each: $1.33   info: selected varieties 128 mL
+
+
+name: PC® Ultra Shake      price: $7.99     quantity: 1   limit:    each:    info: 6 x 237 mL, PC® Nutri-Total™ 6 x 235 mL, PC® Trim Plan bars 6 x 60 g or PC® Trim Plan powder 530 g selected varieties
+
+
+name: Royal Chinet dinner plate      price:      quantity: 1   limit:    each:    info: 125 count also
+
+
+name: Sensodyne ProNamel      price: $4.99     quantity: 1   limit:    each:    info: 110 mL, ISOactive 100 mL, regular 135 mL toothpaste or Fixodent denture adhesive 57/68 g selected varieties
+
+
+name: Similac non-omega      price: $20.99     quantity: 1   limit:    each:    info: 850 g or PC® Organics with Omega 658/730 g powder baby formula selected varieties
+
+
+name: Vitalux caplets      price: $9.99     quantity: 1   limit:    each:    info: 50's or Webber Omega 3 capsules 210's selected varieties
+
+
+name: 20 piece chicken wings      price: $10     quantity: 1   limit:    each:    info: hot or chilled selected varieties  Available at most locations. Plus applicable taxes.
+
+
+name: Astro Original, BioBest yogurt      price: $5     quantity: 2   limit:    each: $2.50   info: 650/750 g, Stouffers, Lean Cuisine or Bistro entrées 167-340 g frozen selected varieties
+
+
+name: Cracker Barrel shredded cheese      price: $5.99     quantity: 1   limit: 10   each: $8.29   info: 250-320 g or cheese bars 400/460 g selected varieties
+
+
+name: Danone Oikos Greek yogurt      price: $3.99     quantity: 1   limit:    each:    info: 500 g or General Mills cereal selected varieties 260-500 g
+
+
+name: Del Monte vegetables      price: $5     quantity: 4   limit:    each: $1.25   info: 341/398 mL, Aylmer tomatoes 796 mL or Accents 398-540 mL selected varieties
+
+
+name: Enfamil A+      price: $28.99     quantity: 1   limit:    each:    info: 550-730 g or Nestlé Good Start 600/660 g baby formula with Omega selected varieties
+
+
+name: Farmer’s Market™ lemon meringue or key lime pie      price: $5.99     quantity: 1   limit:    each:    info: 1 kg
+
+
+name: fresh tilapia fillets      price: $6.99     weight: lb   limit:    each:    info: Fresh seafood items subject to availability. 15.41/kg
+
+
+name: Grimmway True Organic juice      price: $7     quantity: 2   limit:    each: $3.50   info: product of U.S.A. selected varieties 828 mL
+
+
+name: Huggies or Pampers mega pack training pants      price: $16.99     quantity: 1   limit:    each:    info: selected varieties 20-44's
+
+
+name: Johnsonville breakfast or dinner sausage, ground sausage meat or smoked sausage      price: $2.99     quantity: 1   limit:    each:    info: selected varieties 250-500 g
+
+
+name: Kraft salad dressing      price: $5     quantity: 2   limit:    each: $2.50   info: 475 mL or Bull's-Eye barbecue sauce 425 mL selected varieties
+
+
+name: Miss Vickie’s potato chips      price: $2.99     quantity: 1   limit: 10   each: $4.29   info: selected varieties 200/220 g
+
+
+name: Nestlé Pure Life water      price: $6     quantity: 2   limit:    each: $3.49   info: 24 x 500 mL or sparkling water 12x355 mL selected varieties
+
+
+name: Ocean Spray 100% juice blend or cocktail      price: $8     quantity: 3   limit:    each: $2.67   info: selected varieties 1.89 L/6 x 295 mL
+
+
+name: Pampers 9X or Huggies 10X baby wipes      price: $17.49     quantity: 1   limit:    each:    info: selected varieties 576-768's
+
+
+name: PC® club size or Teddy's Choice® Club Pack® diapers      price: $19.99     quantity: 1   limit:    each:    info: selected varieties 84-148's
+
+
+name: PC® frozen fruit      price: $3.99     quantity: 1   limit:    each:    info: 600 g or Maxwell House instant coffee 150/200 g selected varieties
+
+
+name: PC® pork back ribs      price: $9.99     quantity: 1   limit:    each:    info: Smokin' Stampede™ or honey barbecue frozen 680 g
+
+
+name: PC® Too Good To Be Wings™ chicken breast chunks      price: $11.99     quantity: 1   limit:    each:    info: selected varieties frozen 800 g
+
+
+name: raspberries      price: $5     quantity: 2   limit:    each: $2.50   info: product of U.S.A., no. 1 grade 170 g
+
+
+name: Schneiders or Country Naturals pepperettes      price: $7.99     quantity: 1   limit:    each:    info: 375 g or Maple Leaf Natural Selections sliced meat 375/400 g selected varieties
+
+
