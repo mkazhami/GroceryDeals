@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from ZehrsLoblaws import ZehrsLoblaws
+from ZehrsLoblawsAccessibility import ZehrsLoblaws
 
 zehrs = ZehrsLoblaws("zehrs")
 loblaws = ZehrsLoblaws("loblaws")
