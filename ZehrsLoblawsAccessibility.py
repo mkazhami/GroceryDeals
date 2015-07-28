@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from baseparseclass import BaseParseClass
+from item import Item
 from selenium import webdriver
 import time
 import os
@@ -20,9 +21,15 @@ class ZehrsLoblaws(BaseParseClass):
     storePostalCodes = []
     storeNumbers = []
     
-    store_list_links = { "zehrs" : "http://www.zehrs.ca/en_CA/store-list-page.ON.html",
+    store_list_links = { 
+                         "zehrs" : "http://www.zehrs.ca/en_CA/store-list-page.ON.html",
                          "loblaws" : "http://www.loblaws.ca/en_CA/store-list-page.ON.html"
                        }
+    
+    store_rewards_programs = {
+                                "zehrs": "PCPlus",
+                                "loblaws": "PCPlus"
+                             }
     
     def __init__(self, store_name):
         self.store_name = store_name
@@ -32,7 +39,8 @@ class ZehrsLoblaws(BaseParseClass):
         # opens phantom browser
         # phantomjs.exe is located in the root directory
         #self.driver = webdriver.PhantomJS(executable_path="/home/mikhail/Documents/htmlparse/phantomjs_linux")
-        driver = webdriver.PhantomJS(executable_path="./phantomjs_linux")
+        #driver = webdriver.PhantomJS(executable_path="./phantomjs_linux")
+        driver = webdriver.PhantomJS()
         driver.set_window_size(1400,1000)
         #self.driver = webdriver.Firefox()
 
@@ -61,30 +69,41 @@ class ZehrsLoblaws(BaseParseClass):
                 cityURLs.append(str(url.get_attribute("href").encode('ascii', 'ignore')))
         print("Going through each city and store, opening flyers...")
         # goes through each city, opens each store's flyers
+        
+        storeCount = 0
         for url in cityURLs:
             print("Opening store link: " + url)
             # open link to city's page
             driver.get(url)
-            time.sleep(5)
-            # get all the store 'view flyer' buttons
-            viewFlyerButtons = driver.find_elements_by_xpath(".//a[@class='button view-flyer']")
-            viewFlyerLinks = []
-            # get all of the store numbers
-            storeNumberElements = driver.find_elements_by_xpath(".//div[@class='store-listing-row']")
-            # get the addresses and names of all the stores
-            # address is in form:
-            #       street
-            #       city, province    postal code
-            #       phone
-            #       manager
-            # we only care about the first two lines
-            addresses = driver.find_elements_by_xpath(".//p[@class='store-address']")
-            names = driver.find_elements_by_xpath(".//div[@class='store-info']//h3[@class='title']")
-            
-            # make sure there is one button, name, and address for each store
-            if (len(viewFlyerButtons) != len(names)) or (len(viewFlyerButtons) != len(addresses)) or (len(viewFlyerButtons) != len(storeNumberElements)):
-                print("unequal number of view flyer buttons, names of stores, addresses, and store numbers")
-                print("flyer buttons: " + str(len(viewFlyerButtons)) + "  names: " + str(len(names)) + "  addresses: " + str(len(addresses)) + "  store numbers: " + len(storeNumberElements))
+            time.sleep(8)
+            tries = 0
+            while tries <= 5:
+                # get all the store 'view flyer' buttons
+                viewFlyerButtons = driver.find_elements_by_xpath(".//a[@class='button view-flyer']")
+                viewFlyerLinks = []
+                # get all of the store numbers
+                storeNumberElements = driver.find_elements_by_xpath(".//div[@class='store-listing-row']")
+                # get the addresses and names of all the stores
+                # address is in form:
+                #       street
+                #       city, province    postal code
+                #       phone
+                #       manager
+                # we only care about the first two lines
+                addresses = driver.find_elements_by_xpath(".//p[@class='store-address']")
+                names = driver.find_elements_by_xpath(".//div[@class='store-info']//h3[@class='title']")
+                
+                # make sure there is one button, name, and address for each store
+                if (len(viewFlyerButtons) != len(names)) or (len(viewFlyerButtons) != len(addresses)) or (len(viewFlyerButtons) != len(storeNumberElements)):
+                    print("unequal number of view flyer buttons, names of stores, addresses, and store numbers")
+                    print("flyer buttons: " + str(len(viewFlyerButtons)) + "  names: " + str(len(names)) + "  addresses: " + str(len(addresses)) + "  store numbers: " + str(len(storeNumberElements)))
+                    print("retrying... " + str(tries) + " of 5")
+                    tries += 1
+                    driver.refresh()
+                    time.sleep(8)
+                    continue
+                break
+            if tries >= 5:
                 raise Exception("exiting due to error in parsing")
 
             # get all the store 'view flyer' urls from the buttons as well as each store's info
@@ -109,18 +128,49 @@ class ZehrsLoblaws(BaseParseClass):
 
                 
             for idx, link in enumerate(viewFlyerLinks):
-                print("Opening flyer for store: " + self.storeNames[idx] + "...")
+                print("Opening flyer for store: " + self.storeNames[storeCount] + "...")
                 # open specific store's flyer
                 driver.get(link)
                 time.sleep(8)
                 print("Opening accessibility view...")
-                # go to accessibility view
-                driver.find_element_by_xpath("//ul[@class='sort-options tab-layout tabs-3']//li//a[@class='accessible-view']").click()
-                time.sleep(8)
+                tries = 0
+                while tries <= 5:
+                    try:
+                        # go to accessibility view
+                        driver.find_element_by_xpath("//ul[@class='sort-options tab-layout tabs-3']//li//a[@class='accessible-view']").click()
+                        time.sleep(8)
+                        break
+                    except:
+                        print("Failed to open accessible view")
+                        print("Retrying... " + str(tries) + " of 5")
+                        driver.refresh()
+                        time.sleep(8)
+                        tries += 1
+                if tries >= 5:
+                    print("\n\nUnable to open accessible view for store: " + self.storeNames[storeCount])
+                    print("Skipping store...\n\n")
+                    #TODO: raise some sort of alarm but don't quit program
+                    storeCount += 1
+                    continue
                 print("Getting product info...")
                 try:
                     # get all html elements that have product info
-                    driver.switch_to_frame(driver.find_element_by_xpath("//iframe[@id='videoFrame']"))
+                    tries = 0
+                    while tries <= 5:
+                        try:
+                            driver.switch_to_frame(driver.find_element_by_xpath("//iframe[@id='videoFrame']"))
+                            break
+                        except:
+                            print("Failed to switch to frame")
+                            print("Retrying... " + str(tries) + " out of 5")
+                            driver.refresh()
+                            driver.sleep(8)
+                            tries += 1
+                    if tries >= 5:
+                        print("Unable to switch to frame for store: " + self.storeNames[storeCount])
+                        print("Skipping store...\n\n")
+                        storeCount += 1
+                        continue
                     #print(driver.page_source.encode('utf-8', 'ignore'))
                     elements = driver.find_elements_by_xpath(".//div[@id='content']//table//tbody//tr")
                     if len(elements) == 0:
@@ -140,6 +190,8 @@ class ZehrsLoblaws(BaseParseClass):
                                 limit = ""
                                 each = ""
                                 additionalInfo = ""
+                                points = ""
+                                promotion = ""
                                 productInfo = product[1].text.encode('utf-8', 'ignore').replace("\n", " ")
                                 
                                 # remove 'SAVE $x' from the info, not needed
@@ -222,14 +274,21 @@ class ZehrsLoblaws(BaseParseClass):
                                     price = productInfo[findPrice.start():findPrice.end()].replace("each", "").replace("ea.", "").strip().replace(" ", ".")
                                     productInfo = productInfo.replace(productInfo[findPrice.start():findPrice.end()], "").strip()
 
+                                
+                                
+                                item = Item(name, price, quantity, weight, limit, each, productInfo,
+                                                points, promotion, self.storeNames[storeCount], self.storeAddresses[storeCount],
+                                                self.storeCities[storeCount], self.storeProvinces[storeCount], self.storePostalCodes[storeCount])
+                                print(item)
 
-                                if weight == "":
-                                    print("name: " + name + "      price: " + price + "     quantity: " + quantity + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
-                                else:
-                                    print("name: " + name + "      price: " + price + "     weight: " + weight + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
-                                print("\n")
-                    print("Done getting product info for store: " + storeNames[idx])
-                    exit()
+                                #if weight == "":
+                                #    print("name: " + name + "      price: " + price + "     quantity: " + quantity + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
+                                #else:
+                                #    print("name: " + name + "      price: " + price + "     weight: " + weight + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
+                                print("\n\n")
+                    storeCount += 1
+                    print("Done getting product info for store: " + self.storeNames[storeCount])
+                    #exit()
 
 
 
@@ -237,3 +296,4 @@ class ZehrsLoblaws(BaseParseClass):
                 except Exception as e:
                     # print exception message and break from loop since we've gone through all the pages
                     print(str(e))
+        driver.quit()
