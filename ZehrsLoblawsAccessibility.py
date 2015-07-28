@@ -286,8 +286,9 @@ class ZehrsLoblaws(BaseParseClass):
                                 #else:
                                 #    print("name: " + name + "      price: " + price + "     weight: " + weight + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
                                 print("\n\n")
-                    storeCount += 1
+                    
                     print("Done getting product info for store: " + self.storeNames[storeCount])
+                    storeCount += 1
                     #exit()
 
 
