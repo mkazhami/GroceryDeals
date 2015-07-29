@@ -1,10 +1,34 @@
-[INFO  - 2015-07-28T19:49:07.693Z] GhostDriver - Main - running on port 52529
-[INFO  - 2015-07-28T19:49:08.462Z] Session [b5e37230-3561-11e5-8344-cd240fb81153] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
-[INFO  - 2015-07-28T19:49:08.462Z] Session [b5e37230-3561-11e5-8344-cd240fb81153] - page.customHeaders:  - {}
-[INFO  - 2015-07-28T19:49:08.462Z] Session [b5e37230-3561-11e5-8344-cd240fb81153] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
-[INFO  - 2015-07-28T19:49:08.462Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: b5e37230-3561-11e5-8344-cd240fb81153
-[INFO  - 2015-07-28T19:54:07.695Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2015-07-28T19:59:07.695Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2015-07-28T20:04:07.750Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2015-07-28T20:09:07.780Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
-[INFO  - 2015-07-28T20:14:07.816Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-07-29T19:26:49.564Z] GhostDriver - Main - running on port 62170
+[INFO  - 2015-07-29T19:26:50.305Z] Session [c2b27d50-3627-11e5-b15a-f3c3d9d2ff86] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2015-07-29T19:26:50.305Z] Session [c2b27d50-3627-11e5-b15a-f3c3d9d2ff86] - page.customHeaders:  - {}
+[INFO  - 2015-07-29T19:26:50.305Z] Session [c2b27d50-3627-11e5-b15a-f3c3d9d2ff86] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2015-07-29T19:26:50.305Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: c2b27d50-3627-11e5-b15a-f3c3d9d2ff86
+[ERROR - 2015-07-29T19:26:51.705Z] Session [c2b27d50-3627-11e5-b15a-f3c3d9d2ff86] - page.onError - msg: Error: Script error
+http://requirejs.org/docs/errors.html#scripterror
+
+  :262 in error
+[ERROR - 2015-07-29T19:26:51.705Z] Session [c2b27d50-3627-11e5-b15a-f3c3d9d2ff86] - page.onError - stack:
+  onError (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  S (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  onScriptError (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  appendChild (:0)
+  load (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  load (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  load (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  fetch (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  check (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  enable (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  enable (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  (anonymous function) (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  (anonymous function) (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  each (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  enable (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  init (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  (anonymous function) (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+
+  :262 in error
+[INFO  - 2015-07-29T19:31:49.563Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-07-29T19:36:49.603Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-07-29T19:41:49.737Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-07-29T19:46:49.717Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-07-29T19:51:49.728Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

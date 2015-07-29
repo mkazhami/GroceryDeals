@@ -8,7 +8,7 @@ zehrs = ZehrsLoblaws("zehrs")
 loblaws = ZehrsLoblaws("loblaws")
 
 print("ZEHRS\n")
-#zehrs.parse()
+zehrs.parse()
 print("\n\n\nLOBLAWS\n")
 loblaws.parse()
 
