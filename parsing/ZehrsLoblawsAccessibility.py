@@ -39,8 +39,8 @@ class ZehrsLoblaws(BaseParseClass):
         # opens phantom browser
         # phantomjs.exe is located in the root directory
         #self.driver = webdriver.PhantomJS(executable_path="/home/mikhail/Documents/htmlparse/phantomjs_linux")
-        driver = webdriver.PhantomJS(executable_path="./phantomjs_linux")
-        #driver = webdriver.PhantomJS()
+        #driver = webdriver.PhantomJS(executable_path="./phantomjs_linux")
+        driver = webdriver.PhantomJS()
         driver.set_window_size(1400,1000)
         #self.driver = webdriver.Firefox()
 
@@ -65,6 +65,8 @@ class ZehrsLoblaws(BaseParseClass):
             provinces.append(str(provinceElement.text.encode('ascii', 'ignore')))
             provinceLinks.append(str(provinceElement.get_attribute("href").encode('ascii', 'ignore')))
 
+        provinceLinks = [provinceLinks[1]]
+        provinces = [provinces[1]]
         storeCount = 0
         for provIdx, provinceLink in enumerate(provinceLinks):
             logger.logInfo("Opening " + provinces[provIdx] + " city list for " + self.store_name)
@@ -208,49 +210,55 @@ class ZehrsLoblaws(BaseParseClass):
                                     productInfo = product[1].text.encode('utf-8', 'ignore').replace("\n", " ")
                                     
                                     # remove 'SAVE $x' from the info, not needed
-                                    findSave = re.search("[Ss][Aa][Vv][Ee]", productInfo)
+                                    findSave = re.search("(économisez/)?save", productInfo.lower())
                                     if findSave is not None:
                                         productInfo = productInfo[:findSave.start()].strip()
 
                                     # check for '$x dozen' - usually used for flowers
-                                    findDozen = re.search("\$[0-9]+( )*DOZEN", productInfo.upper())
+                                    findDozen = re.search("(((\$[0-9]+( )*DOZEN)|([0-9]+( )*\$( )*DOZEN))|((DOZEN( )*\$[0-9]+)|(DOZEN( )*[0-9]+( )*\$)))", productInfo.upper())
                                     if findDozen is not None:
                                         price = productInfo[findDozen.start():findDozen.end()].upper().replace("DOZEN", "").strip()
                                         quantity = "12"
                                         productInfo = productInfo.replace(productInfo[findDozen.start():findDozen.end()], "").strip()
                                     
                                     # get the 'less than x $y each' deals
-                                    findLessThan = re.search("LESS( )*THAN( )*[0-9]+( )*\$[0-9]+(\.| )[0-9]+( )*EA(\.|CH)", productInfo.upper())
+                                    findLessThan = re.search("LESS( )*THAN( )*[0-9]+( )*(\$)?[0-9]+(\.| |,)[0-9]+( )*(\$( )*)?(CH\./)?EA(\.|CH)", productInfo.upper())
                                     if findLessThan is not None:
+                                        logger.logDebug("Using less than")
                                         split = productInfo[findLessThan.start():findLessThan.end()].split("$")
-                                        each = "$" + split[1].replace("each", "").replace("ea.", "").strip().replace(" ", ".")
+                                        each = "$" + split[1].replace("each", "").replace("ea.", "").replace("ch./", "").strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findLessThan.start():findLessThan.end()], "").strip()
 
                                     # get '2/$x or $y each" deals
-                                    findOr = re.search("[0-9]+/\$[0-9]+(\.[0-9]+)?( )*OR( )*((\$[0-9]+(\.| )?[0-9]*)|([0-9]+¢))( )*EA(\.|CH)", productInfo.upper()) # ghetto way of matching 'cent' unicode
+                                    findOr = re.search("[0-9]+/((\$[0-9]+((\.|,)[0-9]+)?)|([0-9]+((\.|,)[0-9]+)?( )*\$))( )*(OU/)?OR( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$)|([0-9]+( )*¢))( )*((CH\./)?( )*EA(\.|CH))?", productInfo.upper()) # ghetto way of matching 'cent' unicode
                                     if findOr is not None:
+                                        logger.logDebug("Using 'or'")
+                                        s = productInfo[findOr.start():findOr.end()].upper()
                                         split = productInfo[findOr.start():findOr.end()].upper().split("OR")
-                                        quantityPriceSplit = split[0].split("/")
+                                        quantityPriceSplit = split[0].replace("CH./", "").replace("OU/", "").split("/")
                                         quantity = quantityPriceSplit[0].strip()
                                         price = quantityPriceSplit[1].strip()
-                                        each = split[1].replace("EACH", "").replace("EA.", "").strip().replace(" ", ".")
+                                        if "OU" in s.upper():
+                                            each = split[1].replace("EACH", "").replace("EA.", "").replace("CH./", "").strip().replace(" ", "")
+                                        else:
+                                            each = split[1].replace("EACH", "").replace("EA.", "").replace("CH./", "").strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findOr.start():findOr.end()], "").strip()
 
                                     # get weight unit of product - prioritize lb, but if only kg then use that
                                     # and take it out of the product info
-                                    findLb = re.search("\$[0-9]*(\.[0-9]*)?( )*([Ee][Aa]\.)?( )*/?( )*lb( )*(/)?", productInfo)
+                                    findLb = re.search("((\$[0-9]*((\.|,)[0-9]*)?)|([0-9]+((\.|,)[0-9]*)?( )*\$))( )*(([Cc][Hh]\.)?[Ee][Aa]\.)?( )*/?( )*lb( )*(/)?", productInfo)
                                     if findLb is not None:
-                                        price = productInfo[findLb.start():findLb.end()].split("lb")[0].lower().replace("ea.", "").replace("/", "").strip()
+                                        price = productInfo[findLb.start():findLb.end()].split("lb")[0].lower().replace("ea.", "").replace("ch.", "").replace("/", "").strip()
                                         weight = "lb"
                                         productInfo = productInfo.replace(productInfo[findLb.start():findLb.end()], "").strip()
                                     else:
-                                        findKg = re.search("\$[0-9]*\.[0-9]*( )*/( )*kg( )*(/)?", productInfo)
+                                        findKg = re.search("\$[0-9]*(\.|,)[0-9]*( )*/( )*kg( )*(/)?", productInfo)
                                         if findKg is not None:
                                             price = productInfo[findKg.start():findKg.end()].split("kg")[0].replace("/", "").strip()
                                             weight = "kg"
                                             productInfo = productInfo.replace(productInfo[findKg.start():findKg.end()], "").strip()
                                         else:
-                                            findG = re.search("\$[0-9]+((\.| )[0-9]+)?( )*/[0-9]+( )*[Gg]", productInfo)
+                                            findG = re.search("\$[0-9]+((\.| |,)[0-9]+)?( )*/[0-9]+( )*[Gg]", productInfo)
                                             if findG is not None and price == "":
                                                 split = productInfo[findG.start():findG.end()].split("/")
                                                 # sometimes there is a price /x grams and sometimes price is separate
@@ -259,15 +267,21 @@ class ZehrsLoblaws(BaseParseClass):
                                                 productInfo = productInfo.replace(productInfo[findG.start():findG.end()], "").strip()
 
                                     # get item limit if applicable and remove from product info
-                                    findLimit = re.search("LIMIT( )*[0-9]+( )*AFTER LIMIT( )*\$[0-9]*(\.| )[0-9]*( )*(EA(\.|CH))?", productInfo.upper())
+                                    findLimit = re.search("LIMIT( OF|E DE)?( )*[0-9]+( )*(AFTER|APRèS) LIMIT(E)?( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$))( )*(CH\.( )*/( )*)?(EA(\.|CH))?", productInfo.upper())
                                     if findLimit is not None:
-                                        split = productInfo[findLimit.start():findLimit.end()].upper().split("AFTER LIMIT")
+                                        logger.logDebug("Using limit")
+                                        s = productInfo[findLimit.start():findLimit.end()].upper()
+                                        if "APRèS" in s:
+                                            split = s.split("APRèS LIMITE")
+                                            each = split[1].replace("EACH", "").upper().replace("EA.", "").replace("CH.", "").replace("/", "").strip().replace(" ", "")
+                                        else:
+                                            split = s.split("AFTER LIMIT")
+                                            each = split[1].replace("EACH", "").upper().replace("EA.", "").replace("CH./", "").replace("/", "").strip().replace(" ", ".")
                                         limit = split[0][re.search("[0-9]+", split[0]).start():].strip()
-                                        each = split[1].replace("EACH", "").replace("EA.", "").strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findLimit.start():findLimit.end()], "").strip()
 
                                     # get 'x/$y' deals
-                                    findXForY = re.search("[0-9]+( )*/( )*\$[0-9]+((\.| )[0-9]+)?", productInfo)
+                                    findXForY = re.search("[0-9]+( )*/( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$))", productInfo)
                                     if findXForY is not None:
                                         split = productInfo[findXForY.start():findXForY.end()].split("/")
                                         quantity = split[0].strip()
@@ -275,20 +289,36 @@ class ZehrsLoblaws(BaseParseClass):
                                         productInfo = productInfo.replace(productInfo[findXForY.start():findXForY.end()], "").strip()
                                     
                                     # sometimes there are multiple products, make sure we have the 'each' price if it's left
-                                    findEach = re.search('\$[0-9]+((\.| )[0-9]*)?( )*(ea(\.|ch))', productInfo)
+                                    findEach = re.search('((\$[0-9]+((\.| |,)[0-9]*)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$))( )*((ch\./)?ea(\.|ch))', productInfo)
                                     if findEach is not None and each == "":
-                                        each = productInfo[findEach.start():findEach.end()].replace("each", "").replace("ea.", "").strip().replace(" ", ".")
+                                        logger.logDebug("Using each")
+                                        each = productInfo[findEach.start():findEach.end()].lower().replace("each", "").replace("ea.", "").replace("ch./", "").replace("CH./", "").strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findEach.start():findEach.end()], "").strip()
 
                                     # lastly get the price, should be the only thing remaining with a price
                                     # 'kg' price might still be there so '$' must be there
-                                    findPrice = re.search("((\$[0-9]+)|([0-9]+¢))((\.| )[0-9]*)?(( )*(ea(\.|ch)))?", productInfo)
-                                    if findPrice is not None and price == "":
-                                        price = productInfo[findPrice.start():findPrice.end()].replace("each", "").replace("ea.", "").strip().replace(" ", ".")
-                                        productInfo = productInfo.replace(productInfo[findPrice.start():findPrice.end()], "").strip()
+                                    #findPrice = re.findall("((\$[0-9]+((\.| |,)[0-9]*)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$)|([0-9]+( )*¢))(( )*(ch\.( )*/( )*)?(( )*ea(\.|ch)))?", productInfo)
+                                    findPrice = re.findall("((\$[0-9]+((\.| |,)[0-9]*)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$)|([0-9]+( )*¢))", productInfo)
+                                    if len(findPrice) != 0 and price == "":
+                                        min = ""
+                                        minStr = ""
+                                        for priceMatch in findPrice:
+                                            priceMatch = priceMatch[0]
+                                            if min == "" or int(priceMatch.replace("$", "").replace(",", "").replace(".", "").strip()) < int(min):
+                                                min = priceMatch.replace("$", "").replace(",", "").replace(".", "").strip()
+                                                minStr = priceMatch
+                                        price = minStr
+                                        #price = productInfo[findPrice.start():findPrice.end()].replace("each", "").replace("ea.", "").replace("ch./", "").strip()
+                                        if "¢" in price:
+                                            price.replace(" ", "")
+                                        else:
+                                            price.replace(" ", ".")
+                                        #productInfo = productInfo.replace(productInfo[findPrice.start():findPrice.end()], "").strip()
+                                        productInfo = productInfo.replace(minStr, "").strip()
 
-                                    
-                                    
+                                    # just in case
+                                    if price == "" and each != "":
+                                        price = each
                                     item = Item(name, price, quantity, weight, limit, each, productInfo,
                                                     points, promotion, self.storeNames[storeCount], self.storeAddresses[storeCount],
                                                     self.storeCities[storeCount], self.storeProvinces[storeCount], self.storePostalCodes[storeCount])
