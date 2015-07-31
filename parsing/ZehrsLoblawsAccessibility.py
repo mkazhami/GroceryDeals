@@ -65,8 +65,8 @@ class ZehrsLoblaws(BaseParseClass):
             provinces.append(str(provinceElement.text.encode('ascii', 'ignore')))
             provinceLinks.append(str(provinceElement.get_attribute("href").encode('ascii', 'ignore')))
 
-        provinceLinks = [provinceLinks[1]]
-        provinces = [provinces[1]]
+        #provinceLinks = [provinceLinks[1]]
+        #provinces = [provinces[1]]
         storeCount = 0
         for provIdx, provinceLink in enumerate(provinceLinks):
             logger.logInfo("Opening " + provinces[provIdx] + " city list for " + self.store_name)
@@ -211,7 +211,9 @@ class ZehrsLoblaws(BaseParseClass):
                                     
                                     # remove 'SAVE $x' from the info, not needed
                                     findSave = re.search("(économisez/)?save", productInfo.lower())
+                                    save = ""
                                     if findSave is not None:
+                                        save = productInfo[findSave.start():]
                                         productInfo = productInfo[:findSave.start()].strip()
 
                                     # check for '$x dozen' - usually used for flowers
@@ -304,8 +306,17 @@ class ZehrsLoblaws(BaseParseClass):
                                         minStr = ""
                                         for priceMatch in findPrice:
                                             priceMatch = priceMatch[0]
-                                            if min == "" or int(priceMatch.replace("$", "").replace(",", "").replace(".", "").strip()) < int(min):
-                                                min = priceMatch.replace("$", "").replace(",", "").replace(".", "").strip()
+                                            amount = 0
+                                            if "." not in priceMatch and "," not in priceMatch:
+                                                if "¢" in priceMatch:
+                                                    amount = int(priceMatch.replace("¢", "").strip())
+                                                else:
+                                                    amount = int(priceMatch.replace("$", "").strip()) * 100
+                                            else:
+                                                amount = int(priceMatch.replace(".", "").replace(",", "").replace("$", "").replace("¢", "").strip())
+                                            
+                                            if min == "" or amount < int(min):
+                                                min = amount
                                                 minStr = priceMatch
                                         price = minStr
                                         #price = productInfo[findPrice.start():findPrice.end()].replace("each", "").replace("ea.", "").replace("ch./", "").strip()
@@ -319,6 +330,8 @@ class ZehrsLoblaws(BaseParseClass):
                                     # just in case
                                     if price == "" and each != "":
                                         price = each
+                                    elif price == "" and each == "" and save != "": # if there's no price and just a savings
+                                        productInfo += " " + save
                                     item = Item(name, price, quantity, weight, limit, each, productInfo,
                                                     points, promotion, self.storeNames[storeCount], self.storeAddresses[storeCount],
                                                     self.storeCities[storeCount], self.storeProvinces[storeCount], self.storePostalCodes[storeCount])

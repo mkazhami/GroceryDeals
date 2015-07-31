@@ -1,1 +1,71 @@
-[2015-07-30 12:27:31.209000] ERROR: invalid literal for int() with base 10: '50 \xc2\xa2'
+[2015-07-31 10:51:17.241000] ERROR: could not find elements
+[2015-07-31 10:56:43.177000] ERROR: Failed to open accessible view
+[2015-07-31 10:56:43.177000] ERROR: Retrying... 0 of 5
+[2015-07-31 10:56:52.060000] ERROR: Failed to open accessible view
+[2015-07-31 10:56:52.060000] ERROR: Retrying... 1 of 5
+[2015-07-31 10:57:01.406000] ERROR: Failed to open accessible view
+[2015-07-31 10:57:01.406000] ERROR: Retrying... 2 of 5
+[2015-07-31 10:57:10.639000] ERROR: Failed to open accessible view
+[2015-07-31 10:57:10.639000] ERROR: Retrying... 3 of 5
+[2015-07-31 10:57:19.518000] ERROR: Failed to open accessible view
+[2015-07-31 10:57:19.518000] ERROR: Retrying... 4 of 5
+[2015-07-31 10:57:28.614000] ERROR: Failed to open accessible view
+[2015-07-31 10:57:28.614000] ERROR: Retrying... 5 of 5
+[2015-07-31 10:57:37.056000] ERROR: 
+
+Unable to open accessible view for store: Loblaws - Broadview Ave
+[2015-07-31 10:57:37.056000] ERROR: Skipping store...
+
+
+[2015-07-31 11:03:06.123000] ERROR: Failed to switch to frame
+[2015-07-31 11:03:06.123000] ERROR: Retrying... 0 out of 5
+[2015-07-31 11:03:15.352000] ERROR: Failed to switch to frame
+[2015-07-31 11:03:15.352000] ERROR: Retrying... 1 out of 5
+[2015-07-31 11:03:25.182000] ERROR: Failed to switch to frame
+[2015-07-31 11:03:25.182000] ERROR: Retrying... 2 out of 5
+[2015-07-31 11:03:34.370000] ERROR: Failed to switch to frame
+[2015-07-31 11:03:34.370000] ERROR: Retrying... 3 out of 5
+[2015-07-31 11:03:43.107000] ERROR: Failed to switch to frame
+[2015-07-31 11:03:43.107000] ERROR: Retrying... 4 out of 5
+[2015-07-31 11:03:51.971000] ERROR: Failed to switch to frame
+[2015-07-31 11:03:51.971000] ERROR: Retrying... 5 out of 5
+[2015-07-31 11:04:00.371000] ERROR: Unable to switch to frame for store: Loblaws - St. Clair Ave West
+[2015-07-31 11:04:00.371000] ERROR: Skipping store...
+
+
+[2015-07-31 11:26:49.068000] ERROR: Failed to open accessible view
+[2015-07-31 11:26:49.068000] ERROR: Retrying... 0 of 5
+[2015-07-31 11:26:58.005000] ERROR: Failed to open accessible view
+[2015-07-31 11:26:58.005000] ERROR: Retrying... 1 of 5
+[2015-07-31 11:27:06.992000] ERROR: Failed to open accessible view
+[2015-07-31 11:27:06.992000] ERROR: Retrying... 2 of 5
+[2015-07-31 11:27:16.083000] ERROR: Failed to open accessible view
+[2015-07-31 11:27:16.083000] ERROR: Retrying... 3 of 5
+[2015-07-31 11:27:24.953000] ERROR: Failed to open accessible view
+[2015-07-31 11:27:24.953000] ERROR: Retrying... 4 of 5
+[2015-07-31 11:27:33.828000] ERROR: Failed to open accessible view
+[2015-07-31 11:27:33.828000] ERROR: Retrying... 5 of 5
+[2015-07-31 11:27:42.263000] ERROR: 
+
+Unable to open accessible view for store: Loblaws Victoriaville
+[2015-07-31 11:27:42.263000] ERROR: Skipping store...
+
+
+[2015-07-31 11:28:00.879000] ERROR: Failed to open accessible view
+[2015-07-31 11:28:00.879000] ERROR: Retrying... 0 of 5
+[2015-07-31 11:28:09.855000] ERROR: Failed to open accessible view
+[2015-07-31 11:28:09.855000] ERROR: Retrying... 1 of 5
+[2015-07-31 11:28:18.869000] ERROR: Failed to open accessible view
+[2015-07-31 11:28:18.869000] ERROR: Retrying... 2 of 5
+[2015-07-31 11:28:27.787000] ERROR: Failed to open accessible view
+[2015-07-31 11:28:27.787000] ERROR: Retrying... 3 of 5
+[2015-07-31 11:28:37.505000] ERROR: Failed to open accessible view
+[2015-07-31 11:28:37.505000] ERROR: Retrying... 4 of 5
+[2015-07-31 11:28:48.036000] ERROR: Failed to open accessible view
+[2015-07-31 11:28:48.036000] ERROR: Retrying... 5 of 5
+[2015-07-31 11:28:56.254000] ERROR: 
+
+Unable to open accessible view for store: Loblaw City Market, North Vancouver
+[2015-07-31 11:28:56.254000] ERROR: Skipping store...
+
+
