@@ -13,7 +13,7 @@ zehrs = ZehrsLoblaws("zehrs", logger)
 loblaws = ZehrsLoblaws("loblaws", logger)
 
 print("ZEHRS\n")
-#zehrs.parse()
+zehrs.parse()
 print("\n\n\nLOBLAWS\n")
 loblaws.parse()
 

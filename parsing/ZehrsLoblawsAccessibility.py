@@ -300,8 +300,11 @@ class ZehrsLoblaws(BaseParseClass):
                                     # lastly get the price, should be the only thing remaining with a price
                                     # 'kg' price might still be there so '$' must be there
                                     #findPrice = re.findall("((\$[0-9]+((\.| |,)[0-9]*)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$)|([0-9]+( )*¢))(( )*(ch\.( )*/( )*)?(( )*ea(\.|ch)))?", productInfo)
-                                    findPrice = re.findall("((\$[0-9]+((\.| |,)[0-9]*)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$)|([0-9]+( )*¢))", productInfo)
+                                    findPrice = re.findall("((\$[0-9]+((\.| |,)[0-9]*)?)|([0-9]+( )*¢))", productInfo) # try without 'x $' format first
+                                    if len(findPrice) == 0:
+                                        findPrice = re.findall("((\$[0-9]+((\.| |,)[0-9]*)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$)|([0-9]+( )*¢))", productInfo) # then add 'x $' format
                                     if len(findPrice) != 0 and price == "":
+                                        logger.logDebug("Using price (last resort)")
                                         min = ""
                                         minStr = ""
                                         for priceMatch in findPrice:
