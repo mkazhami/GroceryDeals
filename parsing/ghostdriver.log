@@ -1,0 +1,48 @@
+[INFO  - 2015-08-07T19:15:13.291Z] GhostDriver - Main - running on port 64859
+[INFO  - 2015-08-07T19:15:14.001Z] Session [a165bb90-3d38-11e5-b911-771199135e08] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.0.0 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2015-08-07T19:15:14.001Z] Session [a165bb90-3d38-11e5-b911-771199135e08] - page.customHeaders:  - {}
+[INFO  - 2015-08-07T19:15:14.001Z] Session [a165bb90-3d38-11e5-b911-771199135e08] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.0.0","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2015-08-07T19:15:14.001Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a165bb90-3d38-11e5-b911-771199135e08
+[ERROR - 2015-08-07T19:15:15.215Z] Session [a165bb90-3d38-11e5-b911-771199135e08] - page.onError - msg: Error: Script error
+http://requirejs.org/docs/errors.html#scripterror
+
+  :262 in error
+[ERROR - 2015-08-07T19:15:15.215Z] Session [a165bb90-3d38-11e5-b911-771199135e08] - page.onError - stack:
+  onError (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  S (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  onScriptError (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  appendChild (:0)
+  load (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  load (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  load (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  fetch (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  check (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  enable (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  enable (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  (anonymous function) (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  (anonymous function) (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  each (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  enable (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  init (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  (anonymous function) (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+
+  :262 in error
+[ERROR - 2015-08-07T19:15:15.215Z] Session [a165bb90-3d38-11e5-b911-771199135e08] - page.onError - msg: Error: Script error
+http://requirejs.org/docs/errors.html#scripterror
+
+  :262 in error
+[ERROR - 2015-08-07T19:15:15.215Z] Session [a165bb90-3d38-11e5-b911-771199135e08] - page.onError - stack:
+  onError (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  S (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+  onScriptError (http://www.zehrs.ca/etc/designs/lclonline/js/vendor/require.js:7)
+
+  :262 in error
+[INFO  - 2015-08-07T19:20:13.294Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T19:25:13.339Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T19:30:13.375Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T19:35:13.408Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T19:40:13.410Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T19:45:13.735Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T19:50:13.776Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T19:55:13.776Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW
+[INFO  - 2015-08-07T20:00:13.777Z] SessionManagerReqHand - _cleanupWindowlessSessions - Asynchronous Sessions clean-up phase starting NOW

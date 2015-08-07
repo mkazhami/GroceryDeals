@@ -4,8 +4,10 @@ from baseparseclass import BaseParseClass
 from item import Item
 from selenium import webdriver
 import time
+import datetime
 import os
 import re
+import csv
 
 
 class ZehrsLoblaws(BaseParseClass):
@@ -36,12 +38,19 @@ class ZehrsLoblaws(BaseParseClass):
     
     def parse(self):
         logger = self.log
+        csvFileName = "../CsvFiles/" + self.store_name + "-" + str(datetime.date.today()) + ".csv"
+        try:
+            os.remove(csvFileName)
+        except OSError:
+            pass
+        #csvFile = open("../CsvFiles/" + self.store_name + "-" + str(datetime.date.today()) + ".csv", "w")
         # opens phantom browser
         # phantomjs.exe is located in the root directory
         #self.driver = webdriver.PhantomJS(executable_path="/home/mikhail/Documents/htmlparse/phantomjs_linux")
-        driver = webdriver.PhantomJS(executable_path="./phantomjs_linux")
-        #driver = webdriver.PhantomJS()
+        #driver = webdriver.PhantomJS(executable_path="./phantomjs_linux")
+        driver = webdriver.PhantomJS()
         driver.set_window_size(1400,1000)
+        driver.set_page_load_timeout(30)
         #self.driver = webdriver.Firefox()
 
         logger.logInfo("Opening store list page for " + self.store_name + "...")
@@ -54,7 +63,15 @@ class ZehrsLoblaws(BaseParseClass):
             logger.logInfo("Closing 'select province' button for loblaws")
             # press 'ontario' button to close the pop-up
             # shouldn't have any affect on the flyers
-            driver.find_element_by_xpath(".//a[@class='btn' and @data-province='ON']").click()
+            tries = 0
+            while tries <= 5:
+                try:
+                    driver.find_element_by_xpath(".//a[@class='btn' and @data-province='ON']").click()
+                except:
+                    driver.refresh()
+                    tries += 1
+                    time.sleep(5)
+                    Logger.logInfo("Failed to find/close loblaws province button. Retrying " + str(tries) + " of 5...")
             time.sleep(1)
         
         provinces = []
@@ -67,6 +84,31 @@ class ZehrsLoblaws(BaseParseClass):
 
         storeCount = 0
         for provIdx, provinceLink in enumerate(provinceLinks):
+            if provinces[provIdx].strip().upper() == "QUEBEC":
+                saveRE = "(économisez/)?save"
+                dozenRE = "(((\$[0-9]+( )*DOZEN)|([0-9]+( )*\$( )*DOZEN))|((DOZEN( )*\$[0-9]+)|(DOZEN( )*[0-9]+( )*\$)))"
+                lessThanRE = "LESS( )*THAN( )*[0-9]+( )*(\$)?[0-9]+(\.| |,)[0-9]+( )*(\$( )*)?(CH\./)?EA(\.|CH)"
+                orRE = "[0-9]+/((\$[0-9]+((\.|,)[0-9]+)?)|([0-9]+((\.|,)[0-9]+)?( )*\$))( )*(OU/)?OR( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$)|([0-9]+( )*¢))( )*((CH\./)?( )*EA(\.|CH))?"
+                lbRE = "((\$[0-9]*((\.|,)[0-9]*)?)|([0-9]+((\.|,)[0-9]*)?( )*\$))( )*(([Cc][Hh]\.)?[Ee][Aa]\.)?( )*/?( )*lb( )*(/)?"
+                kgRE = "\$[0-9]*(\.|,)[0-9]*( )*/( )*kg( )*(/)?"
+                gRE = "\$[0-9]+((\.| |,)[0-9]+)?( )*/[0-9]+( )*[Gg]"
+                limitRE = "LIMIT( OF|E DE)?( )*[0-9]+( )*(AFTER|APRèS) LIMIT(E)?( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$))( )*(CH\.( )*/( )*)?(EA(\.|CH))?"
+                xforyRE = "[0-9]+( )*/( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$))"
+                eachRE = '((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$))( )*((ch\./)?ea(\.|ch))'
+                priceRE = "((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$)|([0-9]+( )*¢))"
+            else:
+                saveRE = "[Ss][Aa][Vv][Ee]"
+                dozenRE = "\$[0-9]+( )*DOZEN"
+                lessThanRE = "LESS( )*THAN( )*[0-9]+( )*\$[0-9]+(\.| )[0-9]+( )*EA(\.|CH)"
+                orRE = "[0-9]+/\$[0-9]+(\.[0-9]+)?( )*OR( )*((\$[0-9]+(\.| )?[0-9]*)|([0-9]+¢))( )*EA(\.|CH)"
+                lbRE = "\$[0-9]*(\.[0-9]*)?( )*([Ee][Aa]\.)?( )*/?( )*lb( )*(/)?"
+                kgRE = "\$[0-9]*\.[0-9]*( )*/( )*kg( )*(/)?"
+                gRE = "\$[0-9]+((\.| )[0-9]+)?( )*/[0-9]+( )*[Gg]"
+                limitRE = "LIMIT( )*[0-9]+( )*AFTER LIMIT( )*\$[0-9]*(\.| )[0-9]*( )*(EA(\.|CH))?"
+                xforyRE = "[0-9]+( )*/( )*\$[0-9]+((\.| )[0-9]+)?"
+                eachRE = '\$[0-9]+((\.| )[0-9]+)?( )*(ea(\.|ch))'
+                priceRE = "((\$[0-9]+)|([0-9]+¢))((\.| )[0-9]+)?(( )*(ea(\.|ch)))?"
+                
             logger.logInfo("Opening " + provinces[provIdx] + " city list for " + self.store_name)
             driver.get(provinceLink)
             time.sleep(8)
@@ -143,8 +185,20 @@ class ZehrsLoblaws(BaseParseClass):
                 for idx, link in enumerate(viewFlyerLinks):
                     logger.logInfo("Opening flyer for store: " + self.storeNames[storeCount] + "...")
                     # open specific store's flyer
-                    driver.get(link)
-                    time.sleep(8)
+                    tries = 0
+                    while tries <= 5:
+                        try:
+                            driver.get(link)
+                            time.sleep(8)
+                        except:
+                            logger.logError("Failed to open store flyer")
+                            logger.logError("Retrying... " + str(tries) + " of 5")
+                            driver.refresh()
+                            time.sleep(8)
+                            tries += 1
+                    if tries >= 5:
+                        logger.logError("Skipping store")
+                        continue
                     logger.logInfo("Opening accessibility view...")
                     tries = 0
                     while tries <= 5:
@@ -188,6 +242,8 @@ class ZehrsLoblaws(BaseParseClass):
                         elements = driver.find_elements_by_xpath(".//div[@id='content']//table//tbody//tr")
                         if len(elements) == 0:
                             raise Exception("could not find elements")
+                            
+                        items = []
                         # iterate over each product
                         for i in range(len(elements)):
                             element = elements[i]
@@ -208,26 +264,27 @@ class ZehrsLoblaws(BaseParseClass):
                                     productInfo = product[1].text.encode('utf-8', 'ignore').replace("\n", " ")
                                     
                                     # remove 'SAVE $x' from the info, not needed
-                                    findSave = re.search("[Ss][Aa][Vv][Ee]", productInfo)
+                                    findSave = re.search(saveRE, productInfo)
                                     if findSave is not None:
                                         productInfo = productInfo[:findSave.start()].strip()
+                                        promotion = productInfo[findSave.start():].strip()
 
                                     # check for '$x dozen' - usually used for flowers
-                                    findDozen = re.search("\$[0-9]+( )*DOZEN", productInfo.upper())
+                                    findDozen = re.search(dozenRE, productInfo.upper())
                                     if findDozen is not None:
                                         price = productInfo[findDozen.start():findDozen.end()].upper().replace("DOZEN", "").strip()
                                         quantity = "12"
                                         productInfo = productInfo.replace(productInfo[findDozen.start():findDozen.end()], "").strip()
                                     
                                     # get the 'less than x $y each' deals
-                                    findLessThan = re.search("LESS( )*THAN( )*[0-9]+( )*\$[0-9]+(\.| )[0-9]+( )*EA(\.|CH)", productInfo.upper())
+                                    findLessThan = re.search(lessThanRE, productInfo.upper())
                                     if findLessThan is not None:
                                         split = productInfo[findLessThan.start():findLessThan.end()].split("$")
                                         each = "$" + split[1].replace("each", "").replace("ea.", "").strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findLessThan.start():findLessThan.end()], "").strip()
 
                                     # get '2/$x or $y each" deals
-                                    findOr = re.search("[0-9]+/\$[0-9]+(\.[0-9]+)?( )*OR( )*((\$[0-9]+(\.| )?[0-9]*)|([0-9]+¢))( )*EA(\.|CH)", productInfo.upper()) # ghetto way of matching 'cent' unicode
+                                    findOr = re.search(orRE, productInfo.upper())
                                     if findOr is not None:
                                         split = productInfo[findOr.start():findOr.end()].upper().split("OR")
                                         quantityPriceSplit = split[0].split("/")
@@ -235,22 +292,23 @@ class ZehrsLoblaws(BaseParseClass):
                                         price = quantityPriceSplit[1].strip()
                                         each = split[1].replace("EACH", "").replace("EA.", "").strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findOr.start():findOr.end()], "").strip()
+                                        promotion = str(quantity) + " for " + str(price) + " or " + str(each) + " each"
 
                                     # get weight unit of product - prioritize lb, but if only kg then use that
                                     # and take it out of the product info
-                                    findLb = re.search("\$[0-9]*(\.[0-9]*)?( )*([Ee][Aa]\.)?( )*/?( )*lb( )*(/)?", productInfo)
+                                    findLb = re.search(lbRE, productInfo)
                                     if findLb is not None:
                                         price = productInfo[findLb.start():findLb.end()].split("lb")[0].lower().replace("ea.", "").replace("/", "").strip()
                                         weight = "lb"
                                         productInfo = productInfo.replace(productInfo[findLb.start():findLb.end()], "").strip()
                                     else:
-                                        findKg = re.search("\$[0-9]*\.[0-9]*( )*/( )*kg( )*(/)?", productInfo)
+                                        findKg = re.search(kgRE, productInfo)
                                         if findKg is not None:
                                             price = productInfo[findKg.start():findKg.end()].split("kg")[0].replace("/", "").strip()
                                             weight = "kg"
                                             productInfo = productInfo.replace(productInfo[findKg.start():findKg.end()], "").strip()
                                         else:
-                                            findG = re.search("\$[0-9]+((\.| )[0-9]+)?( )*/[0-9]+( )*[Gg]", productInfo)
+                                            findG = re.search(gRE, productInfo)
                                             if findG is not None and price == "":
                                                 split = productInfo[findG.start():findG.end()].split("/")
                                                 # sometimes there is a price /x grams and sometimes price is separate
@@ -259,7 +317,7 @@ class ZehrsLoblaws(BaseParseClass):
                                                 productInfo = productInfo.replace(productInfo[findG.start():findG.end()], "").strip()
 
                                     # get item limit if applicable and remove from product info
-                                    findLimit = re.search("LIMIT( )*[0-9]+( )*AFTER LIMIT( )*\$[0-9]*(\.| )[0-9]*( )*(EA(\.|CH))?", productInfo.upper())
+                                    findLimit = re.search(limitRE, productInfo.upper())
                                     if findLimit is not None:
                                         split = productInfo[findLimit.start():findLimit.end()].upper().split("AFTER LIMIT")
                                         limit = split[0][re.search("[0-9]+", split[0]).start():].strip()
@@ -267,38 +325,73 @@ class ZehrsLoblaws(BaseParseClass):
                                         productInfo = productInfo.replace(productInfo[findLimit.start():findLimit.end()], "").strip()
 
                                     # get 'x/$y' deals
-                                    findXForY = re.search("[0-9]+( )*/( )*\$[0-9]+((\.| )[0-9]+)?", productInfo)
+                                    findXForY = re.search(xforyRE, productInfo)
                                     if findXForY is not None:
                                         split = productInfo[findXForY.start():findXForY.end()].split("/")
                                         quantity = split[0].strip()
                                         price = split[1].strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findXForY.start():findXForY.end()], "").strip()
+                                        promotion = str(quantity) + " for " + str(price)
                                     
                                     # sometimes there are multiple products, make sure we have the 'each' price if it's left
-                                    findEach = re.search('\$[0-9]+((\.| )[0-9]*)?( )*(ea(\.|ch))', productInfo)
+                                    findEach = re.search(eachRE, productInfo)
                                     if findEach is not None and each == "":
                                         each = productInfo[findEach.start():findEach.end()].replace("each", "").replace("ea.", "").strip().replace(" ", ".")
                                         productInfo = productInfo.replace(productInfo[findEach.start():findEach.end()], "").strip()
 
                                     # lastly get the price, should be the only thing remaining with a price
                                     # 'kg' price might still be there so '$' must be there
-                                    findPrice = re.search("((\$[0-9]+)|([0-9]+¢))((\.| )[0-9]*)?(( )*(ea(\.|ch)))?", productInfo)
-                                    if findPrice is not None and price == "":
-                                        price = productInfo[findPrice.start():findPrice.end()].replace("each", "").replace("ea.", "").strip().replace(" ", ".")
-                                        productInfo = productInfo.replace(productInfo[findPrice.start():findPrice.end()], "").strip()
+                                    findPrice = re.findall(priceRE, productInfo)
+                                    if len(findPrice) != 0 and price == "":
+                                        logger.logDebug("Using price (last resort)")
+                                        min = ""
+                                        minStr = ""
+                                        for priceMatch in re.finditer(priceRE, productInfo):
+                                            priceMatch = productInfo[priceMatch.start():priceMatch.end()].replace("each", "").replace("ea.", "").strip()
+                                            logger.logDebug("match: " + priceMatch)
+                                            #priceMatch = priceMatch[0]
+                                            amount = 0
+                                            if "." not in priceMatch and "," not in priceMatch:
+                                                if "¢" in priceMatch:
+                                                    amount = int(priceMatch.replace("¢", "").strip())
+                                                else:
+                                                    amount = int(priceMatch.replace("$", "").strip()) * 100
+                                            else:
+                                                amount = int(priceMatch.replace(".", "").replace(",", "").replace("$", "").replace("¢", "").strip())
+                                            
+                                            if min == "" or amount < int(min):
+                                                min = amount
+                                                minStr = priceMatch
+                                        price = minStr
+                                        if "¢" in price:
+                                            price.replace(" ", "")
+                                        else:
+                                            price.replace(" ", ".")
+                                        productInfo = productInfo.replace(minStr, "").strip()
 
-                                    
+                                    # just in case
+                                    if price == "" and each != "":
+                                        price = each
+                                    elif price == "" and each == "" and promotion != "": # if there's no price and just a savings
+                                        productInfo += " " + promotion
                                     
                                     item = Item(name, price, quantity, weight, limit, each, productInfo,
                                                     points, promotion, self.storeNames[storeCount], self.storeAddresses[storeCount],
                                                     self.storeCities[storeCount], self.storeProvinces[storeCount], self.storePostalCodes[storeCount])
                                     logger.logDebug(str(item))
+                                    items.append(item.toCSVFormat())
+                                    #csvFile.write(item.toCSVFormat() + "\n")
 
                                     #if weight == "":
                                     #    print("name: " + name + "      price: " + price + "     quantity: " + quantity + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
                                     #else:
                                     #    print("name: " + name + "      price: " + price + "     weight: " + weight + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
                                     logger.logDebug("\n")
+                                
+                                # write the store's items to the csv file
+                                with open(csvFileName, 'ab') as f:
+                                    csvWrite = csv.writer(f, delimiter=',')
+                                    csvWrite.writerows(items)
                         
                         logger.logInfo("Done getting product info for store: " + self.storeNames[storeCount])
                         storeCount += 1
@@ -311,3 +404,4 @@ class ZehrsLoblaws(BaseParseClass):
                         # print exception message and break from loop since we've gone through all the pages
                         logger.logError(str(e))
         driver.quit()
+        #csvFile.close()

@@ -36,8 +36,14 @@ class Item():
         self.store_postal_code = store_postal_code
     
     def __str__(self):
-        return "name: " + self.name + "      price: " + self.price + "      quantity: " + self.quantity + "       limit: " + self.limit +\
+        return "name: " + self.name + "      price: " + self.price + "      quantity: " + self.quantity + "       limit: " + self.limit + "   weight: " + self.weight +\
               "\neach: " + self.each + "   info: " + self.additional_info + "    points: " + self.points + "    promotion: " + self.promotion +\
               "store: " + self.store_name + ",  " + self.store_address + ",  " + self.store_city + "," + self.store_province + ",  " + self.store_postal_code
         
+    def toCSVFormat(self):
+        #return self.name + "," + self.price + "," + self.quantity + "," + self.limit + "," + self.weight +\
+        #      "," + self.each + "," + self.additional_info + "," + self.points + "," + self.promotion +\
+        #      "," + self.store_name + "," + self.store_address + ","+ self.store_city + "," + self.store_province + "," + self.store_postal_code
+        return [self.name, self.price, self.quantity, self.limit, self.weight, self.each, self.additional_info, self.points, self.promotion,
+                self.store_name, self.store_address, self.store_city, self.store_province, self.store_postal_code]
     
