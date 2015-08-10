@@ -68,7 +68,7 @@ class ZehrsLoblaws(BaseParseClass):
                     driver.refresh()
                     tries += 1
                     time.sleep(5)
-                    Logger.logInfo("Failed to find/close loblaws province button. Retrying " + str(tries) + " of 5...")
+                    logger.logInfo("Failed to find/close loblaws province button. Retrying " + str(tries) + " of 5...")
             time.sleep(1)
         
         provinces = []
