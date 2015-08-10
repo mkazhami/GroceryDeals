@@ -39,10 +39,7 @@ class ZehrsLoblaws(BaseParseClass):
     def parse(self):
         logger = self.log
         csvFileName = "../CsvFiles/" + self.store_name + "-" + str(datetime.date.today()) + ".csv"
-        try:
-            os.remove(csvFileName)
-        except OSError:
-            pass
+        open(csvFileName, 'w').close() # create empty file
         #csvFile = open("../CsvFiles/" + self.store_name + "-" + str(datetime.date.today()) + ".csv", "w")
         # opens phantom browser
         # phantomjs.exe is located in the root directory
@@ -84,7 +81,10 @@ class ZehrsLoblaws(BaseParseClass):
 
         storeCount = 0
         for provIdx, provinceLink in enumerate(provinceLinks):
+            if provinces[provIdx].strip().upper() != "ONTARIO":
+                continue # skip all non-ontario provinces, other provinces have very inconsistent formats
             if provinces[provIdx].strip().upper() == "QUEBEC":
+                continue # skip it for now, quebec descriptions are far too inconsistent
                 saveRE = "(économisez/)?save"
                 dozenRE = "(((\$[0-9]+( )*DOZEN)|([0-9]+( )*\$( )*DOZEN))|((DOZEN( )*\$[0-9]+)|(DOZEN( )*[0-9]+( )*\$)))"
                 lessThanRE = "LESS( )*THAN( )*[0-9]+( )*(\$)?[0-9]+(\.| |,)[0-9]+( )*(\$( )*)?(CH\./)?EA(\.|CH)"
@@ -92,7 +92,7 @@ class ZehrsLoblaws(BaseParseClass):
                 lbRE = "((\$[0-9]*((\.|,)[0-9]*)?)|([0-9]+((\.|,)[0-9]*)?( )*\$))( )*(([Cc][Hh]\.)?[Ee][Aa]\.)?( )*/?( )*lb( )*(/)?"
                 kgRE = "\$[0-9]*(\.|,)[0-9]*( )*/( )*kg( )*(/)?"
                 gRE = "\$[0-9]+((\.| |,)[0-9]+)?( )*/[0-9]+( )*[Gg]"
-                limitRE = "LIMIT( OF|E DE)?( )*[0-9]+( )*(AFTER|APRèS) LIMIT(E)?( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$))( )*(CH\.( )*/( )*)?(EA(\.|CH))?"
+                limitRE = "LIMIT( OF|E DE)?( )*[0-9]+( )*(AFTER|APRèS) LIMIT(E)?(,)?( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$))( )*(CH\.( )*/( )*)?(EA(\.|CH))?"
                 xforyRE = "[0-9]+( )*/( )*((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]+)?( )*\$))"
                 eachRE = '((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$))( )*((ch\./)?ea(\.|ch))'
                 priceRE = "((\$[0-9]+((\.| |,)[0-9]+)?)|([0-9]+((\.| |,)[0-9]*)?( )*\$)|([0-9]+( )*¢))"
@@ -104,10 +104,10 @@ class ZehrsLoblaws(BaseParseClass):
                 lbRE = "\$[0-9]*(\.[0-9]*)?( )*([Ee][Aa]\.)?( )*/?( )*lb( )*(/)?"
                 kgRE = "\$[0-9]*\.[0-9]*( )*/( )*kg( )*(/)?"
                 gRE = "\$[0-9]+((\.| )[0-9]+)?( )*/[0-9]+( )*[Gg]"
-                limitRE = "LIMIT( )*[0-9]+( )*AFTER LIMIT( )*\$[0-9]*(\.| )[0-9]*( )*(EA(\.|CH))?"
+                limitRE = "LIMIT( )*[0-9]+( )*AFTER LIMIT(,)?( )*\$[0-9]*(\.| )[0-9]*( )*(EA(\.|CH))?"
                 xforyRE = "[0-9]+( )*/( )*\$[0-9]+((\.| )[0-9]+)?"
                 eachRE = '\$[0-9]+((\.| )[0-9]+)?( )*(ea(\.|ch))'
-                priceRE = "((\$[0-9]+)|([0-9]+¢))((\.| )[0-9]+)?(( )*(ea(\.|ch)))?"
+                priceRE = "((\$[0-9]+)|([0-9]+¢))(\.[0-9]+)?(( )*(ea(\.|ch)))?"
                 
             logger.logInfo("Opening " + provinces[provIdx] + " city list for " + self.store_name)
             driver.get(provinceLink)
@@ -185,20 +185,8 @@ class ZehrsLoblaws(BaseParseClass):
                 for idx, link in enumerate(viewFlyerLinks):
                     logger.logInfo("Opening flyer for store: " + self.storeNames[storeCount] + "...")
                     # open specific store's flyer
-                    tries = 0
-                    while tries <= 5:
-                        try:
-                            driver.get(link)
-                            time.sleep(8)
-                        except:
-                            logger.logError("Failed to open store flyer")
-                            logger.logError("Retrying... " + str(tries) + " of 5")
-                            driver.refresh()
-                            time.sleep(8)
-                            tries += 1
-                    if tries >= 5:
-                        logger.logError("Skipping store")
-                        continue
+                    driver.get(link)
+                    time.sleep(8)
                     logger.logInfo("Opening accessibility view...")
                     tries = 0
                     while tries <= 5:
@@ -357,7 +345,7 @@ class ZehrsLoblaws(BaseParseClass):
                                                 else:
                                                     amount = int(priceMatch.replace("$", "").strip()) * 100
                                             else:
-                                                amount = int(priceMatch.replace(".", "").replace(",", "").replace("$", "").replace("¢", "").strip())
+                                                amount = int(priceMatch.replace(".", "").replace(",", "").replace("$", "").replace("¢", "").replace(" ", "").strip())
                                             
                                             if min == "" or amount < int(min):
                                                 min = amount
@@ -378,14 +366,12 @@ class ZehrsLoblaws(BaseParseClass):
                                     item = Item(name, price, quantity, weight, limit, each, productInfo,
                                                     points, promotion, self.storeNames[storeCount], self.storeAddresses[storeCount],
                                                     self.storeCities[storeCount], self.storeProvinces[storeCount], self.storePostalCodes[storeCount])
+                                    if price == "":
+                                        logger.logInfo(str(item))
                                     logger.logDebug(str(item))
                                     items.append(item.toCSVFormat())
                                     #csvFile.write(item.toCSVFormat() + "\n")
 
-                                    #if weight == "":
-                                    #    print("name: " + name + "      price: " + price + "     quantity: " + quantity + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
-                                    #else:
-                                    #    print("name: " + name + "      price: " + price + "     weight: " + weight + "   limit: " + limit + "   each: " + each + "   info: " + productInfo)
                                     logger.logDebug("\n")
                                 
                                 # write the store's items to the csv file
