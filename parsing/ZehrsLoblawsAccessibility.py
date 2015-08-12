@@ -12,7 +12,7 @@ import csv
 
 class ZehrsLoblaws(BaseParseClass):
     """
-    Parent class to the different stores that follow similar page formats
+    Class for the different stores that follow similar page formats to Zehrs and Loblaws
     """
     
     store_list_links = { 
