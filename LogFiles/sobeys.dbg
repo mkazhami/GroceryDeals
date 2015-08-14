@@ -1,0 +1,2035 @@
+[2015-08-14 14:58:40.316000] INFO: Opening https://www.sobeys.com/en/store-locator/
+[2015-08-14 14:58:51.974000] DEBUG: Zooming out of map...
+[2015-08-14 14:59:00.060000] DEBUG: Getting all 'save my store' buttons
+[2015-08-14 14:59:06.820000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-fort-erie/
+[2015-08-14 14:59:14.029000] DEBUG: Saving store as 'my store'
+[2015-08-14 14:59:14.651000] DEBUG: Getting store info...
+[2015-08-14 14:59:14.815000] DEBUG: Name:  Sobeys  Fort Erie
+[2015-08-14 14:59:14.815000] DEBUG: Store Number:  4718
+[2015-08-14 14:59:14.815000] DEBUG: Address:  450 Garrison Rd
+[2015-08-14 14:59:14.815000] DEBUG: Postal Code:  L2A1N2
+[2015-08-14 14:59:14.815000] DEBUG: City:  Fort Erie
+[2015-08-14 14:59:14.815000] DEBUG: Province:  Ontario
+[2015-08-14 14:59:14.815000] DEBUG: Opening flyer...
+[2015-08-14 14:59:30.439000] DEBUG: Switching frame...
+[2015-08-14 14:59:31.458000] DEBUG: Going to Item View...
+[2015-08-14 14:59:42.980000] DEBUG: Getting products...
+[2015-08-14 14:59:43.016000] DEBUG: number of products: 386
+[2015-08-14 14:59:43.016000] DEBUG: Parsing products information...
+[2015-08-14 14:59:43.066000] DEBUG: using uneven price
+[2015-08-14 14:59:43.086000] DEBUG: 
+[2015-08-14 14:59:43.120000] DEBUG: 30 Month Aged Parmigiano Reggiano Cheese
+[2015-08-14 14:59:43.120000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 14:59:43.172000] DEBUG: using uneven price
+[2015-08-14 14:59:43.192000] DEBUG: 
+[2015-08-14 14:59:43.225000] DEBUG: 30 Month Aged Parmigiano Reggiano Cheese
+[2015-08-14 14:59:43.225000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 14:59:43.382000] DEBUG: using normal price
+[2015-08-14 14:59:51.228000] DEBUG: Unable to get item story
+[2015-08-14 14:59:51.228000] DEBUG: 6" or 8" Cheesecakes
+[2015-08-14 14:59:51.228000] DEBUG: price: $16.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 14:59:51.352000] DEBUG: using normal price
+[2015-08-14 14:59:51.377000] DEBUG: A Taste of Thai Lite Coconut Milk
+[2015-08-14 14:59:51.377000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 1 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 14:59:51.500000] DEBUG: using normal price
+[2015-08-14 14:59:51.525000] DEBUG: Alberto European Styling
+[2015-08-14 14:59:51.525000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 14:59:51.678000] DEBUG: using normal price
+[2015-08-14 14:59:51.705000] DEBUG: Anco Danesborg Gouda Cheese
+[2015-08-14 14:59:51.705000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 14:59:51.843000] DEBUG: using normal price
+[2015-08-14 14:59:51.868000] DEBUG: Arm &amp; Hammer Cat Litter
+[2015-08-14 14:59:51.868000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 14:59:52.004000] DEBUG: using normal price
+[2015-08-14 14:59:59.818000] DEBUG: Unable to get item story
+[2015-08-14 14:59:59.818000] DEBUG: Aspen Ridge Prime Rib Steaks
+[2015-08-14 14:59:59.818000] DEBUG: price: $18.49  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 14:59:59.990000] DEBUG: using normal price
+[2015-08-14 15:00:00.029000] DEBUG: Astro Athentikos Greek Yogurt
+[2015-08-14 15:00:00.029000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points: 12  promotion: BUY 2 EARN +12 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:00.163000] DEBUG: using normal price
+[2015-08-14 15:00:00.198000] DEBUG: BC Fresh Wild Whole Pink Salmon
+[2015-08-14 15:00:00.198000] DEBUG: price: $0.66  each:    quantity: 1  limit:   weight: 100 g  points:   promotion:   additional info: 
+
+[2015-08-14 15:00:00.351000] DEBUG: using normal price
+[2015-08-14 15:00:00.387000] DEBUG: Baby Gourmet Pouches
+[2015-08-14 15:00:00.387000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 10 EARN +10 reward miles  additional info: 
+
+[2015-08-14 15:00:00.440000] DEBUG: using uneven price
+[2015-08-14 15:00:00.457000] DEBUG: 
+[2015-08-14 15:00:00.488000] DEBUG: Beef Back Ribs
+[2015-08-14 15:00:00.488000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:00.670000] DEBUG: using normal price
+[2015-08-14 15:00:00.700000] DEBUG: Beef Tenderloin
+[2015-08-14 15:00:00.700000] DEBUG: price: $13.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:00:00.834000] DEBUG: using normal price
+[2015-08-14 15:00:00.859000] DEBUG: Beneful Healthy Smile Dog Treats
+[2015-08-14 15:00:00.859000] DEBUG: price: $3.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:00.998000] DEBUG: using normal price
+[2015-08-14 15:00:01.035000] DEBUG: Betty Crocker Super Moist Cake Mixes
+[2015-08-14 15:00:01.035000] DEBUG: price: $1.49  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 3 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:01.190000] DEBUG: using normal price
+[2015-08-14 15:00:01.222000] DEBUG: Blue Goose Chicken Drumsticks or Thighs
+[2015-08-14 15:00:01.222000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight: lb  points: 5  promotion: BUY 2 EARN +5 reward miles  additional info: 
+
+[2015-08-14 15:00:01.416000] DEBUG: using normal price
+[2015-08-14 15:00:01.449000] DEBUG: BlueWater Premium Seafood Portions
+[2015-08-14 15:00:01.449000] DEBUG: price: $10.49  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:01.608000] DEBUG: using normal price
+[2015-08-14 15:00:01.648000] DEBUG: Bottle Green Beverage
+[2015-08-14 15:00:01.648000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:01.828000] DEBUG: using normal price
+[2015-08-14 15:00:10.153000] DEBUG: Unable to get item story
+[2015-08-14 15:00:10.153000] DEBUG: Broccoli
+[2015-08-14 15:00:10.153000] DEBUG: price: $3.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:10.373000] DEBUG: using normal price
+[2015-08-14 15:00:10.415000] DEBUG: Brookside Chocolate
+[2015-08-14 15:00:10.415000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 5 ITEMS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:10.634000] DEBUG: using normal price
+[2015-08-14 15:00:10.676000] DEBUG: Butterball Turkey Bacon or Franks
+[2015-08-14 15:00:10.676000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:10.867000] DEBUG: using normal price
+[2015-08-14 15:00:10.905000] DEBUG: Camino Fair Trade Organic Chocolate
+[2015-08-14 15:00:10.905000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:11.127000] DEBUG: using normal price
+[2015-08-14 15:00:18.979000] DEBUG: Unable to get item story
+[2015-08-14 15:00:18.979000] DEBUG: Canadian Lamb Rack
+[2015-08-14 15:00:18.979000] DEBUG: price: $19.99  each:    quantity: 1  limit:   weight: lb  points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:19.155000] DEBUG: using normal price
+[2015-08-14 15:00:19.188000] DEBUG: Catelli Pasta
+[2015-08-14 15:00:19.188000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:19.353000] DEBUG: using normal price
+[2015-08-14 15:00:19.388000] DEBUG: Cavendish Fries
+[2015-08-14 15:00:19.388000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:19.560000] DEBUG: using normal price
+[2015-08-14 15:00:27.627000] DEBUG: Unable to get item story
+[2015-08-14 15:00:27.627000] DEBUG: Celery Stalks
+[2015-08-14 15:00:27.627000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:27.791000] DEBUG: using normal price
+[2015-08-14 15:00:27.823000] DEBUG: Chapman's Gelato
+[2015-08-14 15:00:27.823000] DEBUG: price: $6.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:27.976000] DEBUG: using normal price
+[2015-08-14 15:00:28.016000] DEBUG: Cheemo Perogies
+[2015-08-14 15:00:28.016000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:28.187000] DEBUG: using normal price
+[2015-08-14 15:00:28.224000] DEBUG: Chef Elite Angus Roast Beef
+[2015-08-14 15:00:28.224000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight: 100 g  points:   promotion:   additional info: 
+
+[2015-08-14 15:00:28.427000] DEBUG: using normal price
+[2015-08-14 15:00:28.462000] DEBUG: Cloverleaf Albacore Tuna
+[2015-08-14 15:00:28.462000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:28.637000] DEBUG: using normal price
+[2015-08-14 15:00:28.673000] DEBUG: Comet Disinfecting Cleaners
+[2015-08-14 15:00:28.673000] DEBUG: price: $2.00  each: $1.49   quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:28.846000] DEBUG: using normal price
+[2015-08-14 15:00:28.883000] DEBUG: Compliments Balance Frozen Yogourt
+[2015-08-14 15:00:28.883000] DEBUG: price: $8.00  each:    quantity: 2  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:29.058000] DEBUG: using normal price
+[2015-08-14 15:00:29.095000] DEBUG: Compliments Balance Microwaveable Popcorn
+[2015-08-14 15:00:29.095000] DEBUG: price: $4.00  each:    quantity: 2  limit:   weight:   points: 6  promotion: BUY 2 EARN +6 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:29.308000] DEBUG: using normal price
+[2015-08-14 15:00:29.344000] DEBUG: Compliments Balance Tilapia, Wild Cod, Haddock or Sole Fillets
+[2015-08-14 15:00:29.344000] DEBUG: price: $10.00  each: $5.99   quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:29.518000] DEBUG: using normal price
+[2015-08-14 15:00:29.552000] DEBUG: Compliments Canned Dog Food
+[2015-08-14 15:00:29.552000] DEBUG: price: $5.00  each: $1.79   quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:29.719000] DEBUG: using normal price
+[2015-08-14 15:00:37.373000] DEBUG: Unable to get item story
+[2015-08-14 15:00:37.373000] DEBUG: Compliments Large Eggs
+[2015-08-14 15:00:37.373000] DEBUG: price: $2.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:37.535000] DEBUG: using normal price
+[2015-08-14 15:00:37.566000] DEBUG: Compliments Latex Gloves
+[2015-08-14 15:00:37.566000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:37.735000] DEBUG: using normal price
+[2015-08-14 15:00:37.769000] DEBUG: Compliments Natural Spring Water
+[2015-08-14 15:00:37.769000] DEBUG: price: $1.00  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:37.823000] DEBUG: using uneven price
+[2015-08-14 15:00:37.843000] DEBUG: 
+[2015-08-14 15:00:45.520000] DEBUG: Unable to get item story
+[2015-08-14 15:00:45.520000] DEBUG: Compliments Nuts
+[2015-08-14 15:00:45.520000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:45.563000] DEBUG: using uneven price
+[2015-08-14 15:00:45.579000] DEBUG: 
+[2015-08-14 15:00:53.302000] DEBUG: Unable to get item story
+[2015-08-14 15:00:53.302000] DEBUG: Compliments Organic Peanut Butter
+[2015-08-14 15:00:53.302000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:53.479000] DEBUG: using normal price
+[2015-08-14 15:00:53.512000] DEBUG: Compliments Pacific White Shrimp
+[2015-08-14 15:00:53.512000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:00:53.674000] DEBUG: using normal price
+[2015-08-14 15:00:53.709000] DEBUG: Compliments Pancake Mix
+[2015-08-14 15:00:53.709000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:00:53.763000] DEBUG: using uneven price
+[2015-08-14 15:00:53.783000] DEBUG: 
+[2015-08-14 15:01:01.295000] DEBUG: Unable to get item story
+[2015-08-14 15:01:01.295000] DEBUG: Compliments Rainbow Sweet Peppers
+[2015-08-14 15:01:01.295000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:01.457000] DEBUG: using normal price
+[2015-08-14 15:01:09.036000] DEBUG: Unable to get item story
+[2015-08-14 15:01:09.036000] DEBUG: Compliments or Compliments Balance Tortillas
+[2015-08-14 15:01:09.036000] DEBUG: price: $2.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:09.208000] DEBUG: using normal price
+[2015-08-14 15:01:09.242000] DEBUG: Compliments presents Jamie Oliver Discovers Canada Apple &amp; Blackberry Crisp
+[2015-08-14 15:01:09.242000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:09.297000] DEBUG: using uneven price
+[2015-08-14 15:01:09.317000] DEBUG: 
+[2015-08-14 15:01:09.352000] DEBUG: Compliments presents Jamie Oliver Discovers Canada Premium Burgers
+[2015-08-14 15:01:09.353000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:09.512000] DEBUG: using normal price
+[2015-08-14 15:01:09.571000] DEBUG: Crest 3D White Toothpaste
+[2015-08-14 15:01:09.571000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:09.747000] DEBUG: using normal price
+[2015-08-14 15:01:09.781000] DEBUG: Dare Ultimate Cookies, Viva Puffs or Wagon Wheels
+[2015-08-14 15:01:09.781000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 reward miles  additional info: 
+
+[2015-08-14 15:01:09.946000] DEBUG: using normal price
+[2015-08-14 15:01:09.980000] DEBUG: Delissio Rising Crust or Pizzeria Pizza
+[2015-08-14 15:01:09.980000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:10.141000] DEBUG: using normal price
+[2015-08-14 15:01:10.177000] DEBUG: Delissio Rustico Pizza
+[2015-08-14 15:01:10.177000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:10.382000] DEBUG: using normal price
+[2015-08-14 15:01:10.419000] DEBUG: Dempster's Whole Grains Bread
+[2015-08-14 15:01:10.419000] DEBUG: price: $5.00  each: $2.99   quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:10.582000] DEBUG: using normal price
+[2015-08-14 15:01:10.618000] DEBUG: Design Your Own
+[2015-08-14 15:01:10.618000] DEBUG: price: $20.00  each: $7.99   quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:10.777000] DEBUG: using normal price
+[2015-08-14 15:01:10.813000] DEBUG: Diana Sauce
+[2015-08-14 15:01:10.813000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:10.973000] DEBUG: using normal price
+[2015-08-14 15:01:11.008000] DEBUG: Doi Chang Organic Coffee
+[2015-08-14 15:01:11.008000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:11.204000] DEBUG: using normal price
+[2015-08-14 15:01:11.238000] DEBUG: Dove, Degree Clinical Deodorant
+[2015-08-14 15:01:11.238000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points: 3  promotion: BUY 1 EARN +3 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:01:11.400000] DEBUG: using normal price
+[2015-08-14 15:01:11.434000] DEBUG: Dr. Oetker Ristorante or Panebello Pizza
+[2015-08-14 15:01:11.434000] DEBUG: price: $4.44  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:11.594000] DEBUG: using normal price
+[2015-08-14 15:01:11.628000] DEBUG: DuBreton Pork Back Ribs
+[2015-08-14 15:01:11.628000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:01:11.682000] DEBUG: using uneven price
+[2015-08-14 15:01:11.703000] DEBUG: 
+[2015-08-14 15:01:19.633000] DEBUG: Unable to get item story
+[2015-08-14 15:01:19.633000] DEBUG: Eat Smart Salad Kits
+[2015-08-14 15:01:19.633000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:19.835000] DEBUG: using normal price
+[2015-08-14 15:01:19.878000] DEBUG: Effervé Lemonade
+[2015-08-14 15:01:19.878000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:20.047000] DEBUG: using normal price
+[2015-08-14 15:01:20.082000] DEBUG: Enjoy Life Plentils
+[2015-08-14 15:01:20.082000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:20.270000] DEBUG: using normal price
+[2015-08-14 15:01:20.308000] DEBUG: Fancy Feast Cat Food
+[2015-08-14 15:01:20.308000] DEBUG: price: $0.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:20.509000] DEBUG: using normal price
+[2015-08-14 15:01:20.547000] DEBUG: Fibre 1 Bars
+[2015-08-14 15:01:20.547000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:20.720000] DEBUG: using normal price
+[2015-08-14 15:01:20.756000] DEBUG: Field Tomatoes
+[2015-08-14 15:01:20.756000] DEBUG: price: $0.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:01:20.978000] DEBUG: using normal price
+[2015-08-14 15:01:21.018000] DEBUG: Filippo Berio Olive Oil
+[2015-08-14 15:01:21.019000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:21.167000] DEBUG: using normal price
+[2015-08-14 15:01:21.199000] DEBUG: Frank's Red Hot
+[2015-08-14 15:01:21.199000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:21.347000] DEBUG: using normal price
+[2015-08-14 15:01:21.379000] DEBUG: Fresh Malpeque or Komo Gway Oysters
+[2015-08-14 15:01:21.379000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:21.536000] DEBUG: using normal price
+[2015-08-14 15:01:21.571000] DEBUG: Fresh Organic Rainbow Trout Fillets
+[2015-08-14 15:01:21.571000] DEBUG: price: $2.21  each:    quantity: 1  limit:   weight: 100 g  points:   promotion:   additional info: 
+
+[2015-08-14 15:01:21.753000] DEBUG: using normal price
+[2015-08-14 15:01:31.047000] DEBUG: Unable to get item story
+[2015-08-14 15:01:31.047000] DEBUG: Fresh Store Made Beef, Chicken or Pork Kabobs
+[2015-08-14 15:01:31.047000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight: lb  points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:01:31.224000] DEBUG: using normal price
+[2015-08-14 15:01:31.259000] DEBUG: Fresh Wild Cod Fillets
+[2015-08-14 15:01:31.259000] DEBUG: price: $2.21  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:31.451000] DEBUG: using normal price
+[2015-08-14 15:01:31.494000] DEBUG: Friskies Party Mix Cat Treats
+[2015-08-14 15:01:31.494000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:31.599000] DEBUG: using uneven price
+[2015-08-14 15:01:31.631000] DEBUG: 
+[2015-08-14 15:01:40.958000] DEBUG: Unable to get item story
+[2015-08-14 15:01:40.958000] DEBUG: Fruit or Vegetable Kabobs
+[2015-08-14 15:01:40.958000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:41.176000] DEBUG: using normal price
+[2015-08-14 15:01:41.220000] DEBUG: Fudgsicle or Creamsicle
+[2015-08-14 15:01:41.220000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:01:41.401000] DEBUG: using normal price
+[2015-08-14 15:01:41.436000] DEBUG: Furlani Texas Garlic Toast
+[2015-08-14 15:01:41.436000] DEBUG: price: $3.00  each:    quantity: 2  limit:   weight:   points: 5  promotion: BUY 1 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:01:41.601000] DEBUG: using normal price
+[2015-08-14 15:01:41.636000] DEBUG: Gatorade
+[2015-08-14 15:01:41.636000] DEBUG: price: $5.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: SPEND $25 EARN +35 AIR MILES reward miles
+
+[2015-08-14 15:01:41.835000] DEBUG: using normal price
+[2015-08-14 15:01:41.869000] DEBUG: Gay Lea Spreadables Butter
+[2015-08-14 15:01:41.869000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:01:42.043000] DEBUG: using normal price
+[2015-08-14 15:01:42.080000] DEBUG: Glad Kitchen Catchers
+[2015-08-14 15:01:42.080000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:01:42.262000] DEBUG: using normal price
+[2015-08-14 15:01:50.937000] DEBUG: Unable to get item story
+[2015-08-14 15:01:50.937000] DEBUG: Gourmet Cheese Sticks
+[2015-08-14 15:01:50.937000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points: 20  promotion: BUY ANY 3 EARN 20 AIR MILES REWARD MILES  additional info: 
+
+[2015-08-14 15:01:51.115000] DEBUG: using normal price
+[2015-08-14 15:02:00.079000] DEBUG: Unable to get item story
+[2015-08-14 15:02:00.079000] DEBUG: Gourmet Cheese or Cheese Onion Buns
+[2015-08-14 15:02:00.079000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points: 20  promotion: BUY ANY 3 EARN 20 AIR MILES REWARD MILES  additional info: 
+
+[2015-08-14 15:02:00.253000] DEBUG: using normal price
+[2015-08-14 15:02:00.288000] DEBUG: Guy Fieri BBQ Sauce
+[2015-08-14 15:02:00.288000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:00.448000] DEBUG: using normal price
+[2015-08-14 15:02:00.482000] DEBUG: Healthy Choice Gourmet Steamers or VH Steamers
+[2015-08-14 15:02:00.482000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:00.664000] DEBUG: using normal price
+[2015-08-14 15:02:00.699000] DEBUG: Hellmann's Mayonnaise
+[2015-08-14 15:02:00.699000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:00.863000] DEBUG: using normal price
+[2015-08-14 15:02:00.899000] DEBUG: Herbal Essence Hair Care
+[2015-08-14 15:02:00.899000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 3  promotion: BUY 2 EARN +3 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:02:01.059000] DEBUG: using normal price
+[2015-08-14 15:02:01.107000] DEBUG: Hershey's Kingsize Bar
+[2015-08-14 15:02:01.107000] DEBUG: price: $1.25  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 5 ITEMS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:02:01.297000] DEBUG: using normal price
+[2015-08-14 15:02:01.341000] DEBUG: Hershey's Pouches
+[2015-08-14 15:02:01.341000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY 5 ITEMS EARN +15 reward miles  additional info: 
+
+[2015-08-14 15:02:01.500000] DEBUG: using normal price
+[2015-08-14 15:02:09.296000] DEBUG: Unable to get item story
+[2015-08-14 15:02:09.296000] DEBUG: Homestyle Cheese Bread
+[2015-08-14 15:02:09.296000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:09.482000] DEBUG: using normal price
+[2015-08-14 15:02:18.946000] DEBUG: Unable to get item story
+[2015-08-14 15:02:18.946000] DEBUG: Huggies Baby Wipes
+[2015-08-14 15:02:18.946000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:19.196000] DEBUG: using normal price
+[2015-08-14 15:02:19.248000] DEBUG: Jamie Oliver Glass Water Bottle and set of 4 Glasses
+[2015-08-14 15:02:19.248000] DEBUG: price: $14.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:19.490000] DEBUG: using normal price
+[2015-08-14 15:02:19.538000] DEBUG: Jamie Oliver Steak Knives or Forks
+[2015-08-14 15:02:19.538000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:19.846000] DEBUG: using normal price
+[2015-08-14 15:02:19.915000] DEBUG: Johnsonville Dinner or Breakfast Sausages
+[2015-08-14 15:02:19.915000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 3 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:02:20.155000] DEBUG: using normal price
+[2015-08-14 15:02:20.197000] DEBUG: Jumbo Sea Scallops
+[2015-08-14 15:02:20.197000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight: 100 G  points:   promotion:   additional info: 
+
+[2015-08-14 15:02:20.419000] DEBUG: using normal price
+[2015-08-14 15:02:20.462000] DEBUG: Kashi Granola or Fruit Bars
+[2015-08-14 15:02:20.462000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:02:20.701000] DEBUG: using normal price
+[2015-08-14 15:02:20.747000] DEBUG: Kellogg's Eggo Waffles
+[2015-08-14 15:02:20.747000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:20.955000] DEBUG: using normal price
+[2015-08-14 15:02:20.997000] DEBUG: Kellogg's Special K Cereal Bars or Crisps
+[2015-08-14 15:02:20.997000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:21.187000] DEBUG: using normal price
+[2015-08-14 15:02:21.227000] DEBUG: Kraft Cheese Bars
+[2015-08-14 15:02:21.227000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:21.518000] DEBUG: using normal price
+[2015-08-14 15:02:21.561000] DEBUG: Kraft Salad Dressing
+[2015-08-14 15:02:21.561000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:21.753000] DEBUG: using normal price
+[2015-08-14 15:02:29.846000] DEBUG: Unable to get item story
+[2015-08-14 15:02:29.846000] DEBUG: La Grille Seasoning
+[2015-08-14 15:02:29.846000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:30.088000] DEBUG: using normal price
+[2015-08-14 15:02:37.759000] DEBUG: Unable to get item story
+[2015-08-14 15:02:37.759000] DEBUG: Large Bartlett Pears
+[2015-08-14 15:02:37.759000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:02:37.931000] DEBUG: using normal price
+[2015-08-14 15:02:46.280000] DEBUG: Unable to get item story
+[2015-08-14 15:02:46.280000] DEBUG: Large Whole Seedless Watermelons
+[2015-08-14 15:02:46.280000] DEBUG: price: $1.49  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:02:46.456000] DEBUG: using normal price
+[2015-08-14 15:02:46.492000] DEBUG: Lavazza Coffee
+[2015-08-14 15:02:46.492000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:02:46.650000] DEBUG: using normal price
+[2015-08-14 15:02:46.715000] DEBUG: Lay's Family Size Chips
+[2015-08-14 15:02:46.715000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:46.908000] DEBUG: using normal price
+[2015-08-14 15:02:46.944000] DEBUG: Lysol Disinfecting Wipes
+[2015-08-14 15:02:46.944000] DEBUG: price: $8.00  each: $4.29   quantity: 2  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:02:46.999000] DEBUG: using uneven price
+[2015-08-14 15:02:47.020000] DEBUG: 
+[2015-08-14 15:02:54.600000] DEBUG: Unable to get item story
+[2015-08-14 15:02:54.600000] DEBUG: Made Fresh Daily Regular or Greek Yogurt Bowls
+[2015-08-14 15:02:54.600000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:02:54.762000] DEBUG: using normal price
+[2015-08-14 15:03:02.163000] DEBUG: Unable to get item story
+[2015-08-14 15:03:02.163000] DEBUG: Made Fresh Daily Sliced Strawberries or Pineapple Strawberry Bowls
+[2015-08-14 15:03:02.163000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:03:02.357000] DEBUG: using normal price
+[2015-08-14 15:03:02.396000] DEBUG: Magnum Ice Cream Bars
+[2015-08-14 15:03:02.396000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:02.555000] DEBUG: using normal price
+[2015-08-14 15:03:02.616000] DEBUG: Maple Leaf Prime Chicken Wings Strips, Nuggets or Burgers
+[2015-08-14 15:03:02.616000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points: 100  promotion: BUY 2 EARN +100 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:02.785000] DEBUG: using normal price
+[2015-08-14 15:03:02.822000] DEBUG: Maple Leaf, Ready Crisp or Natural Selections Bacon
+[2015-08-14 15:03:02.822000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:02.988000] DEBUG: using normal price
+[2015-08-14 15:03:03.020000] DEBUG: MaraNatha Almond Butter
+[2015-08-14 15:03:03.020000] DEBUG: price: $7.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:03.209000] DEBUG: using normal price
+[2015-08-14 15:03:03.245000] DEBUG: McCain Deep 'n Delicious Cakes
+[2015-08-14 15:03:03.245000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY 3 PARTICIPATING MCCAIN PRODUCTS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:03.405000] DEBUG: using normal price
+[2015-08-14 15:03:03.440000] DEBUG: McCain Fries or Hashbrowns
+[2015-08-14 15:03:03.440000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 3 PARTICIPATING MCCAIN PRODUCTS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:03.598000] DEBUG: using normal price
+[2015-08-14 15:03:03.628000] DEBUG: McCain Pizza Pockets
+[2015-08-14 15:03:03.628000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 3 PARTICIPATING MCCAIN PRODUCTS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:03.817000] DEBUG: using normal price
+[2015-08-14 15:03:03.853000] DEBUG: Minute Maid, Five Alive or Nestea Tetra Drinks
+[2015-08-14 15:03:03.853000] DEBUG: price: $3.29  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:04.012000] DEBUG: using normal price
+[2015-08-14 15:03:04.045000] DEBUG: Minute Rice Cups
+[2015-08-14 15:03:04.045000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points: 3  promotion: BUY 2 EARN +3 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:04.230000] DEBUG: using normal price
+[2015-08-14 15:03:04.267000] DEBUG: Nature Valley Granola or Treat Bars
+[2015-08-14 15:03:04.267000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points: 20  promotion: BUY 5 EARN +20 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:04.430000] DEBUG: using normal price
+[2015-08-14 15:03:04.465000] DEBUG: Nature's Path Granola Bars
+[2015-08-14 15:03:04.465000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:04.625000] DEBUG: using normal price
+[2015-08-14 15:03:04.659000] DEBUG: Nestea, Five Alive, Minute Maid or Fruitopia
+[2015-08-14 15:03:04.659000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:04.848000] DEBUG: using normal price
+[2015-08-14 15:03:04.883000] DEBUG: Nestlé Gerber Cereal
+[2015-08-14 15:03:04.883000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:05.045000] DEBUG: using normal price
+[2015-08-14 15:03:05.080000] DEBUG: Nestlé Gerber Snacking
+[2015-08-14 15:03:05.080000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:05.242000] DEBUG: using normal price
+[2015-08-14 15:03:05.276000] DEBUG: Nestlé Toll House, Rolo or Scoops
+[2015-08-14 15:03:05.276000] DEBUG: price: $1.00  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:05.463000] DEBUG: using normal price
+[2015-08-14 15:03:12.965000] DEBUG: Unable to get item story
+[2015-08-14 15:03:12.965000] DEBUG: New York Style Cheese or Jalapeño Cheese Bagels
+[2015-08-14 15:03:12.965000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points: 20  promotion: BUY ANY 3 EARN 20 AIR MILES REWARD MILES  additional info: each ! on these participating bakery cheese products
+
+[2015-08-14 15:03:13.124000] DEBUG: using normal price
+[2015-08-14 15:03:13.158000] DEBUG: Nutella Hazelnut Spread
+[2015-08-14 15:03:13.158000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:13.322000] DEBUG: using normal price
+[2015-08-14 15:03:13.356000] DEBUG: Old El Paso Shells
+[2015-08-14 15:03:13.357000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:13.551000] DEBUG: using normal price
+[2015-08-14 15:03:21.086000] DEBUG: Unable to get item story
+[2015-08-14 15:03:21.086000] DEBUG: Ontario Muskmelons
+[2015-08-14 15:03:21.086000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:21.261000] DEBUG: using normal price
+[2015-08-14 15:03:21.296000] DEBUG: Organic Avocados
+[2015-08-14 15:03:21.296000] DEBUG: price: $4.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:21.459000] DEBUG: using normal price
+[2015-08-14 15:03:29.037000] DEBUG: Unable to get item story
+[2015-08-14 15:03:29.037000] DEBUG: Organic Avocados
+[2015-08-14 15:03:29.037000] DEBUG: price: $4.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:29.207000] DEBUG: using normal price
+[2015-08-14 15:03:36.806000] DEBUG: Unable to get item story
+[2015-08-14 15:03:36.806000] DEBUG: Organic Blueberries
+[2015-08-14 15:03:36.806000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:36.854000] DEBUG: using uneven price
+[2015-08-14 15:03:36.870000] DEBUG: 
+[2015-08-14 15:03:44.701000] DEBUG: Unable to get item story
+[2015-08-14 15:03:44.701000] DEBUG: Organic Green Beans
+[2015-08-14 15:03:44.701000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:44.889000] DEBUG: using normal price
+[2015-08-14 15:03:52.373000] DEBUG: Unable to get item story
+[2015-08-14 15:03:52.373000] DEBUG: Organic Royal Gala Apples
+[2015-08-14 15:03:52.373000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:52.429000] DEBUG: using uneven price
+[2015-08-14 15:03:52.450000] DEBUG: 
+[2015-08-14 15:03:52.486000] DEBUG: Packages of Lou's Quick n' Easy Sliced Peameal Bacon, Sliced Cornmeal Back Bacon or Applewood Smoked Back Bacon
+[2015-08-14 15:03:52.486000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:52.653000] DEBUG: using normal price
+[2015-08-14 15:03:52.689000] DEBUG: Palmolive Dish Detergent
+[2015-08-14 15:03:52.689000] DEBUG: price: $8.00  each: $2.99   quantity: 3  limit:   weight:   points: 10  promotion: BUY 3 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:03:52.879000] DEBUG: using normal price
+[2015-08-14 15:03:52.916000] DEBUG: Pampers Super-Pack Diapers
+[2015-08-14 15:03:52.916000] DEBUG: price: $24.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:03:53.075000] DEBUG: using normal price
+[2015-08-14 15:03:53.111000] DEBUG: Pepsi Mini Cans
+[2015-08-14 15:03:53.111000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: each SPEND $25 EARN +35 AIR MILES reward miles
+
+[2015-08-14 15:03:53.301000] DEBUG: using normal price
+[2015-08-14 15:03:53.336000] DEBUG: Pepsi Soft Drinks
+[2015-08-14 15:03:53.336000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: SPEND $25 EARN +35 AIR MILES reward miles
+
+[2015-08-14 15:03:53.507000] DEBUG: using normal price
+[2015-08-14 15:04:01.060000] DEBUG: Unable to get item story
+[2015-08-14 15:04:01.060000] DEBUG: Pepsi Soft Drinks
+[2015-08-14 15:04:01.060000] DEBUG: price: $9.00  each: $5.49   quantity: 2  limit:   weight:   points:   promotion:   additional info:  SPEND $25 EARN +35 AIR MILES reward miles
+
+[2015-08-14 15:04:01.256000] DEBUG: using normal price
+[2015-08-14 15:04:01.292000] DEBUG: Perugina Tablets
+[2015-08-14 15:04:01.292000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:01.453000] DEBUG: using normal price
+[2015-08-14 15:04:08.999000] DEBUG: Unable to get item story
+[2015-08-14 15:04:08.999000] DEBUG: Phalaenopsis Orchid In Deco Pot
+[2015-08-14 15:04:08.999000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:09.160000] DEBUG: using normal price
+[2015-08-14 15:04:09.197000] DEBUG: Pine-Sol Multi Purpose Cleaner
+[2015-08-14 15:04:09.197000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:09.395000] DEBUG: using normal price
+[2015-08-14 15:04:09.424000] DEBUG: Pinty's Pub &amp; Grill Chicken Wings, Fillets, Burgers or Chunks
+[2015-08-14 15:04:09.424000] DEBUG: price: $12.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:09.480000] DEBUG: using uneven price
+[2015-08-14 15:04:09.501000] DEBUG: 
+[2015-08-14 15:04:09.537000] DEBUG: Pkg of Beef, Chicken Strips or Shrimp
+[2015-08-14 15:04:09.537000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:09.698000] DEBUG: using normal price
+[2015-08-14 15:04:09.732000] DEBUG: Pledge Furniture Spray
+[2015-08-14 15:04:09.732000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:09.920000] DEBUG: using normal price
+[2015-08-14 15:04:09.956000] DEBUG: Pork Loin Centre Chops
+[2015-08-14 15:04:09.956000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:10.122000] DEBUG: using normal price
+[2015-08-14 15:04:17.826000] DEBUG: Unable to get item story
+[2015-08-14 15:04:17.826000] DEBUG: Pork Loin Combo Chops, 2 Sirloin, 3 Rib Chops
+[2015-08-14 15:04:17.826000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:18.002000] DEBUG: using normal price
+[2015-08-14 15:04:18.037000] DEBUG: Post Cereals
+[2015-08-14 15:04:18.037000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:18.197000] DEBUG: using normal price
+[2015-08-14 15:04:18.231000] DEBUG: Powerade
+[2015-08-14 15:04:18.231000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:18.416000] DEBUG: using normal price
+[2015-08-14 15:04:18.460000] DEBUG: Primo Pasta Sauce
+[2015-08-14 15:04:18.460000] DEBUG: price: $5.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:18.624000] DEBUG: using normal price
+[2015-08-14 15:04:18.659000] DEBUG: Quaker Granola Bars
+[2015-08-14 15:04:18.659000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:18.825000] DEBUG: using normal price
+[2015-08-14 15:04:18.856000] DEBUG: Real Dairy or Confectionery Tubs
+[2015-08-14 15:04:18.856000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:19.043000] DEBUG: using normal price
+[2015-08-14 15:04:19.080000] DEBUG: Red, Green or Black Seedless Grapes
+[2015-08-14 15:04:19.080000] DEBUG: price: $1.77  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:19.244000] DEBUG: using normal price
+[2015-08-14 15:04:19.274000] DEBUG: Red, Yellow or Orange Sweet Peppers
+[2015-08-14 15:04:19.274000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:19.451000] DEBUG: using normal price
+[2015-08-14 15:04:19.486000] DEBUG: Reese Mini Bag
+[2015-08-14 15:04:19.486000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 5 ITEMS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:04:19.680000] DEBUG: using normal price
+[2015-08-14 15:04:19.721000] DEBUG: Reser's Salads
+[2015-08-14 15:04:19.721000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:19.886000] DEBUG: using normal price
+[2015-08-14 15:04:19.917000] DEBUG: Rockstar Energy
+[2015-08-14 15:04:19.917000] DEBUG: price: $7.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: SPEND $25 EARN +35 AIR MILES reward miles
+
+[2015-08-14 15:04:20.102000] DEBUG: using normal price
+[2015-08-14 15:04:20.138000] DEBUG: Royale Bathroom Tissue
+[2015-08-14 15:04:20.138000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points: 20  promotion: BUY ANY 3 ITEMS EARN +20 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:04:20.306000] DEBUG: using normal price
+[2015-08-14 15:04:20.341000] DEBUG: Schneiders Lunchmate Stackers, Kits, Lunch Box or Ham Steaks
+[2015-08-14 15:04:20.341000] DEBUG: price: $10.00  each: $2.99   quantity: 5  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:20.501000] DEBUG: using normal price
+[2015-08-14 15:04:20.532000] DEBUG: Schneiders Olde Fashioned Ham or Burns Honey Maple Ham
+[2015-08-14 15:04:20.532000] DEBUG: price: $2.29  each:    quantity: 1  limit:   weight: 100 g  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:20.720000] DEBUG: using normal price
+[2015-08-14 15:04:20.753000] DEBUG: Schneiders Pepperettes
+[2015-08-14 15:04:20.753000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:04:20.921000] DEBUG: using normal price
+[2015-08-14 15:04:28.561000] DEBUG: Unable to get item story
+[2015-08-14 15:04:28.561000] DEBUG: Schwartz's Smoked Montreal Deli Meat
+[2015-08-14 15:04:28.561000] DEBUG: price: $11.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:04:28.738000] DEBUG: using normal price
+[2015-08-14 15:04:28.776000] DEBUG: Scope Mouthwash
+[2015-08-14 15:04:28.776000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:28.949000] DEBUG: using normal price
+[2015-08-14 15:04:29] DEBUG: Sea Delight Swordfish or Tuna Steaks
+[2015-08-14 15:04:29] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points: 4  promotion: BUY 1 EARN +4 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:04:29.191000] DEBUG: using normal price
+[2015-08-14 15:04:36.795000] DEBUG: Unable to get item story
+[2015-08-14 15:04:36.795000] DEBUG: Sealtest Milk
+[2015-08-14 15:04:36.795000] DEBUG: price: $3.97  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:36.860000] DEBUG: using uneven price
+[2015-08-14 15:04:36.880000] DEBUG: 
+[2015-08-14 15:04:36.918000] DEBUG: Seasoned Flattened Chicken
+[2015-08-14 15:04:36.918000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:37.092000] DEBUG: using normal price
+[2015-08-14 15:04:44.749000] DEBUG: Unable to get item story
+[2015-08-14 15:04:44.749000] DEBUG: Seedless Mini Cucumbers
+[2015-08-14 15:04:44.749000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:44.807000] DEBUG: using uneven price
+[2015-08-14 15:04:44.828000] DEBUG: 
+[2015-08-14 15:04:44.864000] DEBUG: Sensations by Compliments Chicken Breasts, Wings, Pork Back or Side Ribs
+[2015-08-14 15:04:44.864000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:44.919000] DEBUG: using uneven price
+[2015-08-14 15:04:44.940000] DEBUG: 
+[2015-08-14 15:04:44.970000] DEBUG: Sensations by Compliments Freshwater 16/20 Shrimp and Sensations by Compliments Herb &amp; Garlic Shrimp
+[2015-08-14 15:04:44.971000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:45.157000] DEBUG: using normal price
+[2015-08-14 15:04:45.196000] DEBUG: Sensations by Compliments Italian Soda
+[2015-08-14 15:04:45.196000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:45.373000] DEBUG: using normal price
+[2015-08-14 15:04:45.411000] DEBUG: Sensations by Compliments Jumbo Black Tiger Shrimp
+[2015-08-14 15:04:45.411000] DEBUG: price: $14.99  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 1 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:04:45.607000] DEBUG: using normal price
+[2015-08-14 15:04:45.641000] DEBUG: Sensations by Compliments Salsa
+[2015-08-14 15:04:45.641000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:45.826000] DEBUG: using normal price
+[2015-08-14 15:04:45.864000] DEBUG: Sensations by Compliments Whole Chicken
+[2015-08-14 15:04:45.864000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:46.033000] DEBUG: using normal price
+[2015-08-14 15:04:46.071000] DEBUG: Sensations by Compliments Whole or Split Chicken Wings
+[2015-08-14 15:04:46.071000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:46.248000] DEBUG: using normal price
+[2015-08-14 15:04:46.312000] DEBUG: Sterling Silver Inside Round Steaks
+[2015-08-14 15:04:46.312000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:46.484000] DEBUG: using normal price
+[2015-08-14 15:04:46.522000] DEBUG: Sterling Silver T-Bone Steaks
+[2015-08-14 15:04:46.522000] DEBUG: price: $16.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:46.688000] DEBUG: using normal price
+[2015-08-14 15:04:54.216000] DEBUG: Unable to get item story
+[2015-08-14 15:04:54.216000] DEBUG: Store Made Pork Sausages
+[2015-08-14 15:04:54.216000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:04:54.395000] DEBUG: using normal price
+[2015-08-14 15:04:54.429000] DEBUG: Stouffer's Sauté Sensations
+[2015-08-14 15:04:54.429000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:54.600000] DEBUG: using normal price
+[2015-08-14 15:04:54.635000] DEBUG: Stouffer's, Lean Cuisine or Bistro Entrées
+[2015-08-14 15:04:54.635000] DEBUG: price: $6.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:54.830000] DEBUG: using normal price
+[2015-08-14 15:04:54.865000] DEBUG: Summer Fresh Snack 'n Go Hummus
+[2015-08-14 15:04:54.865000] DEBUG: price: $5.00  each: $1.99   quantity: 4  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:04:55.031000] DEBUG: using normal price
+[2015-08-14 15:05:02.960000] DEBUG: Unable to get item story
+[2015-08-14 15:05:02.960000] DEBUG: Sunflower Bouquet
+[2015-08-14 15:05:02.960000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:03.022000] DEBUG: using uneven price
+[2015-08-14 15:05:03.042000] DEBUG: 
+[2015-08-14 15:05:10.602000] DEBUG: Unable to get item story
+[2015-08-14 15:05:10.602000] DEBUG: Sunflower Fruit or Vegetable Tray
+[2015-08-14 15:05:10.602000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:10.776000] DEBUG: using normal price
+[2015-08-14 15:05:10.812000] DEBUG: Tassimo T-Discs
+[2015-08-14 15:05:10.812000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:05:10.972000] DEBUG: using normal price
+[2015-08-14 15:05:11.008000] DEBUG: Tetley Orange Pekoe, Bold or Ceylon Tea
+[2015-08-14 15:05:11.008000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:11.188000] DEBUG: using normal price
+[2015-08-14 15:05:18.647000] DEBUG: Unable to get item story
+[2015-08-14 15:05:18.647000] DEBUG: The Canadian Pork or Turkey Burger
+[2015-08-14 15:05:18.647000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:18.822000] DEBUG: using normal price
+[2015-08-14 15:05:18.858000] DEBUG: Thirsty Buddha Coconut Water or Good Stuff Coconut Water
+[2015-08-14 15:05:18.858000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:19.040000] DEBUG: using normal price
+[2015-08-14 15:05:19.076000] DEBUG: Tide Laundry Detergent
+[2015-08-14 15:05:19.076000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:19.240000] DEBUG: using normal price
+[2015-08-14 15:05:19.275000] DEBUG: Tropicana Pure Premium Orange Juice
+[2015-08-14 15:05:19.275000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:19.438000] DEBUG: using normal price
+[2015-08-14 15:05:19.473000] DEBUG: Twizzlers
+[2015-08-14 15:05:19.473000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 5 ITEMS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:05:19.661000] DEBUG: using normal price
+[2015-08-14 15:05:19.696000] DEBUG: Vachon Jos Louis, Ah Caramel or 1/2 Moons
+[2015-08-14 15:05:19.696000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:05:19.858000] DEBUG: using normal price
+[2015-08-14 15:05:27.377000] DEBUG: Unable to get item story
+[2015-08-14 15:05:27.377000] DEBUG: Veal Leg Scallopini
+[2015-08-14 15:05:27.377000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:05:27.567000] DEBUG: using normal price
+[2015-08-14 15:05:27.603000] DEBUG: Villaggio Bread
+[2015-08-14 15:05:27.603000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points: 25  promotion: BUY 2 EARN +25 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:05:27.783000] DEBUG: using normal price
+[2015-08-14 15:05:27.820000] DEBUG: Way Better Snacks
+[2015-08-14 15:05:27.820000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:27.985000] DEBUG: using normal price
+[2015-08-14 15:05:28.021000] DEBUG: Zucchini Squash
+[2015-08-14 15:05:28.021000] DEBUG: price: $0.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:05:28.184000] DEBUG: using normal price
+[2015-08-14 15:05:28.214000] DEBUG: belVita Breakfast Cookies
+[2015-08-14 15:05:28.214000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:05:28.504000] DEBUG: using normal price
+[2015-08-14 15:05:35.929000] DEBUG: Unable to get item story
+[2015-08-14 15:05:35.929000] DEBUG: Aspen Ridge Prime Rib Steaks
+[2015-08-14 15:05:35.929000] DEBUG: price: $18.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:36] DEBUG: using uneven price
+[2015-08-14 15:05:36.018000] DEBUG: 
+[2015-08-14 15:05:36.082000] DEBUG: Beef Back Ribs
+[2015-08-14 15:05:36.082000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:36.244000] DEBUG: using normal price
+[2015-08-14 15:05:36.307000] DEBUG: Beef Tenderloin
+[2015-08-14 15:05:36.307000] DEBUG: price: $13.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:36.487000] DEBUG: using normal price
+[2015-08-14 15:05:36.549000] DEBUG: Blue Goose Chicken Drumsticks or Thighs
+[2015-08-14 15:05:36.549000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:36.712000] DEBUG: using normal price
+[2015-08-14 15:05:44.253000] DEBUG: Unable to get item story
+[2015-08-14 15:05:44.253000] DEBUG: Canadian Lamb Rack
+[2015-08-14 15:05:44.253000] DEBUG: price: $19.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:44.315000] DEBUG: using uneven price
+[2015-08-14 15:05:44.333000] DEBUG: 
+[2015-08-14 15:05:44.395000] DEBUG: Compliments presents Jamie Oliver Discovers Canada Premium Burgers
+[2015-08-14 15:05:44.395000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:44.558000] DEBUG: using normal price
+[2015-08-14 15:05:44.621000] DEBUG: DuBreton Pork Back Ribs
+[2015-08-14 15:05:44.621000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:44.784000] DEBUG: using normal price
+[2015-08-14 15:05:52.299000] DEBUG: Unable to get item story
+[2015-08-14 15:05:52.299000] DEBUG: Fresh Store Made Beef, Chicken or Pork Kabobs
+[2015-08-14 15:05:52.299000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:52.462000] DEBUG: using normal price
+[2015-08-14 15:05:52.532000] DEBUG: Johnsonville Dinner or Breakfast Sausages
+[2015-08-14 15:05:52.532000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:52.717000] DEBUG: using normal price
+[2015-08-14 15:05:52.787000] DEBUG: Maple Leaf, Ready Crisp or Natural Selections Bacon
+[2015-08-14 15:05:52.787000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:52.845000] DEBUG: using uneven price
+[2015-08-14 15:05:52.863000] DEBUG: 
+[2015-08-14 15:05:52.928000] DEBUG: Packages of Lou's Quick n' Easy Sliced Peameal Bacon, Sliced Cornmeal Back Bacon or Applewood Smoked Back Bacon
+[2015-08-14 15:05:52.928000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:53.093000] DEBUG: using normal price
+[2015-08-14 15:05:53.155000] DEBUG: Pinty's Pub &amp; Grill Chicken Wings, Fillets, Burgers or Chunks
+[2015-08-14 15:05:53.155000] DEBUG: price: $12.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:53.335000] DEBUG: using normal price
+[2015-08-14 15:05:53.400000] DEBUG: Pork Loin Centre Chops
+[2015-08-14 15:05:53.400000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:05:53.563000] DEBUG: using normal price
+[2015-08-14 15:06:01.177000] DEBUG: Unable to get item story
+[2015-08-14 15:06:01.177000] DEBUG: Pork Loin Combo Chops, 2 Sirloin, 3 Rib Chops
+[2015-08-14 15:06:01.177000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:01.358000] DEBUG: using normal price
+[2015-08-14 15:06:01.422000] DEBUG: Schneiders Pepperettes
+[2015-08-14 15:06:01.422000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:01.476000] DEBUG: using uneven price
+[2015-08-14 15:06:01.494000] DEBUG: 
+[2015-08-14 15:06:01.556000] DEBUG: Seasoned Flattened Chicken
+[2015-08-14 15:06:01.556000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:01.747000] DEBUG: using normal price
+[2015-08-14 15:06:01.808000] DEBUG: Sensations by Compliments Whole Chicken
+[2015-08-14 15:06:01.808000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:01.975000] DEBUG: using normal price
+[2015-08-14 15:06:02.036000] DEBUG: Sensations by Compliments Whole or Split Chicken Wings
+[2015-08-14 15:06:02.036000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:02.201000] DEBUG: using normal price
+[2015-08-14 15:06:02.286000] DEBUG: Sterling Silver Inside Round Steaks
+[2015-08-14 15:06:02.286000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:02.453000] DEBUG: using normal price
+[2015-08-14 15:06:02.517000] DEBUG: Sterling Silver T-Bone Steaks
+[2015-08-14 15:06:02.517000] DEBUG: price: $16.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:02.675000] DEBUG: using normal price
+[2015-08-14 15:06:10.141000] DEBUG: Unable to get item story
+[2015-08-14 15:06:10.141000] DEBUG: Store Made Pork Sausages
+[2015-08-14 15:06:10.141000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:10.306000] DEBUG: using normal price
+[2015-08-14 15:06:18.079000] DEBUG: Unable to get item story
+[2015-08-14 15:06:18.079000] DEBUG: The Canadian Pork or Turkey Burger
+[2015-08-14 15:06:18.079000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:18.209000] DEBUG: using normal price
+[2015-08-14 15:06:25.715000] DEBUG: Unable to get item story
+[2015-08-14 15:06:25.715000] DEBUG: Veal Leg Scallopini
+[2015-08-14 15:06:25.715000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:25.888000] DEBUG: using normal price
+[2015-08-14 15:06:33.365000] DEBUG: Unable to get item story
+[2015-08-14 15:06:33.365000] DEBUG: Broccoli
+[2015-08-14 15:06:33.365000] DEBUG: price: $3.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:33.535000] DEBUG: using normal price
+[2015-08-14 15:06:41.013000] DEBUG: Unable to get item story
+[2015-08-14 15:06:41.013000] DEBUG: Celery Stalks
+[2015-08-14 15:06:41.013000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:41.081000] DEBUG: using uneven price
+[2015-08-14 15:06:41.104000] DEBUG: 
+[2015-08-14 15:06:48.547000] DEBUG: Unable to get item story
+[2015-08-14 15:06:48.547000] DEBUG: Compliments Rainbow Sweet Peppers
+[2015-08-14 15:06:48.547000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:48.714000] DEBUG: using normal price
+[2015-08-14 15:06:48.778000] DEBUG: Field Tomatoes
+[2015-08-14 15:06:48.778000] DEBUG: price: $0.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:48.836000] DEBUG: using uneven price
+[2015-08-14 15:06:48.855000] DEBUG: 
+[2015-08-14 15:06:56.560000] DEBUG: Unable to get item story
+[2015-08-14 15:06:56.560000] DEBUG: Fruit or Vegetable Kabobs
+[2015-08-14 15:06:56.560000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:06:56.724000] DEBUG: using normal price
+[2015-08-14 15:07:04.288000] DEBUG: Unable to get item story
+[2015-08-14 15:07:04.288000] DEBUG: Large Bartlett Pears
+[2015-08-14 15:07:04.288000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:04.453000] DEBUG: using normal price
+[2015-08-14 15:07:12.218000] DEBUG: Unable to get item story
+[2015-08-14 15:07:12.218000] DEBUG: Large Whole Seedless Watermelons
+[2015-08-14 15:07:12.218000] DEBUG: price: $1.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:12.347000] DEBUG: using normal price
+[2015-08-14 15:07:19.941000] DEBUG: Unable to get item story
+[2015-08-14 15:07:19.941000] DEBUG: Made Fresh Daily Sliced Strawberries or Pineapple Strawberry Bowls
+[2015-08-14 15:07:19.941000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:20.127000] DEBUG: using normal price
+[2015-08-14 15:07:27.634000] DEBUG: Unable to get item story
+[2015-08-14 15:07:27.634000] DEBUG: Ontario Muskmelons
+[2015-08-14 15:07:27.634000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:27.800000] DEBUG: using normal price
+[2015-08-14 15:07:35.287000] DEBUG: Unable to get item story
+[2015-08-14 15:07:35.287000] DEBUG: Organic Avocados
+[2015-08-14 15:07:35.287000] DEBUG: price: $4.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:35.452000] DEBUG: using normal price
+[2015-08-14 15:07:43.060000] DEBUG: Unable to get item story
+[2015-08-14 15:07:43.060000] DEBUG: Organic Blueberries
+[2015-08-14 15:07:43.060000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:43.116000] DEBUG: using uneven price
+[2015-08-14 15:07:43.135000] DEBUG: 
+[2015-08-14 15:07:50.602000] DEBUG: Unable to get item story
+[2015-08-14 15:07:50.602000] DEBUG: Organic Green Beans
+[2015-08-14 15:07:50.602000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:50.762000] DEBUG: using normal price
+[2015-08-14 15:07:58.288000] DEBUG: Unable to get item story
+[2015-08-14 15:07:58.288000] DEBUG: Organic Royal Gala Apples
+[2015-08-14 15:07:58.288000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:58.454000] DEBUG: using normal price
+[2015-08-14 15:07:58.517000] DEBUG: Red, Green or Black Seedless Grapes
+[2015-08-14 15:07:58.517000] DEBUG: price: $1.77  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:58.702000] DEBUG: using normal price
+[2015-08-14 15:07:58.767000] DEBUG: Red, Yellow or Orange Sweet Peppers
+[2015-08-14 15:07:58.767000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:07:58.934000] DEBUG: using normal price
+[2015-08-14 15:08:06.549000] DEBUG: Unable to get item story
+[2015-08-14 15:08:06.549000] DEBUG: Seedless Mini Cucumbers
+[2015-08-14 15:08:06.549000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:06.596000] DEBUG: using uneven price
+[2015-08-14 15:08:06.610000] DEBUG: 
+[2015-08-14 15:08:14.299000] DEBUG: Unable to get item story
+[2015-08-14 15:08:14.299000] DEBUG: Sunflower Fruit or Vegetable Tray
+[2015-08-14 15:08:14.299000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:14.466000] DEBUG: using normal price
+[2015-08-14 15:08:14.528000] DEBUG: Zucchini Squash
+[2015-08-14 15:08:14.528000] DEBUG: price: $0.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:14.713000] DEBUG: using normal price
+[2015-08-14 15:08:14.785000] DEBUG: A Taste of Thai Lite Coconut Milk
+[2015-08-14 15:08:14.785000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:14.949000] DEBUG: using normal price
+[2015-08-14 15:08:15.008000] DEBUG: Alberto European Styling
+[2015-08-14 15:08:15.008000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:15.156000] DEBUG: using normal price
+[2015-08-14 15:08:15.224000] DEBUG: Arm &amp; Hammer Cat Litter
+[2015-08-14 15:08:15.224000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:15.349000] DEBUG: using normal price
+[2015-08-14 15:08:15.399000] DEBUG: Astro Athentikos Greek Yogurt
+[2015-08-14 15:08:15.399000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:15.522000] DEBUG: using normal price
+[2015-08-14 15:08:15.571000] DEBUG: Baby Gourmet Pouches
+[2015-08-14 15:08:15.571000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:15.717000] DEBUG: using normal price
+[2015-08-14 15:08:15.765000] DEBUG: Beneful Healthy Smile Dog Treats
+[2015-08-14 15:08:15.765000] DEBUG: price: $3.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:15.892000] DEBUG: using normal price
+[2015-08-14 15:08:15.942000] DEBUG: Bottle Green Beverage
+[2015-08-14 15:08:15.942000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:16.096000] DEBUG: using normal price
+[2015-08-14 15:08:16.154000] DEBUG: Brookside Chocolate
+[2015-08-14 15:08:16.154000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:16.318000] DEBUG: using normal price
+[2015-08-14 15:08:16.380000] DEBUG: Camino Fair Trade Organic Chocolate
+[2015-08-14 15:08:16.380000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:16.566000] DEBUG: using normal price
+[2015-08-14 15:08:16.631000] DEBUG: Catelli Pasta
+[2015-08-14 15:08:16.631000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:16.804000] DEBUG: using normal price
+[2015-08-14 15:08:16.878000] DEBUG: Cavendish Fries
+[2015-08-14 15:08:16.878000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:17.043000] DEBUG: using normal price
+[2015-08-14 15:08:17.134000] DEBUG: Chapman's Gelato
+[2015-08-14 15:08:17.134000] DEBUG: price: $6.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:17.291000] DEBUG: using normal price
+[2015-08-14 15:08:17.352000] DEBUG: Cheemo Perogies
+[2015-08-14 15:08:17.352000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:17.514000] DEBUG: using normal price
+[2015-08-14 15:08:17.575000] DEBUG: Cloverleaf Albacore Tuna
+[2015-08-14 15:08:17.575000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:17.765000] DEBUG: using normal price
+[2015-08-14 15:08:17.828000] DEBUG: Comet Disinfecting Cleaners
+[2015-08-14 15:08:17.828000] DEBUG: price: $2.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:17.991000] DEBUG: using normal price
+[2015-08-14 15:08:18.054000] DEBUG: Compliments Balance Frozen Yogourt
+[2015-08-14 15:08:18.055000] DEBUG: price: $8.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:18.218000] DEBUG: using normal price
+[2015-08-14 15:08:18.281000] DEBUG: Compliments Balance Microwaveable Popcorn
+[2015-08-14 15:08:18.281000] DEBUG: price: $4.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:18.470000] DEBUG: using normal price
+[2015-08-14 15:08:18.534000] DEBUG: Compliments Canned Dog Food
+[2015-08-14 15:08:18.534000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:18.699000] DEBUG: using normal price
+[2015-08-14 15:08:26.149000] DEBUG: Unable to get item story
+[2015-08-14 15:08:26.149000] DEBUG: Compliments Large Eggs
+[2015-08-14 15:08:26.149000] DEBUG: price: $2.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:26.341000] DEBUG: using normal price
+[2015-08-14 15:08:26.400000] DEBUG: Compliments Latex Gloves
+[2015-08-14 15:08:26.400000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:26.568000] DEBUG: using normal price
+[2015-08-14 15:08:26.655000] DEBUG: Compliments Natural Spring Water
+[2015-08-14 15:08:26.655000] DEBUG: price: $1.00  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:26.709000] DEBUG: using uneven price
+[2015-08-14 15:08:26.727000] DEBUG: 
+[2015-08-14 15:08:34.247000] DEBUG: Unable to get item story
+[2015-08-14 15:08:34.247000] DEBUG: Compliments Nuts
+[2015-08-14 15:08:34.247000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:34.316000] DEBUG: using uneven price
+[2015-08-14 15:08:34.334000] DEBUG: 
+[2015-08-14 15:08:42.082000] DEBUG: Unable to get item story
+[2015-08-14 15:08:42.082000] DEBUG: Compliments Organic Peanut Butter
+[2015-08-14 15:08:42.082000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:42.218000] DEBUG: using normal price
+[2015-08-14 15:08:42.266000] DEBUG: Compliments Pacific White Shrimp
+[2015-08-14 15:08:42.266000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:42.389000] DEBUG: using normal price
+[2015-08-14 15:08:42.438000] DEBUG: Compliments Pancake Mix
+[2015-08-14 15:08:42.438000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:42.602000] DEBUG: using normal price
+[2015-08-14 15:08:50.270000] DEBUG: Unable to get item story
+[2015-08-14 15:08:50.270000] DEBUG: Compliments or Compliments Balance Tortillas
+[2015-08-14 15:08:50.270000] DEBUG: price: $2.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:50.435000] DEBUG: using normal price
+[2015-08-14 15:08:50.500000] DEBUG: Crest 3D White Toothpaste
+[2015-08-14 15:08:50.500000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:50.658000] DEBUG: using normal price
+[2015-08-14 15:08:50.747000] DEBUG: Dare Ultimate Cookies, Viva Puffs or Wagon Wheels
+[2015-08-14 15:08:50.747000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:50.915000] DEBUG: using normal price
+[2015-08-14 15:08:50.979000] DEBUG: Delissio Rising Crust or Pizzeria Pizza
+[2015-08-14 15:08:50.979000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:51.132000] DEBUG: using normal price
+[2015-08-14 15:08:51.179000] DEBUG: Delissio Rustico Pizza
+[2015-08-14 15:08:51.179000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:51.331000] DEBUG: using normal price
+[2015-08-14 15:08:51.380000] DEBUG: Diana Sauce
+[2015-08-14 15:08:51.380000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:51.507000] DEBUG: using normal price
+[2015-08-14 15:08:51.555000] DEBUG: Doi Chang Organic Coffee
+[2015-08-14 15:08:51.555000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:51.681000] DEBUG: using normal price
+[2015-08-14 15:08:51.737000] DEBUG: Dove, Degree Clinical Deodorant
+[2015-08-14 15:08:51.737000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:51.943000] DEBUG: using normal price
+[2015-08-14 15:08:51.991000] DEBUG: Dr. Oetker Ristorante or Panebello Pizza
+[2015-08-14 15:08:51.991000] DEBUG: price: $4.44  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:52.045000] DEBUG: using uneven price
+[2015-08-14 15:08:52.060000] DEBUG: 
+[2015-08-14 15:08:59.814000] DEBUG: Unable to get item story
+[2015-08-14 15:08:59.814000] DEBUG: Eat Smart Salad Kits
+[2015-08-14 15:08:59.814000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:08:59.987000] DEBUG: using normal price
+[2015-08-14 15:09:00.055000] DEBUG: Effervé Lemonade
+[2015-08-14 15:09:00.055000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:00.228000] DEBUG: using normal price
+[2015-08-14 15:09:00.278000] DEBUG: Enjoy Life Plentils
+[2015-08-14 15:09:00.278000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:00.408000] DEBUG: using normal price
+[2015-08-14 15:09:00.458000] DEBUG: Fancy Feast Cat Food
+[2015-08-14 15:09:00.458000] DEBUG: price: $0.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:00.583000] DEBUG: using normal price
+[2015-08-14 15:09:00.631000] DEBUG: Fibre 1 Bars
+[2015-08-14 15:09:00.631000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:00.782000] DEBUG: using normal price
+[2015-08-14 15:09:00.835000] DEBUG: Filippo Berio Olive Oil
+[2015-08-14 15:09:00.835000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:00.966000] DEBUG: using normal price
+[2015-08-14 15:09:01.015000] DEBUG: Frank's Red Hot
+[2015-08-14 15:09:01.015000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:01.182000] DEBUG: using normal price
+[2015-08-14 15:09:01.247000] DEBUG: Friskies Party Mix Cat Treats
+[2015-08-14 15:09:01.247000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:01.414000] DEBUG: using normal price
+[2015-08-14 15:09:01.479000] DEBUG: Fudgsicle or Creamsicle
+[2015-08-14 15:09:01.479000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:01.634000] DEBUG: using normal price
+[2015-08-14 15:09:01.697000] DEBUG: Furlani Texas Garlic Toast
+[2015-08-14 15:09:01.697000] DEBUG: price: $3.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:01.891000] DEBUG: using normal price
+[2015-08-14 15:09:01.956000] DEBUG: Gatorade
+[2015-08-14 15:09:01.956000] DEBUG: price: $5.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:02.118000] DEBUG: using normal price
+[2015-08-14 15:09:02.179000] DEBUG: Gay Lea Spreadables Butter
+[2015-08-14 15:09:02.179000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:02.344000] DEBUG: using normal price
+[2015-08-14 15:09:02.408000] DEBUG: Glad Kitchen Catchers
+[2015-08-14 15:09:02.408000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:02.601000] DEBUG: using normal price
+[2015-08-14 15:09:02.674000] DEBUG: Guy Fieri BBQ Sauce
+[2015-08-14 15:09:02.674000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:02.846000] DEBUG: using normal price
+[2015-08-14 15:09:02.912000] DEBUG: Healthy Choice Gourmet Steamers or VH Steamers
+[2015-08-14 15:09:02.912000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:03.077000] DEBUG: using normal price
+[2015-08-14 15:09:03.167000] DEBUG: Hellmann's Mayonnaise
+[2015-08-14 15:09:03.167000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:03.346000] DEBUG: using normal price
+[2015-08-14 15:09:03.412000] DEBUG: Herbal Essence Hair Care
+[2015-08-14 15:09:03.412000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:03.576000] DEBUG: using normal price
+[2015-08-14 15:09:03.639000] DEBUG: Hershey's Kingsize Bar
+[2015-08-14 15:09:03.639000] DEBUG: price: $1.25  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:03.831000] DEBUG: using normal price
+[2015-08-14 15:09:03.897000] DEBUG: Hershey's Pouches
+[2015-08-14 15:09:03.897000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:04.057000] DEBUG: using normal price
+[2015-08-14 15:09:11.528000] DEBUG: Unable to get item story
+[2015-08-14 15:09:11.528000] DEBUG: Huggies Baby Wipes
+[2015-08-14 15:09:11.528000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:11.697000] DEBUG: using normal price
+[2015-08-14 15:09:11.763000] DEBUG: Jamie Oliver Glass Water Bottle and set of 4 Glasses
+[2015-08-14 15:09:11.763000] DEBUG: price: $14.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:11.934000] DEBUG: using normal price
+[2015-08-14 15:09:12] DEBUG: Jamie Oliver Steak Knives or Forks
+[2015-08-14 15:09:12] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:12.195000] DEBUG: using normal price
+[2015-08-14 15:09:12.257000] DEBUG: Kashi Granola or Fruit Bars
+[2015-08-14 15:09:12.257000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:12.416000] DEBUG: using normal price
+[2015-08-14 15:09:12.475000] DEBUG: Kellogg's Eggo Waffles
+[2015-08-14 15:09:12.475000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:12.641000] DEBUG: using normal price
+[2015-08-14 15:09:12.706000] DEBUG: Kellogg's Special K Cereal Bars or Crisps
+[2015-08-14 15:09:12.706000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:12.915000] DEBUG: using normal price
+[2015-08-14 15:09:12.976000] DEBUG: Kraft Salad Dressing
+[2015-08-14 15:09:12.976000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:13.142000] DEBUG: using normal price
+[2015-08-14 15:09:20.713000] DEBUG: Unable to get item story
+[2015-08-14 15:09:20.713000] DEBUG: La Grille Seasoning
+[2015-08-14 15:09:20.713000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:20.894000] DEBUG: using normal price
+[2015-08-14 15:09:20.959000] DEBUG: Lavazza Coffee
+[2015-08-14 15:09:20.959000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:21.139000] DEBUG: using normal price
+[2015-08-14 15:09:21.204000] DEBUG: Lay's Family Size Chips
+[2015-08-14 15:09:21.205000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:21.374000] DEBUG: using normal price
+[2015-08-14 15:09:21.439000] DEBUG: Lysol Disinfecting Wipes
+[2015-08-14 15:09:21.439000] DEBUG: price: $8.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:21.603000] DEBUG: using normal price
+[2015-08-14 15:09:21.668000] DEBUG: Magnum Ice Cream Bars
+[2015-08-14 15:09:21.668000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:21.859000] DEBUG: using normal price
+[2015-08-14 15:09:21.923000] DEBUG: Maple Leaf Prime Chicken Wings Strips, Nuggets or Burgers
+[2015-08-14 15:09:21.923000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:22.083000] DEBUG: using normal price
+[2015-08-14 15:09:22.147000] DEBUG: MaraNatha Almond Butter
+[2015-08-14 15:09:22.147000] DEBUG: price: $7.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:22.308000] DEBUG: using normal price
+[2015-08-14 15:09:22.398000] DEBUG: McCain Deep 'n Delicious Cakes
+[2015-08-14 15:09:22.398000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:22.572000] DEBUG: using normal price
+[2015-08-14 15:09:22.639000] DEBUG: McCain Fries or Hashbrowns
+[2015-08-14 15:09:22.639000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:22.809000] DEBUG: using normal price
+[2015-08-14 15:09:22.874000] DEBUG: McCain Pizza Pockets
+[2015-08-14 15:09:22.874000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:23.063000] DEBUG: using normal price
+[2015-08-14 15:09:23.127000] DEBUG: Minute Maid, Five Alive or Nestea Tetra Drinks
+[2015-08-14 15:09:23.127000] DEBUG: price: $3.29  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:23.295000] DEBUG: using normal price
+[2015-08-14 15:09:23.358000] DEBUG: Minute Rice Cups
+[2015-08-14 15:09:23.358000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:23.544000] DEBUG: using normal price
+[2015-08-14 15:09:23.609000] DEBUG: Nature Valley Granola or Treat Bars
+[2015-08-14 15:09:23.609000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:23.775000] DEBUG: using normal price
+[2015-08-14 15:09:23.844000] DEBUG: Nature's Path Granola Bars
+[2015-08-14 15:09:23.844000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:24.014000] DEBUG: using normal price
+[2015-08-14 15:09:24.101000] DEBUG: Nestea, Five Alive, Minute Maid or Fruitopia
+[2015-08-14 15:09:24.101000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:24.264000] DEBUG: using normal price
+[2015-08-14 15:09:24.328000] DEBUG: Nestlé Gerber Cereal
+[2015-08-14 15:09:24.328000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:24.496000] DEBUG: using normal price
+[2015-08-14 15:09:24.563000] DEBUG: Nestlé Gerber Snacking
+[2015-08-14 15:09:24.563000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:24.758000] DEBUG: using normal price
+[2015-08-14 15:09:24.825000] DEBUG: Nestlé Toll House, Rolo or Scoops
+[2015-08-14 15:09:24.825000] DEBUG: price: $1.00  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:24.993000] DEBUG: using normal price
+[2015-08-14 15:09:25.057000] DEBUG: Nutella Hazelnut Spread
+[2015-08-14 15:09:25.057000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:25.220000] DEBUG: using normal price
+[2015-08-14 15:09:25.286000] DEBUG: Old El Paso Shells
+[2015-08-14 15:09:25.286000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:25.479000] DEBUG: using normal price
+[2015-08-14 15:09:25.546000] DEBUG: Organic Avocados
+[2015-08-14 15:09:25.546000] DEBUG: price: $4.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:25.717000] DEBUG: using normal price
+[2015-08-14 15:09:25.781000] DEBUG: Palmolive Dish Detergent
+[2015-08-14 15:09:25.781000] DEBUG: price: $8.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:25.947000] DEBUG: using normal price
+[2015-08-14 15:09:26.009000] DEBUG: Pampers Super-Pack Diapers
+[2015-08-14 15:09:26.009000] DEBUG: price: $24.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:26.207000] DEBUG: using normal price
+[2015-08-14 15:09:26.267000] DEBUG: Pepsi Mini Cans
+[2015-08-14 15:09:26.267000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:26.434000] DEBUG: using normal price
+[2015-08-14 15:09:26.493000] DEBUG: Pepsi Soft Drinks
+[2015-08-14 15:09:26.493000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:26.665000] DEBUG: using normal price
+[2015-08-14 15:09:34.224000] DEBUG: Unable to get item story
+[2015-08-14 15:09:34.224000] DEBUG: Pepsi Soft Drinks
+[2015-08-14 15:09:34.224000] DEBUG: price: $9.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:34.427000] DEBUG: using normal price
+[2015-08-14 15:09:34.491000] DEBUG: Perugina Tablets
+[2015-08-14 15:09:34.491000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:34.667000] DEBUG: using normal price
+[2015-08-14 15:09:34.756000] DEBUG: Pine-Sol Multi Purpose Cleaner
+[2015-08-14 15:09:34.756000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:34.813000] DEBUG: using uneven price
+[2015-08-14 15:09:34.835000] DEBUG: 
+[2015-08-14 15:09:34.901000] DEBUG: Pkg of Beef, Chicken Strips or Shrimp
+[2015-08-14 15:09:34.901000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:35.069000] DEBUG: using normal price
+[2015-08-14 15:09:35.133000] DEBUG: Pledge Furniture Spray
+[2015-08-14 15:09:35.133000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:35.325000] DEBUG: using normal price
+[2015-08-14 15:09:35.387000] DEBUG: Post Cereals
+[2015-08-14 15:09:35.387000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:35.547000] DEBUG: using normal price
+[2015-08-14 15:09:35.612000] DEBUG: Powerade
+[2015-08-14 15:09:35.612000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:35.802000] DEBUG: using normal price
+[2015-08-14 15:09:35.868000] DEBUG: Primo Pasta Sauce
+[2015-08-14 15:09:35.868000] DEBUG: price: $5.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:36.022000] DEBUG: using normal price
+[2015-08-14 15:09:36.074000] DEBUG: Quaker Granola Bars
+[2015-08-14 15:09:36.074000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:36.205000] DEBUG: using normal price
+[2015-08-14 15:09:36.276000] DEBUG: Real Dairy or Confectionery Tubs
+[2015-08-14 15:09:36.276000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:36.404000] DEBUG: using normal price
+[2015-08-14 15:09:36.453000] DEBUG: Reese Mini Bag
+[2015-08-14 15:09:36.453000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:36.582000] DEBUG: using normal price
+[2015-08-14 15:09:36.631000] DEBUG: Reser's Salads
+[2015-08-14 15:09:36.631000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:36.781000] DEBUG: using normal price
+[2015-08-14 15:09:36.831000] DEBUG: Rockstar Energy
+[2015-08-14 15:09:36.831000] DEBUG: price: $7.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:36.959000] DEBUG: using normal price
+[2015-08-14 15:09:37.008000] DEBUG: Royale Bathroom Tissue
+[2015-08-14 15:09:37.008000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:37.151000] DEBUG: using normal price
+[2015-08-14 15:09:37.215000] DEBUG: Scope Mouthwash
+[2015-08-14 15:09:37.215000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:37.407000] DEBUG: using normal price
+[2015-08-14 15:09:45.198000] DEBUG: Unable to get item story
+[2015-08-14 15:09:45.198000] DEBUG: Sealtest Milk
+[2015-08-14 15:09:45.198000] DEBUG: price: $3.97  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:45.252000] DEBUG: using uneven price
+[2015-08-14 15:09:45.266000] DEBUG: 
+[2015-08-14 15:09:45.319000] DEBUG: Sensations by Compliments Chicken Breasts, Wings, Pork Back or Side Ribs
+[2015-08-14 15:09:45.319000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:45.456000] DEBUG: using normal price
+[2015-08-14 15:09:45.506000] DEBUG: Sensations by Compliments Italian Soda
+[2015-08-14 15:09:45.506000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:45.635000] DEBUG: using normal price
+[2015-08-14 15:09:45.685000] DEBUG: Sensations by Compliments Salsa
+[2015-08-14 15:09:45.685000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:45.846000] DEBUG: using normal price
+[2015-08-14 15:09:45.896000] DEBUG: Stouffer's Sauté Sensations
+[2015-08-14 15:09:45.896000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:46.046000] DEBUG: using normal price
+[2015-08-14 15:09:46.112000] DEBUG: Stouffer's, Lean Cuisine or Bistro Entrées
+[2015-08-14 15:09:46.112000] DEBUG: price: $6.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:46.305000] DEBUG: using normal price
+[2015-08-14 15:09:46.371000] DEBUG: Tassimo T-Discs
+[2015-08-14 15:09:46.371000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:46.532000] DEBUG: using normal price
+[2015-08-14 15:09:46.599000] DEBUG: Tetley Orange Pekoe, Bold or Ceylon Tea
+[2015-08-14 15:09:46.599000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:46.794000] DEBUG: using normal price
+[2015-08-14 15:09:46.865000] DEBUG: Thirsty Buddha Coconut Water or Good Stuff Coconut Water
+[2015-08-14 15:09:46.865000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:47.029000] DEBUG: using normal price
+[2015-08-14 15:09:47.093000] DEBUG: Tide Laundry Detergent
+[2015-08-14 15:09:47.093000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:47.285000] DEBUG: using normal price
+[2015-08-14 15:09:47.348000] DEBUG: Tropicana Pure Premium Orange Juice
+[2015-08-14 15:09:47.348000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:47.508000] DEBUG: using normal price
+[2015-08-14 15:09:47.573000] DEBUG: Twizzlers
+[2015-08-14 15:09:47.573000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:47.740000] DEBUG: using normal price
+[2015-08-14 15:09:47.805000] DEBUG: Vachon Jos Louis, Ah Caramel or 1/2 Moons
+[2015-08-14 15:09:47.805000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:48.001000] DEBUG: using normal price
+[2015-08-14 15:09:48.066000] DEBUG: Way Better Snacks
+[2015-08-14 15:09:48.066000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:48.232000] DEBUG: using normal price
+[2015-08-14 15:09:48.297000] DEBUG: belVita Breakfast Cookies
+[2015-08-14 15:09:48.297000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:48.352000] DEBUG: using uneven price
+[2015-08-14 15:09:48.370000] DEBUG: 
+[2015-08-14 15:09:48.431000] DEBUG: 30 Month Aged Parmigiano Reggiano Cheese
+[2015-08-14 15:09:48.431000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:48.620000] DEBUG: using normal price
+[2015-08-14 15:09:56.197000] DEBUG: Unable to get item story
+[2015-08-14 15:09:56.197000] DEBUG: 6" or 8" Cheesecakes
+[2015-08-14 15:09:56.197000] DEBUG: price: $16.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:56.373000] DEBUG: using normal price
+[2015-08-14 15:09:56.437000] DEBUG: Betty Crocker Super Moist Cake Mixes
+[2015-08-14 15:09:56.437000] DEBUG: price: $1.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:56.606000] DEBUG: using normal price
+[2015-08-14 15:09:56.692000] DEBUG: Compliments presents Jamie Oliver Discovers Canada Apple &amp; Blackberry Crisp
+[2015-08-14 15:09:56.692000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:56.870000] DEBUG: using normal price
+[2015-08-14 15:09:56.944000] DEBUG: Dempster's Whole Grains Bread
+[2015-08-14 15:09:56.944000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:09:57.116000] DEBUG: using normal price
+[2015-08-14 15:10:04.630000] DEBUG: Unable to get item story
+[2015-08-14 15:10:04.630000] DEBUG: New York Style Cheese or Jalapeño Cheese Bagels
+[2015-08-14 15:10:04.630000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:04.803000] DEBUG: using normal price
+[2015-08-14 15:10:04.870000] DEBUG: Villaggio Bread
+[2015-08-14 15:10:04.871000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:04.928000] DEBUG: using uneven price
+[2015-08-14 15:10:04.946000] DEBUG: 
+[2015-08-14 15:10:05.037000] DEBUG: 30 Month Aged Parmigiano Reggiano Cheese
+[2015-08-14 15:10:05.037000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:05.218000] DEBUG: using normal price
+[2015-08-14 15:10:05.284000] DEBUG: Anco Danesborg Gouda Cheese
+[2015-08-14 15:10:05.284000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:05.450000] DEBUG: using normal price
+[2015-08-14 15:10:12.988000] DEBUG: Unable to get item story
+[2015-08-14 15:10:12.988000] DEBUG: Gourmet Cheese Sticks
+[2015-08-14 15:10:12.988000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:13.146000] DEBUG: using normal price
+[2015-08-14 15:10:21.027000] DEBUG: Unable to get item story
+[2015-08-14 15:10:21.027000] DEBUG: Gourmet Cheese or Cheese Onion Buns
+[2015-08-14 15:10:21.027000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:21.191000] DEBUG: using normal price
+[2015-08-14 15:10:29.237000] DEBUG: Unable to get item story
+[2015-08-14 15:10:29.237000] DEBUG: Homestyle Cheese Bread
+[2015-08-14 15:10:29.237000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:29.465000] DEBUG: using normal price
+[2015-08-14 15:10:29.555000] DEBUG: Kraft Cheese Bars
+[2015-08-14 15:10:29.555000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:29.809000] DEBUG: using normal price
+[2015-08-14 15:10:29.911000] DEBUG: Butterball Turkey Bacon or Franks
+[2015-08-14 15:10:29.911000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:30.209000] DEBUG: using normal price
+[2015-08-14 15:10:30.283000] DEBUG: Chef Elite Angus Roast Beef
+[2015-08-14 15:10:30.283000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:30.346000] DEBUG: using uneven price
+[2015-08-14 15:10:30.365000] DEBUG: 
+[2015-08-14 15:10:39.749000] DEBUG: Unable to get item story
+[2015-08-14 15:10:39.749000] DEBUG: Made Fresh Daily Regular or Greek Yogurt Bowls
+[2015-08-14 15:10:39.749000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:40.045000] DEBUG: using normal price
+[2015-08-14 15:10:40.137000] DEBUG: Schneiders Lunchmate Stackers, Kits, Lunch Box or Ham Steaks
+[2015-08-14 15:10:40.137000] DEBUG: price: $10.00  each:    quantity: 5  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:40.375000] DEBUG: using normal price
+[2015-08-14 15:10:40.454000] DEBUG: Schneiders Olde Fashioned Ham or Burns Honey Maple Ham
+[2015-08-14 15:10:40.454000] DEBUG: price: $2.29  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:40.663000] DEBUG: using normal price
+[2015-08-14 15:10:50.375000] DEBUG: Unable to get item story
+[2015-08-14 15:10:50.375000] DEBUG: Schwartz's Smoked Montreal Deli Meat
+[2015-08-14 15:10:50.375000] DEBUG: price: $11.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:50.631000] DEBUG: using normal price
+[2015-08-14 15:10:50.755000] DEBUG: Summer Fresh Snack 'n Go Hummus
+[2015-08-14 15:10:50.755000] DEBUG: price: $5.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:51.032000] DEBUG: using normal price
+[2015-08-14 15:10:51.151000] DEBUG: BC Fresh Wild Whole Pink Salmon
+[2015-08-14 15:10:51.151000] DEBUG: price: $0.66  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:51.449000] DEBUG: using normal price
+[2015-08-14 15:10:51.537000] DEBUG: BlueWater Premium Seafood Portions
+[2015-08-14 15:10:51.537000] DEBUG: price: $10.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:51.873000] DEBUG: using normal price
+[2015-08-14 15:10:51.969000] DEBUG: Compliments Balance Tilapia, Wild Cod, Haddock or Sole Fillets
+[2015-08-14 15:10:51.969000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:52.209000] DEBUG: using normal price
+[2015-08-14 15:10:52.298000] DEBUG: Fresh Malpeque or Komo Gway Oysters
+[2015-08-14 15:10:52.298000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:52.550000] DEBUG: using normal price
+[2015-08-14 15:10:52.664000] DEBUG: Fresh Organic Rainbow Trout Fillets
+[2015-08-14 15:10:52.664000] DEBUG: price: $2.21  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:52.893000] DEBUG: using normal price
+[2015-08-14 15:10:53.005000] DEBUG: Fresh Wild Cod Fillets
+[2015-08-14 15:10:53.005000] DEBUG: price: $2.21  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:53.264000] DEBUG: using normal price
+[2015-08-14 15:10:53.352000] DEBUG: Jumbo Sea Scallops
+[2015-08-14 15:10:53.352000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:53.629000] DEBUG: using normal price
+[2015-08-14 15:10:53.718000] DEBUG: Sea Delight Swordfish or Tuna Steaks
+[2015-08-14 15:10:53.718000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:53.792000] DEBUG: using uneven price
+[2015-08-14 15:10:53.816000] DEBUG: 
+[2015-08-14 15:10:53.903000] DEBUG: Sensations by Compliments Freshwater 16/20 Shrimp and Sensations by Compliments Herb &amp; Garlic Shrimp
+[2015-08-14 15:10:53.904000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:54.155000] DEBUG: using normal price
+[2015-08-14 15:10:54.227000] DEBUG: Sensations by Compliments Jumbo Black Tiger Shrimp
+[2015-08-14 15:10:54.227000] DEBUG: price: $14.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:54.451000] DEBUG: using normal price
+[2015-08-14 15:10:54.544000] DEBUG: Design Your Own
+[2015-08-14 15:10:54.544000] DEBUG: price: $20.00  each:    quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:10:54.770000] DEBUG: using normal price
+[2015-08-14 15:11:03.283000] DEBUG: Unable to get item story
+[2015-08-14 15:11:03.283000] DEBUG: Phalaenopsis Orchid In Deco Pot
+[2015-08-14 15:11:03.283000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:11:03.452000] DEBUG: using normal price
+[2015-08-14 15:11:11.720000] DEBUG: Unable to get item story
+[2015-08-14 15:11:11.720000] DEBUG: Sunflower Bouquet
+[2015-08-14 15:11:11.720000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:11:11.836000] INFO: Done getting items
+[2015-08-14 15:11:11.836000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-port-colborne/
+[2015-08-14 15:11:20.901000] DEBUG: Saving store as 'my store'
+[2015-08-14 15:11:24.906000] DEBUG: Getting store info...
+[2015-08-14 15:11:25.037000] DEBUG: Name:  Sobeys  Port Colborne
+[2015-08-14 15:11:25.037000] DEBUG: Store Number:  914
+[2015-08-14 15:11:25.037000] DEBUG: Address:  287 West Side Rd
+[2015-08-14 15:11:25.037000] DEBUG: Postal Code:  L3K5L2
+[2015-08-14 15:11:25.037000] DEBUG: City:  Port Colborne
+[2015-08-14 15:11:25.037000] DEBUG: Province:  Ontario
+[2015-08-14 15:11:25.037000] DEBUG: Opening flyer...
+[2015-08-14 15:11:38.057000] DEBUG: Switching frame...
+[2015-08-14 15:11:39.077000] DEBUG: Going to Item View...
+[2015-08-14 15:11:51.178000] DEBUG: Getting products...
+[2015-08-14 15:11:51.213000] DEBUG: number of products: 386
+[2015-08-14 15:11:51.213000] DEBUG: Parsing products information...
+[2015-08-14 15:11:51.255000] DEBUG: using uneven price
+[2015-08-14 15:11:51.270000] DEBUG: 
+[2015-08-14 15:11:51.296000] DEBUG: 30 Month Aged Parmigiano Reggiano Cheese
+[2015-08-14 15:11:51.296000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:11:51.337000] DEBUG: using uneven price
+[2015-08-14 15:11:51.351000] DEBUG: 
+[2015-08-14 15:11:51.378000] DEBUG: 30 Month Aged Parmigiano Reggiano Cheese
+[2015-08-14 15:11:51.378000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:11:51.498000] DEBUG: using normal price
+[2015-08-14 15:11:59.233000] DEBUG: Unable to get item story
+[2015-08-14 15:11:59.233000] DEBUG: 6" or 8" Cheesecakes
+[2015-08-14 15:11:59.233000] DEBUG: price: $16.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:11:59.393000] DEBUG: using normal price
+[2015-08-14 15:11:59.428000] DEBUG: A Taste of Thai Lite Coconut Milk
+[2015-08-14 15:11:59.428000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 1 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:11:59.592000] DEBUG: using normal price
+[2015-08-14 15:11:59.626000] DEBUG: Alberto European Styling
+[2015-08-14 15:11:59.626000] DEBUG: price: $2.49  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:11:59.815000] DEBUG: using normal price
+[2015-08-14 15:11:59.851000] DEBUG: Anco Danesborg Gouda Cheese
+[2015-08-14 15:11:59.851000] DEBUG: price: $4.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:00.016000] DEBUG: using normal price
+[2015-08-14 15:12:00.053000] DEBUG: Arm &amp; Hammer Cat Litter
+[2015-08-14 15:12:00.053000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:00.201000] DEBUG: using normal price
+[2015-08-14 15:12:07.793000] DEBUG: Unable to get item story
+[2015-08-14 15:12:07.793000] DEBUG: Aspen Ridge Prime Rib Steaks
+[2015-08-14 15:12:07.793000] DEBUG: price: $18.49  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:12:07.983000] DEBUG: using normal price
+[2015-08-14 15:12:08.019000] DEBUG: Astro Athentikos Greek Yogurt
+[2015-08-14 15:12:08.019000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points: 12  promotion: BUY 2 EARN +12 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:08.183000] DEBUG: using normal price
+[2015-08-14 15:12:08.218000] DEBUG: BC Fresh Wild Whole Pink Salmon
+[2015-08-14 15:12:08.218000] DEBUG: price: $0.66  each:    quantity: 1  limit:   weight: 100 g  points:   promotion:   additional info: 
+
+[2015-08-14 15:12:08.417000] DEBUG: using normal price
+[2015-08-14 15:12:08.452000] DEBUG: Baby Gourmet Pouches
+[2015-08-14 15:12:08.452000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 10 EARN +10 reward miles  additional info: 
+
+[2015-08-14 15:12:08.505000] DEBUG: using uneven price
+[2015-08-14 15:12:08.525000] DEBUG: 
+[2015-08-14 15:12:08.561000] DEBUG: Beef Back Ribs
+[2015-08-14 15:12:08.561000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:08.720000] DEBUG: using normal price
+[2015-08-14 15:12:08.753000] DEBUG: Beef Tenderloin
+[2015-08-14 15:12:08.753000] DEBUG: price: $13.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:12:08.943000] DEBUG: using normal price
+[2015-08-14 15:12:08.981000] DEBUG: Beneful Healthy Smile Dog Treats
+[2015-08-14 15:12:08.981000] DEBUG: price: $3.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:09.140000] DEBUG: using normal price
+[2015-08-14 15:12:09.170000] DEBUG: Betty Crocker Super Moist Cake Mixes
+[2015-08-14 15:12:09.170000] DEBUG: price: $1.49  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 3 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:09.293000] DEBUG: using normal price
+[2015-08-14 15:12:09.320000] DEBUG: Blue Goose Chicken Drumsticks or Thighs
+[2015-08-14 15:12:09.320000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight: lb  points: 5  promotion: BUY 2 EARN +5 reward miles  additional info: 
+
+[2015-08-14 15:12:09.478000] DEBUG: using normal price
+[2015-08-14 15:12:09.516000] DEBUG: BlueWater Premium Seafood Portions
+[2015-08-14 15:12:09.516000] DEBUG: price: $10.49  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:09.645000] DEBUG: using normal price
+[2015-08-14 15:12:09.671000] DEBUG: Bottle Green Beverage
+[2015-08-14 15:12:09.671000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:09.795000] DEBUG: using normal price
+[2015-08-14 15:12:17.662000] DEBUG: Unable to get item story
+[2015-08-14 15:12:17.662000] DEBUG: Broccoli
+[2015-08-14 15:12:17.662000] DEBUG: price: $3.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:17.836000] DEBUG: using normal price
+[2015-08-14 15:12:17.871000] DEBUG: Brookside Chocolate
+[2015-08-14 15:12:17.871000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 5 ITEMS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:18.038000] DEBUG: using normal price
+[2015-08-14 15:12:18.078000] DEBUG: Butterball Turkey Bacon or Franks
+[2015-08-14 15:12:18.078000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:18.231000] DEBUG: using normal price
+[2015-08-14 15:12:18.257000] DEBUG: Camino Fair Trade Organic Chocolate
+[2015-08-14 15:12:18.257000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:18.391000] DEBUG: using normal price
+[2015-08-14 15:12:26.017000] DEBUG: Unable to get item story
+[2015-08-14 15:12:26.017000] DEBUG: Canadian Lamb Rack
+[2015-08-14 15:12:26.017000] DEBUG: price: $19.99  each:    quantity: 1  limit:   weight: lb  points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:26.188000] DEBUG: using normal price
+[2015-08-14 15:12:26.224000] DEBUG: Catelli Pasta
+[2015-08-14 15:12:26.224000] DEBUG: price: $5.00  each:    quantity: 3  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:26.383000] DEBUG: using normal price
+[2015-08-14 15:12:26.417000] DEBUG: Cavendish Fries
+[2015-08-14 15:12:26.417000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:26.598000] DEBUG: using normal price
+[2015-08-14 15:12:33.991000] DEBUG: Unable to get item story
+[2015-08-14 15:12:33.991000] DEBUG: Celery Stalks
+[2015-08-14 15:12:33.991000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:34.172000] DEBUG: using normal price
+[2015-08-14 15:12:34.208000] DEBUG: Chapman's Gelato
+[2015-08-14 15:12:34.208000] DEBUG: price: $6.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:34.364000] DEBUG: using normal price
+[2015-08-14 15:12:34.398000] DEBUG: Cheemo Perogies
+[2015-08-14 15:12:34.399000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:34.588000] DEBUG: using normal price
+[2015-08-14 15:12:34.623000] DEBUG: Chef Elite Angus Roast Beef
+[2015-08-14 15:12:34.623000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight: 100 g  points:   promotion:   additional info: 
+
+[2015-08-14 15:12:34.782000] DEBUG: using normal price
+[2015-08-14 15:12:34.818000] DEBUG: Cloverleaf Albacore Tuna
+[2015-08-14 15:12:34.818000] DEBUG: price: $5.00  each:    quantity: 2  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:34.979000] DEBUG: using normal price
+[2015-08-14 15:12:35.014000] DEBUG: Comet Disinfecting Cleaners
+[2015-08-14 15:12:35.014000] DEBUG: price: $2.00  each: $1.49   quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:35.202000] DEBUG: using normal price
+[2015-08-14 15:12:35.240000] DEBUG: Compliments Balance Frozen Yogourt
+[2015-08-14 15:12:35.240000] DEBUG: price: $8.00  each:    quantity: 2  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:35.404000] DEBUG: using normal price
+[2015-08-14 15:12:35.434000] DEBUG: Compliments Balance Microwaveable Popcorn
+[2015-08-14 15:12:35.434000] DEBUG: price: $4.00  each:    quantity: 2  limit:   weight:   points: 6  promotion: BUY 2 EARN +6 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:35.599000] DEBUG: using normal price
+[2015-08-14 15:12:35.634000] DEBUG: Compliments Balance Tilapia, Wild Cod, Haddock or Sole Fillets
+[2015-08-14 15:12:35.634000] DEBUG: price: $10.00  each: $5.99   quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:35.824000] DEBUG: using normal price
+[2015-08-14 15:12:35.861000] DEBUG: Compliments Canned Dog Food
+[2015-08-14 15:12:35.861000] DEBUG: price: $5.00  each: $1.79   quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:36.022000] DEBUG: using normal price
+[2015-08-14 15:12:43.538000] DEBUG: Unable to get item story
+[2015-08-14 15:12:43.538000] DEBUG: Compliments Large Eggs
+[2015-08-14 15:12:43.538000] DEBUG: price: $2.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:43.740000] DEBUG: using normal price
+[2015-08-14 15:12:43.778000] DEBUG: Compliments Latex Gloves
+[2015-08-14 15:12:43.778000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:43.958000] DEBUG: using normal price
+[2015-08-14 15:12:43.993000] DEBUG: Compliments Natural Spring Water
+[2015-08-14 15:12:43.993000] DEBUG: price: $1.00  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:44.048000] DEBUG: using uneven price
+[2015-08-14 15:12:44.064000] DEBUG: 
+[2015-08-14 15:12:51.632000] DEBUG: Unable to get item story
+[2015-08-14 15:12:51.632000] DEBUG: Compliments Nuts
+[2015-08-14 15:12:51.632000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:51.689000] DEBUG: using uneven price
+[2015-08-14 15:12:51.708000] DEBUG: 
+[2015-08-14 15:12:59.202000] DEBUG: Unable to get item story
+[2015-08-14 15:12:59.202000] DEBUG: Compliments Organic Peanut Butter
+[2015-08-14 15:12:59.202000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:59.381000] DEBUG: using normal price
+[2015-08-14 15:12:59.415000] DEBUG: Compliments Pacific White Shrimp
+[2015-08-14 15:12:59.415000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:12:59.577000] DEBUG: using normal price
+[2015-08-14 15:12:59.612000] DEBUG: Compliments Pancake Mix
+[2015-08-14 15:12:59.612000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points: 5  promotion: BUY 2 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:12:59.684000] DEBUG: using uneven price
+[2015-08-14 15:12:59.704000] DEBUG: 
+[2015-08-14 15:13:07.173000] DEBUG: Unable to get item story
+[2015-08-14 15:13:07.173000] DEBUG: Compliments Rainbow Sweet Peppers
+[2015-08-14 15:13:07.173000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:07.339000] DEBUG: using normal price
+[2015-08-14 15:13:15.031000] DEBUG: Unable to get item story
+[2015-08-14 15:13:15.031000] DEBUG: Compliments or Compliments Balance Tortillas
+[2015-08-14 15:13:15.031000] DEBUG: price: $2.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:15.233000] DEBUG: using normal price
+[2015-08-14 15:13:15.271000] DEBUG: Compliments presents Jamie Oliver Discovers Canada Apple &amp; Blackberry Crisp
+[2015-08-14 15:13:15.271000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:15.331000] DEBUG: using uneven price
+[2015-08-14 15:13:15.354000] DEBUG: 
+[2015-08-14 15:13:15.395000] DEBUG: Compliments presents Jamie Oliver Discovers Canada Premium Burgers
+[2015-08-14 15:13:15.395000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:15.612000] DEBUG: using normal price
+[2015-08-14 15:13:15.655000] DEBUG: Crest 3D White Toothpaste
+[2015-08-14 15:13:15.655000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:15.834000] DEBUG: using normal price
+[2015-08-14 15:13:15.872000] DEBUG: Dare Ultimate Cookies, Viva Puffs or Wagon Wheels
+[2015-08-14 15:13:15.872000] DEBUG: price: $1.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 reward miles  additional info: 
+
+[2015-08-14 15:13:16.036000] DEBUG: using normal price
+[2015-08-14 15:13:16.072000] DEBUG: Delissio Rising Crust or Pizzeria Pizza
+[2015-08-14 15:13:16.072000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:16.259000] DEBUG: using normal price
+[2015-08-14 15:13:16.295000] DEBUG: Delissio Rustico Pizza
+[2015-08-14 15:13:16.295000] DEBUG: price: $10.00  each:    quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:16.465000] DEBUG: using normal price
+[2015-08-14 15:13:16.500000] DEBUG: Dempster's Whole Grains Bread
+[2015-08-14 15:13:16.500000] DEBUG: price: $5.00  each: $2.99   quantity: 2  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:16.694000] DEBUG: using normal price
+[2015-08-14 15:13:16.747000] DEBUG: Design Your Own
+[2015-08-14 15:13:16.747000] DEBUG: price: $20.00  each: $7.99   quantity: 3  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:16.952000] DEBUG: using normal price
+[2015-08-14 15:13:16.989000] DEBUG: Diana Sauce
+[2015-08-14 15:13:16.989000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:17.154000] DEBUG: using normal price
+[2015-08-14 15:13:17.191000] DEBUG: Doi Chang Organic Coffee
+[2015-08-14 15:13:17.191000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:17.359000] DEBUG: using normal price
+[2015-08-14 15:13:17.394000] DEBUG: Dove, Degree Clinical Deodorant
+[2015-08-14 15:13:17.394000] DEBUG: price: $6.99  each:    quantity: 1  limit:   weight:   points: 3  promotion: BUY 1 EARN +3 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:13:17.583000] DEBUG: using normal price
+[2015-08-14 15:13:17.618000] DEBUG: Dr. Oetker Ristorante or Panebello Pizza
+[2015-08-14 15:13:17.618000] DEBUG: price: $4.44  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:17.780000] DEBUG: using normal price
+[2015-08-14 15:13:17.814000] DEBUG: DuBreton Pork Back Ribs
+[2015-08-14 15:13:17.814000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:13:17.875000] DEBUG: using uneven price
+[2015-08-14 15:13:17.897000] DEBUG: 
+[2015-08-14 15:13:25.789000] DEBUG: Unable to get item story
+[2015-08-14 15:13:25.789000] DEBUG: Eat Smart Salad Kits
+[2015-08-14 15:13:25.789000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:25.992000] DEBUG: using normal price
+[2015-08-14 15:13:26.029000] DEBUG: Effervé Lemonade
+[2015-08-14 15:13:26.029000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:26.209000] DEBUG: using normal price
+[2015-08-14 15:13:26.247000] DEBUG: Enjoy Life Plentils
+[2015-08-14 15:13:26.247000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:26.466000] DEBUG: using normal price
+[2015-08-14 15:13:26.501000] DEBUG: Fancy Feast Cat Food
+[2015-08-14 15:13:26.501000] DEBUG: price: $0.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:26.676000] DEBUG: using normal price
+[2015-08-14 15:13:26.714000] DEBUG: Fibre 1 Bars
+[2015-08-14 15:13:26.714000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:26.887000] DEBUG: using normal price
+[2015-08-14 15:13:26.931000] DEBUG: Field Tomatoes
+[2015-08-14 15:13:26.931000] DEBUG: price: $0.99  each:    quantity: 1  limit:   weight: lb  points:   promotion:   additional info: 
+
+[2015-08-14 15:13:27.158000] DEBUG: using normal price
+[2015-08-14 15:13:27.193000] DEBUG: Filippo Berio Olive Oil
+[2015-08-14 15:13:27.193000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:27.359000] DEBUG: using normal price
+[2015-08-14 15:13:27.395000] DEBUG: Frank's Red Hot
+[2015-08-14 15:13:27.395000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:27.577000] DEBUG: using normal price
+[2015-08-14 15:13:27.613000] DEBUG: Fresh Malpeque or Komo Gway Oysters
+[2015-08-14 15:13:27.613000] DEBUG: price: $9.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:27.779000] DEBUG: using normal price
+[2015-08-14 15:13:27.815000] DEBUG: Fresh Organic Rainbow Trout Fillets
+[2015-08-14 15:13:27.815000] DEBUG: price: $2.21  each:    quantity: 1  limit:   weight: 100 g  points:   promotion:   additional info: 
+
+[2015-08-14 15:13:27.983000] DEBUG: using normal price
+[2015-08-14 15:13:35.748000] DEBUG: Unable to get item story
+[2015-08-14 15:13:35.748000] DEBUG: Fresh Store Made Beef, Chicken or Pork Kabobs
+[2015-08-14 15:13:35.748000] DEBUG: price: $8.99  each:    quantity: 1  limit:   weight: lb  points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:13:35.918000] DEBUG: using normal price
+[2015-08-14 15:13:35.955000] DEBUG: Fresh Wild Cod Fillets
+[2015-08-14 15:13:35.955000] DEBUG: price: $2.21  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:36.125000] DEBUG: using normal price
+[2015-08-14 15:13:36.161000] DEBUG: Friskies Party Mix Cat Treats
+[2015-08-14 15:13:36.161000] DEBUG: price: $1.79  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:36.218000] DEBUG: using uneven price
+[2015-08-14 15:13:36.263000] DEBUG: 
+[2015-08-14 15:13:44.367000] DEBUG: Unable to get item story
+[2015-08-14 15:13:44.367000] DEBUG: Fruit or Vegetable Kabobs
+[2015-08-14 15:13:44.367000] DEBUG: price:   each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:44.550000] DEBUG: using normal price
+[2015-08-14 15:13:44.586000] DEBUG: Fudgsicle or Creamsicle
+[2015-08-14 15:13:44.586000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:13:44.747000] DEBUG: using normal price
+[2015-08-14 15:13:44.802000] DEBUG: Furlani Texas Garlic Toast
+[2015-08-14 15:13:44.802000] DEBUG: price: $3.00  each:    quantity: 2  limit:   weight:   points: 5  promotion: BUY 1 EARN +5 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:13:44.968000] DEBUG: using normal price
+[2015-08-14 15:13:45.004000] DEBUG: Gatorade
+[2015-08-14 15:13:45.004000] DEBUG: price: $5.00  each:    quantity: 4  limit:   weight:   points:   promotion:   additional info: SPEND $25 EARN +35 AIR MILES reward miles
+
+[2015-08-14 15:13:45.166000] DEBUG: using normal price
+[2015-08-14 15:13:45.201000] DEBUG: Gay Lea Spreadables Butter
+[2015-08-14 15:13:45.201000] DEBUG: price: $2.99  each:    quantity: 1  limit:   weight:   points: 10  promotion: BUY 2 EARN +10 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:13:45.389000] DEBUG: using normal price
+[2015-08-14 15:13:45.425000] DEBUG: Glad Kitchen Catchers
+[2015-08-14 15:13:45.425000] DEBUG: price: $5.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:13:45.586000] DEBUG: using normal price
+[2015-08-14 15:13:53.178000] DEBUG: Unable to get item story
+[2015-08-14 15:13:53.178000] DEBUG: Gourmet Cheese Sticks
+[2015-08-14 15:13:53.178000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points: 20  promotion: BUY ANY 3 EARN 20 AIR MILES REWARD MILES  additional info: 
+
+[2015-08-14 15:13:53.364000] DEBUG: using normal price
+[2015-08-14 15:14:00.961000] DEBUG: Unable to get item story
+[2015-08-14 15:14:00.961000] DEBUG: Gourmet Cheese or Cheese Onion Buns
+[2015-08-14 15:14:00.961000] DEBUG: price: $4.99  each:    quantity: 1  limit:   weight:   points: 20  promotion: BUY ANY 3 EARN 20 AIR MILES REWARD MILES  additional info: 
+
+[2015-08-14 15:14:01.125000] DEBUG: using normal price
+[2015-08-14 15:14:01.156000] DEBUG: Guy Fieri BBQ Sauce
+[2015-08-14 15:14:01.156000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:14:01.322000] DEBUG: using normal price
+[2015-08-14 15:14:01.378000] DEBUG: Healthy Choice Gourmet Steamers or VH Steamers
+[2015-08-14 15:14:01.378000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:14:01.547000] DEBUG: using normal price
+[2015-08-14 15:14:01.584000] DEBUG: Hellmann's Mayonnaise
+[2015-08-14 15:14:01.584000] DEBUG: price: $3.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:14:01.750000] DEBUG: using normal price
+[2015-08-14 15:14:01.782000] DEBUG: Herbal Essence Hair Care
+[2015-08-14 15:14:01.782000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 3  promotion: BUY 2 EARN +3 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:14:01.946000] DEBUG: using normal price
+[2015-08-14 15:14:01.981000] DEBUG: Hershey's Kingsize Bar
+[2015-08-14 15:14:01.981000] DEBUG: price: $1.25  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY ANY 5 ITEMS EARN +15 AIR MILES reward miles  additional info: 
+
+[2015-08-14 15:14:02.167000] DEBUG: using normal price
+[2015-08-14 15:14:02.202000] DEBUG: Hershey's Pouches
+[2015-08-14 15:14:02.202000] DEBUG: price: $3.49  each:    quantity: 1  limit:   weight:   points: 15  promotion: BUY 5 ITEMS EARN +15 reward miles  additional info: 
+
+[2015-08-14 15:14:02.367000] DEBUG: using normal price
+[2015-08-14 15:14:09.857000] DEBUG: Unable to get item story
+[2015-08-14 15:14:09.857000] DEBUG: Homestyle Cheese Bread
+[2015-08-14 15:14:09.857000] DEBUG: price: $5.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:14:10.039000] DEBUG: using normal price
+[2015-08-14 15:14:17.552000] DEBUG: Unable to get item story
+[2015-08-14 15:14:17.552000] DEBUG: Huggies Baby Wipes
+[2015-08-14 15:14:17.552000] DEBUG: price: $7.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:14:17.717000] DEBUG: using normal price
+[2015-08-14 15:14:17.753000] DEBUG: Jamie Oliver Glass Water Bottle and set of 4 Glasses
+[2015-08-14 15:14:17.753000] DEBUG: price: $14.99  each:    quantity: 1  limit:   weight:   points:   promotion:   additional info: 
+
+[2015-08-14 15:14:17.917000] DEBUG: using normal price
+[2015-08-14 15:14:17.976000] DEBUG: Jamie Oliver Steak Knives or Forks
+[2015-08-14 15:14:17.976000] DEBUG: pr
