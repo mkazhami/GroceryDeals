@@ -69,9 +69,21 @@ class Sobeys(BaseParseClass):
             for link in saveMyStoreLinks:
                 logger.logInfo("Opening new store's page at: " + link)
                 if link == "https://www.sobeys.com/en/stores/test-preview-on/": # random test link/store that they didn't clean up i'm guessing - doesn't go anywhere
+                    logger.logInfo("Skipping [test] store")
                     continue
                 driver.get(link)
                 time.sleep(5)
+                
+                # check if store is closed
+                storeHours = driver.find_element_by_xpath(".//div[@id='storehour']")
+                storeHoursText = storeHours.get_attribute("innerHTML").encode('utf-8', 'ignore')
+                if "Permanantly Closed" in storeHoursText: # some stores are closed but remain in the list - saving them as a store won't do anything
+                    fout = open("../LogFiles/" + link.split("/")[-1] + ".source", 'w')
+                    fout.write(storeHoursText)
+                    fout.flush()
+                    fout.close()
+                    logger.logInfo("Skipping permanently closed store")
+                    continue
 
                 try:
                     logger.logDebug("Saving store as 'my store'")
@@ -121,11 +133,37 @@ class Sobeys(BaseParseClass):
 
                 logger.logDebug("Going to Item View...")
                 # go to item view
+                try:
+                    noFlyer = driver.find_element_by_xpath(".//div[@class='enter_postal_code']//div[@id='zero_case']")
+                    print("no flyer displayed")
+                    logger.logError("No flyer for this store")
+                    continue
+                except Exception as e:
+                    logger.logDebug(str(e))
+                    pass # all good
+                #print(noFlyer.get_attribute("innerHTML").encode('utf-8', 'ignore') + "\n\n")
+                #print("div: " + noFlyer.get_attribute("style").encode('utf-8', 'ignore'))
+                #style = noFlyer.get_attribute("style").encode('utf-8', 'ignore')
+                #if style is not None:
+                #    logger.logDebug("style: " + style + "   len: " + str(len(style)))
+                #else:
+                #    logger.logDebug("no style found")
+                #if style is None or len(style.strip()) == 0: # if error message is not hidden
+                #    print("no flyer displayed")
+                #    logger.logError("No flyer for this store")
+                #    continue
+                #iframeText = driver.find_element_by_xpath("html//body").get_attribute("innerHTML").encode('utf-8', 'ignore')
+                #if "There are currently no available flyers in that postal code" in iframeText:
+                #    logger.logDebug(iframeText)
+                #    logger.logError("No flyer for this store")
+                
                 labelElement = driver.find_element_by_xpath(".//div[@class='grid-view-label']")
                 if "Item View" in labelElement.get_attribute("innerHTML"):
                     labelElement.click()
-                else:
-                    raise Exception("No 'Item View' found")
+                    
+                logger.flush()
+                continue
+                
                 time.sleep(8)
                 
                 logger.logDebug("Getting products...")
@@ -181,7 +219,7 @@ class Sobeys(BaseParseClass):
                         if findQuantity is not None:
                             quantity = prePriceText[findQuantity.start():findQuantity.end()].replace("/", "")
                             
-                        findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+[A-Z ]*EARN.*[0-9]+.*MILES", additional_info.upper())
+                        findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
                         if findPoints is not None:
                             points = additional_info[findPoints.start():findPoints.end()].upper().split("EARN")[1]
                             findNum = re.search("[0-9]+", points)
@@ -204,41 +242,39 @@ class Sobeys(BaseParseClass):
                         
                         if len(additional_info.replace(" ", "").replace("each", "")) < 5: # remove any leftover junk (periods, commas, some leftover 'each's)
                             additional_info = ""
-                        logger.logDebug("using normal price")
-                        #print(name + "      " + repr(prePriceText) + " " + repr(dollarSign) + " " + repr(dollar) + " " + repr(dot) + " " + repr(cents) + " " + repr(restOfText))
                     else:
                         logger.logDebug("using uneven price")
                         #print(name)
                         for i in range(len(priceText)):
                             logger.logDebug(priceText[i].text.encode('utf-8', 'ignore'))
-                    itemStory = product.find_element_by_xpath(".//div[@class='item-story']")
-                    if len(itemStory.text) < 5:
-                        try:
-                            itemStory = itemStory.find_element_by_xpath(".//span")
-                            if len(itemStory.text) > 0:
-                                additional_info += itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore')
-                            else:
-                                raise Exception("")
-                        except:
-                            try:
-                                itemStory = itemStory.find_element_by_xpath(".//div[@class='item-story wishabi-offscreen']")
-                                if len(itemStory.text) > 0:
-                                    additional_info += itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore')
-                                else:
-                                    raise Exception("")
-                            except:
-                                logger.logDebug("Unable to get item story")
+                    itemStory = product.find_element_by_xpath(".//div[@class='item-story wishabi-offscreen']")
+                    itemStoryText = itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore').replace("<span>", "").replace("</span>", "").strip()
+                    if len(itemStoryText) < 3:
+                        pass
+                        # commented out because took 10 extra seconds for this
+                        #try:
+                        #    logger.logDebug("First attempt failed, looking for others")
+                        #    additional_info += product.find_element_by_xpath(".//div[@class='item-story wishabi-offscreen']//span").get_attribute("innerHTML").encode('utf-8', 'ignore')
+                        #except:
+                        #    print("text: " + itemStory.text.encode('utf-8', 'ignore'))
+                        #    print("html: " + itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore'))
+                    else:
+                        findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
+                        if findPoints is not None:
+                            points = additional_info[findPoints.start():findPoints.end()].upper().split("EARN")[1]
+                            findNum = re.search("[0-9]+", points)
+                            points = points[findNum.start():findNum.end()]
+                            promotion = additional_info[findPoints.start():findPoints.end()]
+                            additional_info = additional_info.replace(promotion, "")
+                        additional_info += itemStoryText
                             
-                    logger.logDebug(name) #+ "      " + prePriceText + " " + dollarSign + " " + dollar + " " + dot + " " + cents + " " + restOfText)
+                    if price == "" and len(additional_info.strip()) == 0:
+                        continue # ignore item
+                    logger.logDebug(name)
                     logger.logDebug("price: " + price + "  each: " + each + "   quantity: " + quantity + "  limit: " + limit + "  weight: " + weight + "  points: " + points + "  promotion: " + promotion + "  additional info: " + additional_info + "\n")
                     
-                    #print("printing item story")
-                    #print(repr(itemStory.text.encode('utf-8', 'ignore')) + " \n")
-                        
-                    #if "$" in dollarSign:
-                    #    price = dollar + dot + cents
                 logger.logInfo("Done getting items")
         except Exception as e:
-            print(str(e))
+            logger.logError(str(e))
         finally:
             driver.close()

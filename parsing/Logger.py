@@ -14,6 +14,11 @@ class Logger():
         self.infoFile.close()
         self.errFile.close()
         self.debugFile.close()
+        
+    def flush(self):
+        self.infoFile.flush()
+        self.errFile.flush()
+        self.debugFile.flush()
 
     def logInfo(self, msg):
         fullMsg = "[" + str(datetime.datetime.now()) + "] INFO: " + msg + "\n"
