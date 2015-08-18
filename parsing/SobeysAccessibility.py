@@ -128,38 +128,48 @@ class Sobeys(BaseParseClass):
 
                 logger.logDebug("Switching frame...")
                 # switch frame
-                driver.switch_to_frame(driver.find_element_by_xpath("//iframe[@id='flipp-iframe']"))
-                time.sleep(1)
+                tries = 0
+                while tries <= 5:
+                    try:
+                        driver.switch_to_frame(driver.find_element_by_xpath("//iframe[@id='flipp-iframe']"))
+                        time.sleep(1)
+                        break
+                    except:
+                        logger.logDebug("Failed to switch frame. Retrying " + str(tries) + " of 5...")
+                        driver.refresh()
+                        time.sleep(8)
+                        tries += 1
+                
+                if tries >= 5:
+                    raise Exception("Unable to switch frame. Exiting.")
 
                 logger.logDebug("Going to Item View...")
                 # go to item view
                 try:
-                    noFlyer = driver.find_element_by_xpath(".//div[@class='enter_postal_code']//div[@id='zero_case']")
+                    noFlyer = driver.find_element_by_xpath(".//div[@class='enter_postal_code_area']//div[@class='enter_postal_code']//div[@id='zero_case_content']")
                     print("no flyer displayed")
                     logger.logError("No flyer for this store")
                     continue
                 except Exception as e:
                     logger.logDebug(str(e))
                     pass # all good
-                #print(noFlyer.get_attribute("innerHTML").encode('utf-8', 'ignore') + "\n\n")
-                #print("div: " + noFlyer.get_attribute("style").encode('utf-8', 'ignore'))
-                #style = noFlyer.get_attribute("style").encode('utf-8', 'ignore')
-                #if style is not None:
-                #    logger.logDebug("style: " + style + "   len: " + str(len(style)))
-                #else:
-                #    logger.logDebug("no style found")
-                #if style is None or len(style.strip()) == 0: # if error message is not hidden
-                #    print("no flyer displayed")
-                #    logger.logError("No flyer for this store")
-                #    continue
-                #iframeText = driver.find_element_by_xpath("html//body").get_attribute("innerHTML").encode('utf-8', 'ignore')
-                #if "There are currently no available flyers in that postal code" in iframeText:
-                #    logger.logDebug(iframeText)
-                #    logger.logError("No flyer for this store")
                 
-                labelElement = driver.find_element_by_xpath(".//div[@class='grid-view-label']")
-                if "Item View" in labelElement.get_attribute("innerHTML"):
-                    labelElement.click()
+                tries = 0
+                while tries <= 5:
+                    try:
+                        labelElement = driver.find_element_by_xpath(".//div[@class='grid-view-label']")
+                        if "Item View" in labelElement.get_attribute("innerHTML"):
+                            labelElement.click()
+                        break
+                    except:
+                        logger.logDebug("Failed to press item view. Retrying + " + str(tries) + " of 5...")
+                        tries += 1
+                        driver.refresh()
+                        time.sleep(8)
+                
+                if tries >= 5:
+                    logger.logDebug("Unable to press item view. Skipping store.")
+                    continue
                     
                 logger.flush()
                 continue
@@ -171,14 +181,17 @@ class Sobeys(BaseParseClass):
                 tries = 0
                 products = driver.find_elements_by_xpath(".//li[@class='item']")
                 while len(products) == 0 and tries <= 5:
-                    logger.logDebug("number of products: " + str(len(products)))
-                    driver.refresh()
-                    time.sleep(8)
-                    driver.switch_to_frame(driver.find_element_by_xpath("//iframe[@id='flipp-iframe']"))
-                    time.sleep(1)
-                    driver.find_element_by_xpath(".//div[@class='grid-view-label']").click()
-                    time.sleep(8)
-                    products = driver.find_elements_by_xpath(".//li[@class='item']")
+                    try:
+                        logger.logDebug("number of products: " + str(len(products)))
+                        driver.refresh()
+                        time.sleep(8)
+                        driver.switch_to_frame(driver.find_element_by_xpath("//iframe[@id='flipp-iframe']"))
+                        time.sleep(1)
+                        driver.find_element_by_xpath(".//div[@class='grid-view-label']").click()
+                        time.sleep(8)
+                        products = driver.find_elements_by_xpath(".//li[@class='item']")
+                    except:
+                        pass # keep retrying...
                     tries += 1
                 logger.logDebug("number of products: " + str(len(products)))
                 
