@@ -75,14 +75,19 @@ class Sobeys(BaseParseClass):
                 time.sleep(5)
                 
                 # check if store is closed
-                storeHours = driver.find_element_by_xpath(".//div[@id='storehour']")
-                storeHoursText = storeHours.get_attribute("innerHTML").encode('utf-8', 'ignore')
-                if "Permanantly Closed" in storeHoursText: # some stores are closed but remain in the list - saving them as a store won't do anything
-                    fout = open("../LogFiles/" + link.split("/")[-1] + ".source", 'w')
-                    fout.write(storeHoursText)
-                    fout.flush()
-                    fout.close()
-                    logger.logInfo("Skipping permanently closed store")
+                try:
+                    storeHours = driver.find_element_by_xpath(".//div[@id='storehour']")
+                    storeHoursText = storeHours.get_attribute("innerHTML").encode('utf-8', 'ignore')
+                    if "Permanantly Closed" in storeHoursText: # some stores are closed but remain in the list - saving them as a store won't do anything
+                        fout = open("../LogFiles/" + link.split("/")[-1] + ".source", 'w')
+                        fout.write(storeHoursText)
+                        fout.flush()
+                        fout.close()
+                        logger.logInfo("Skipping permanently closed store")
+                        continue
+                except Exception as e:
+                    logger.logError(str(e))
+                    logger.logError("Unable to find store hours. Skipping store...")
                     continue
 
                 try:
