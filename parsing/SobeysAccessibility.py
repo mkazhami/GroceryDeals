@@ -97,22 +97,33 @@ class Sobeys(BaseParseClass):
                     else:
                         raise Exception("Save my store button not found")
 
+                name = ""
+                address = ""
+                storeNumber = ""
+                city = ""
+                postalCode = ""
+                province = ""
+
                 logger.logDebug("Getting store info...")
-                name = driver.find_element_by_xpath(".//div[@class='combo-right']//div[@class='left']").text.encode('ascii', 'ignore').strip()
-                # there are a couple of elements with identical structure
-                storeInformationElements = driver.find_elements_by_xpath(".//div[@class='col-sm-3']")
-                for element in storeInformationElements:
-                    html = element.get_attribute("innerHTML")
-                    if "Store Number" in html:
-                        storeNumber = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
-                    elif "Address" in html:
-                        storeAddress = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
-                        address = storeAddress.split("<br>")[0]
-                        restOfAddress = storeAddress.split("<br>")[1]
-                        city = restOfAddress.split(",")[0].strip()
-                        findPostalCode = re.search("[A-Z][0-9][A-Z]( )?[0-9][A-Z][0-9]", restOfAddress.split(",")[1])
-                        postalCode = restOfAddress.split(",")[1][findPostalCode.start():].replace(" ", "")
-                        province = restOfAddress.split(",")[1][:findPostalCode.start()].strip()
+                try:
+                    name = driver.find_element_by_xpath(".//div[@class='combo-right']//div[@class='left']").text.encode('ascii', 'ignore').strip()
+                    # there are a couple of elements with identical structure
+                    storeInformationElements = driver.find_elements_by_xpath(".//div[@class='col-sm-3']")
+                    for element in storeInformationElements:
+                        html = element.get_attribute("innerHTML")
+                        if "Store Number" in html:
+                            storeNumber = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
+                        elif "Address" in html:
+                            storeAddress = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
+                            address = storeAddress.split("<br>")[0]
+                            restOfAddress = storeAddress.split("<br>")[1]
+                            city = restOfAddress.split(",")[0].strip()
+                            findPostalCode = re.search("[A-Z][0-9][A-Z]( )?[0-9][A-Z][0-9]", restOfAddress.split(",")[1])
+                            postalCode = restOfAddress.split(",")[1][findPostalCode.start():].replace(" ", "")
+                            province = restOfAddress.split(",")[1][:findPostalCode.start()].strip()
+                except Exception as e:
+                    logger.logError(str(e))
+                    logger.logError("Failed to find some store info. Continuing...")
                 
                 logger.logDebug("Name:  " + name)
                 logger.logDebug("Store Number:  " + storeNumber)
@@ -141,7 +152,8 @@ class Sobeys(BaseParseClass):
                         tries += 1
                 
                 if tries >= 5:
-                    raise Exception("Unable to switch frame. Exiting.")
+                    logger.logError("Unable to switch frame. Skipping store.")
+                    continue
 
                 logger.logDebug("Going to Item View...")
                 # go to item view
@@ -151,7 +163,7 @@ class Sobeys(BaseParseClass):
                     logger.logError("No flyer for this store")
                     continue
                 except Exception as e:
-                    logger.logDebug(str(e))
+                    #logger.logDebug(str(e))
                     pass # all good
                 
                 tries = 0

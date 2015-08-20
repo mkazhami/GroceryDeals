@@ -1,2 +1,69 @@
-[2015-08-18 14:59:56.781000] INFO: Opening https://www.sobeys.com/en/store-locator/
-[2015-08-18 15:00:24.603000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-highland/
+[2015-08-19 22:25:50.884000] INFO: Opening https://www.sobeys.com/en/store-locator/
+[2015-08-19 22:26:15.487000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-bridgeport/
+[2015-08-19 22:26:45.427000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-highland/
+[2015-08-19 22:27:15.209000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-columbia/
+[2015-08-19 22:27:46.434000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-northfield/
+[2015-08-19 22:28:16.722000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-ira-needles/
+[2015-08-19 22:28:45.581000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-fischer-hallman/
+[2015-08-19 22:29:12.662000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-new-hamburg/
+[2015-08-19 22:29:39.186000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-cambridge/
+[2015-08-19 22:30:05.769000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-paris/
+[2015-08-19 22:30:36.493000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-woodstock/
+[2015-08-19 22:31:04.566000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-shellard-lane/
+[2015-08-19 22:31:35.099000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-stratford/
+[2015-08-19 22:32:03.354000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-acton/
+[2015-08-19 22:32:35.488000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-flamborough/
+[2015-08-19 22:33:02.108000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-extra-milton/
+[2015-08-19 22:33:36.021000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-ancaster/
+[2015-08-19 22:34:08.954000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/brant-street/
+[2015-08-19 22:34:45.559000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-orangeville/
+[2015-08-19 22:35:16.846000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-abbey/
+[2015-08-19 22:36:04.737000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-mississauga/
+[2015-08-19 22:36:47.409000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-mayfield/
+[2015-08-19 22:37:54.847000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-brampton/
+[2015-08-19 22:38:30.786000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-bronte/
+[2015-08-19 22:38:54.012000] ERROR: No flyer for this store
+[2015-08-19 22:38:54.012000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-tillsonburg/
+[2015-08-19 22:39:21.152000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-north-park/
+[2015-08-19 22:39:49.898000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-maple-grove/
+[2015-08-19 22:40:17.368000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-airport-road/
+[2015-08-19 22:40:45.280000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-simcoe/
+[2015-08-19 22:41:16.740000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-north-london/
+[2015-08-19 22:41:44.402000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-kipling/
+[2015-08-19 22:42:11.295000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-grimsby/
+[2015-08-19 22:42:39.987000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-queensway/
+[2015-08-19 22:43:07.677000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-high-park-express/
+[2015-08-19 22:43:33.485000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-beamsville/
+[2015-08-19 22:43:59.747000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-rosebury-square-urban-fresh/
+[2015-08-19 22:44:25.691000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-dupont/
+[2015-08-19 22:44:51.823000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-alliston/
+[2015-08-19 22:45:18.504000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-spadina/
+[2015-08-19 22:45:53.493000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-queens-quay/
+[2015-08-19 22:46:20.062000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-bay-street/
+[2015-08-19 22:46:56.500000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-balliol/
+[2015-08-19 22:47:22.319000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-st-clair-urban-fresh/
+[2015-08-19 22:48:55.061000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-mount-pleasant/
+[2015-08-19 22:49:22.815000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-clark-hilda/
+[2015-08-19 22:49:45.566000] ERROR: No flyer for this store
+[2015-08-19 22:49:45.566000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-vaughan/
+[2015-08-19 22:50:14.027000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-todmorden/
+[2015-08-19 22:50:37.730000] ERROR: No flyer for this store
+[2015-08-19 22:50:37.730000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-laird-wicksteed/
+[2015-08-19 22:51:00.090000] ERROR: No flyer for this store
+[2015-08-19 22:51:00.090000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-dunnville/
+[2015-08-19 22:51:30.322000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-jefferson-square/
+[2015-08-19 22:51:57.581000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-danforth/
+[2015-08-19 22:52:24.692000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-grand-bend/
+[2015-08-19 22:52:48.273000] ERROR: No flyer for this store
+[2015-08-19 22:52:48.273000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-bradford/
+[2015-08-19 22:53:15.741000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-aurora-bayview/
+[2015-08-19 22:53:43.074000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-scott-niagara/
+[2015-08-19 22:54:11.108000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-angus/
+[2015-08-19 22:54:45.305000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-fonthill/
+[2015-08-19 22:55:13.229000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-glendale/
+[2015-08-19 22:55:41.465000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-south-pelham/
+[2015-08-19 22:56:17.054000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-barrie/
+[2015-08-19 22:56:45.154000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-collingwood/
+[2015-08-19 22:57:13.226000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-port-colborne/
+[2015-08-19 22:57:39.831000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-kincardine/
+[2015-08-19 22:58:06.649000] INFO: Opening new store's page at: https://www.sobeys.com/en/stores/sobeys-niagara-falls/
