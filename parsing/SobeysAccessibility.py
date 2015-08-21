@@ -9,6 +9,10 @@ import os
 import re
 import csv
 
+longSleep = 8
+mediumSleep = 4
+shortSleep = 3
+
 class Sobeys(BaseParseClass):
     """
     Class for all stores that follow the format of Sobeys (so far just Sobeys...)
@@ -36,21 +40,33 @@ class Sobeys(BaseParseClass):
         # phantomjs.exe is located in the root directory
         driver = webdriver.PhantomJS(executable_path="phantomjs.exe", service_log_path=os.path.devnull)
         #driver = webdriver.Firefox()
-        driver.set_window_size(1400,1000)
+        driver.set_window_size(1800,1400)
         logger = self.log
         
         try:
             logger.logInfo("Opening " + self.store_list_links[self.store_name])
             driver.get(self.store_list_links[self.store_name])
-            time.sleep(8)
-            
-            logger.logDebug("Zooming out of map...")
-            zoomOut = driver.find_element_by_xpath(".//div[@title='Zoom out']")
-            for i in range(10):
-                zoomOut.click()
-                time.sleep(0.5)
+            time.sleep(longSleep)
 
-            time.sleep(2) # just in case
+            logger.logDebug("Zooming out of map...")
+            tries = 0
+            while tries <= 5:
+                try:
+                    zoomOut = driver.find_element_by_xpath(".//div[@title='Zoom out']")
+                    for i in range(10):
+                        zoomOut.click()
+                        time.sleep(0.5)
+                    break
+                except Exception as e:
+                    logger.logDebug("Faild to zoom out. Retrying... " + str(tries) " of 5.")
+                    tries += 1
+            if tries >= 5:
+                logger.logError("Unable to zoom out. Skipping store.")
+                continue
+
+
+
+            time.sleep(shortSleep) # just in case
             stores = driver.find_elements_by_xpath(".//div[@class='row store-result-container']")
             saveMyStoreLinks = []
             storeNames = []
@@ -72,7 +88,7 @@ class Sobeys(BaseParseClass):
                     logger.logInfo("Skipping [test] store")
                     continue
                 driver.get(link)
-                time.sleep(5)
+                time.sleep(shortSleep)
                 
                 # check if store is closed
                 try:
@@ -93,7 +109,7 @@ class Sobeys(BaseParseClass):
                 try:
                     logger.logDebug("Saving store as 'my store'")
                     driver.find_element_by_xpath(".//a[@id='save-as-my-store']").click()
-                    time.sleep(3)
+                    time.sleep(shortSleep)
                 except:
                     # if store is already selected, the button wouldn't be there - check for that in the currently selected store
                     myStore = driver.find_element_by_xpath(".//ul[@class='list-inline']")
@@ -128,6 +144,9 @@ class Sobeys(BaseParseClass):
                             province = restOfAddress.split(",")[1][:findPostalCode.start()].strip()
                 except Exception as e:
                     logger.logError(str(e))
+                    if address == "" or postalCode == "":
+                        logger.logError("Failed to find some store info. Address or postal code unavailable, skipping store.")
+                        continue
                     logger.logError("Failed to find some store info. Continuing...")
                 
                 logger.logDebug("Name:  " + name)
@@ -140,7 +159,7 @@ class Sobeys(BaseParseClass):
                 logger.logDebug("Opening flyer...")
                 # go to flyer with new preferred store
                 driver.get("https://www.sobeys.com/en/flyer")
-                time.sleep(8)
+                time.sleep(mediumSleep)
 
                 logger.logDebug("Switching frame...")
                 # switch frame
@@ -153,7 +172,7 @@ class Sobeys(BaseParseClass):
                     except:
                         logger.logDebug("Failed to switch frame. Retrying " + str(tries) + " of 5...")
                         driver.refresh()
-                        time.sleep(8)
+                        time.sleep(mediumSleep)
                         tries += 1
                 
                 if tries >= 5:
@@ -182,7 +201,7 @@ class Sobeys(BaseParseClass):
                         logger.logDebug("Failed to press item view. Retrying + " + str(tries) + " of 5...")
                         tries += 1
                         driver.refresh()
-                        time.sleep(8)
+                        time.sleep(mediumSleep)
                 
                 if tries >= 5:
                     logger.logDebug("Unable to press item view. Skipping store.")
@@ -191,7 +210,7 @@ class Sobeys(BaseParseClass):
                 logger.flush()
                 continue
                 
-                time.sleep(8)
+                time.sleep(mediumSleep)
                 
                 logger.logDebug("Getting products...")
                 # get all product elements
@@ -306,5 +325,6 @@ class Sobeys(BaseParseClass):
                 logger.logInfo("Done getting items")
         except Exception as e:
             logger.logError(str(e))
+            driver.save_screenshot('out.png');
         finally:
             driver.close()
