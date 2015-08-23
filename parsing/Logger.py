@@ -1,4 +1,7 @@
 import datetime as datetime
+import csv
+
+projectRootDir = ".."
 
 class Logger():
 
@@ -33,4 +36,18 @@ class Logger():
 
     def logDebug(self, msg):
         self.debugFile.write("[" + str(datetime.datetime.now()) + "] DEBUG: " + msg + "\n")
+
+
+class CSVWriter():
+
+    def __init__(self, store_name):
+        self.file_name = projectRootDir + "/CsvFiles/" + store_name + "-" + str(datetime.date.today()) + ".csv"
+        self.csv_file = open(self.file_name, 'w')
+        self.csv_write = csv.writer(self.csv_file, delimiter=',')
+
+    def close(self):
+        self.csv_file.close()
+
+    def addItems(self, items):
+        self.csv_write.writerows(items)
         

@@ -26,7 +26,7 @@ class Sobeys(BaseParseClass):
                                 "sobeys" : "Air Miles"
                              }
 
-    def __init__(self, store_name, logger):
+    def __init__(self, store_name, logger, csv_writer):
         self.store_name = store_name
         self.storeNames = []
         self.storeAddresses = []
@@ -35,6 +35,7 @@ class Sobeys(BaseParseClass):
         self.storePostalCodes = []
         self.storeNumbers = []
         self.log = logger
+        self.csv_writer = csv_writer
 
     def parse(self):
         # phantomjs.exe is located in the root directory
@@ -46,11 +47,11 @@ class Sobeys(BaseParseClass):
         try:
             logger.logInfo("Opening " + self.store_list_links[self.store_name])
             driver.get(self.store_list_links[self.store_name])
-            time.sleep(longSleep)
+            time.sleep(mediumSleep)
 
             logger.logDebug("Zooming out of map...")
             tries = 0
-            while tries <= 5:
+            while tries <= 10:
                 try:
                     zoomOut = driver.find_element_by_xpath(".//div[@title='Zoom out']")
                     for i in range(10):
@@ -58,11 +59,12 @@ class Sobeys(BaseParseClass):
                         time.sleep(0.5)
                     break
                 except Exception as e:
-                    logger.logDebug("Faild to zoom out. Retrying... " + str(tries) " of 5.")
+                    logger.logDebug("Failed to zoom out. Retrying... " + str(tries) + " of 10.")
+                    driver.get(self.store_list_links[self.store_name])
+                    time.sleep(mediumSleep)
                     tries += 1
             if tries >= 5:
-                logger.logError("Unable to zoom out. Skipping store.")
-                continue
+                raise Exception("Unable to zoom out. Exiting program.")
 
 
 
@@ -78,8 +80,13 @@ class Sobeys(BaseParseClass):
 
             logger.logDebug("Getting all 'save my store' buttons")
             for store in stores:
+                address = store.find_element_by_xpath(".//div[@class='col-sm-9 store-result']//p").get_attribute("innerHTML").encode('utf-8', 'ignore')
+                if "ontario" not in address.lower():
+                    logger.logDebug("Ignoring store with address: " + address)
+                    continue
                 button = store.find_element_by_xpath(".//a[@type='button']")
                 saveStoreLink = str(button.get_attribute("href").encode('ascii', 'ignore'))
+                logger.logDebug("Adding store with url " + saveStoreLink + " and address " + address)
                 saveMyStoreLinks.append(saveStoreLink)
 
             for link in saveMyStoreLinks:
@@ -118,16 +125,16 @@ class Sobeys(BaseParseClass):
                     else:
                         raise Exception("Save my store button not found")
 
-                name = ""
-                address = ""
+                storeName = ""
+                storeAddress = ""
                 storeNumber = ""
-                city = ""
-                postalCode = ""
-                province = ""
+                storeCity = ""
+                storePostalCode = ""
+                storeProvince = ""
 
                 logger.logDebug("Getting store info...")
                 try:
-                    name = driver.find_element_by_xpath(".//div[@class='combo-right']//div[@class='left']").text.encode('ascii', 'ignore').strip()
+                    storeName = driver.find_element_by_xpath(".//div[@class='combo-right']//div[@class='left']").text.encode('ascii', 'ignore').strip()
                     # there are a couple of elements with identical structure
                     storeInformationElements = driver.find_elements_by_xpath(".//div[@class='col-sm-3']")
                     for element in storeInformationElements:
@@ -135,26 +142,27 @@ class Sobeys(BaseParseClass):
                         if "Store Number" in html:
                             storeNumber = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
                         elif "Address" in html:
-                            storeAddress = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
-                            address = storeAddress.split("<br>")[0]
-                            restOfAddress = storeAddress.split("<br>")[1]
-                            city = restOfAddress.split(",")[0].strip()
+                            storeAddressFULL = str(element.find_element_by_xpath(".//p").get_attribute("innerHTML").encode('ascii', 'ignore')).strip()
+                            storeAddress = storeAddressFULL.split("<br>")[0]
+                            restOfAddress = storeAddressFULL.split("<br>")[1]
+                            storeCity = restOfAddress.split(",")[0].strip()
                             findPostalCode = re.search("[A-Z][0-9][A-Z]( )?[0-9][A-Z][0-9]", restOfAddress.split(",")[1])
-                            postalCode = restOfAddress.split(",")[1][findPostalCode.start():].replace(" ", "")
-                            province = restOfAddress.split(",")[1][:findPostalCode.start()].strip()
+                            storePostalCode = restOfAddress.split(",")[1][findPostalCode.start():].replace(" ", "")
+                            storeProvince = restOfAddress.split(",")[1][:findPostalCode.start()].strip()
                 except Exception as e:
                     logger.logError(str(e))
-                    if address == "" or postalCode == "":
+                    if storeAddress == "" or storePostalCode == "":
                         logger.logError("Failed to find some store info. Address or postal code unavailable, skipping store.")
                         continue
                     logger.logError("Failed to find some store info. Continuing...")
                 
-                logger.logDebug("Name:  " + name)
+                logger.logDebug("Name:  " + storeName)
                 logger.logDebug("Store Number:  " + storeNumber)
-                logger.logDebug("Address:  " + address)
-                logger.logDebug("Postal Code:  " + postalCode)
-                logger.logDebug("City:  " + city)
-                logger.logDebug("Province:  " + province)
+                logger.logDebug("Address:  " + storeAddress)
+                logger.logDebug("Postal Code:  " + storePostalCode)
+                logger.logDebug("City:  " + storeCity)
+                logger.logDebug("Province:  " + storeProvince)
+
                 
                 logger.logDebug("Opening flyer...")
                 # go to flyer with new preferred store
@@ -183,7 +191,6 @@ class Sobeys(BaseParseClass):
                 # go to item view
                 try:
                     noFlyer = driver.find_element_by_xpath(".//div[@class='enter_postal_code_area']//div[@class='enter_postal_code']//div[@id='zero_case_content']")
-                    print("no flyer displayed")
                     logger.logError("No flyer for this store")
                     continue
                 except Exception as e:
@@ -207,8 +214,8 @@ class Sobeys(BaseParseClass):
                     logger.logDebug("Unable to press item view. Skipping store.")
                     continue
                     
-                logger.flush()
-                continue
+                #logger.flush()
+                #continue
                 
                 time.sleep(mediumSleep)
                 
@@ -220,11 +227,11 @@ class Sobeys(BaseParseClass):
                     try:
                         logger.logDebug("number of products: " + str(len(products)))
                         driver.refresh()
-                        time.sleep(8)
+                        time.sleep(mediumSleep)
                         driver.switch_to_frame(driver.find_element_by_xpath("//iframe[@id='flipp-iframe']"))
                         time.sleep(1)
                         driver.find_element_by_xpath(".//div[@class='grid-view-label']").click()
-                        time.sleep(8)
+                        time.sleep(mediumSleep)
                         products = driver.find_elements_by_xpath(".//li[@class='item']")
                     except:
                         pass # keep retrying...
@@ -232,6 +239,7 @@ class Sobeys(BaseParseClass):
                 logger.logDebug("number of products: " + str(len(products)))
                 
                 logger.logDebug("Parsing products information...")
+                items = []
                 for product in products:
                     #print(str(product.get_attribute("innerHTML").encode('ascii', 'ignore')))
                     name = product.find_element_by_xpath(".//div[@class='item-name']").get_attribute("innerHTML").encode('utf-8', 'ignore')
@@ -256,7 +264,11 @@ class Sobeys(BaseParseClass):
                         dot = priceText[3].get_attribute("innerHTML").encode('utf-8', 'ignore')
                         cents = priceText[4].get_attribute("innerHTML").encode('utf-8', 'ignore')
                         centSign = priceText[5].get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        additional_info = fullPrice.find_element_by_xpath(".//span[@class='price-text']").text.encode('utf-8', 'ignore')
+                        # sometimes the price text is embedded in child elements (i.e. <price-text> <span> ...)
+                        for elem in fullPrice.find_elements_by_xpath(".//span[@class='price-text']//span"):
+                            if elem.get_attribute("style") is None or elem.get_attribute("style") == "":
+                                additional_info += elem.get_attribute("innerHTML").encode('utf-8', 'ignore')
+                        additional_info += fullPrice.find_element_by_xpath(".//span[@class='price-text']").text.encode('utf-8', 'ignore')
                         additional_info = repr(additional_info).replace(r'\xc2\xae', '').replace("\'", "")
                         if "$" in dollarSign:
                             price = dollarSign + dollar + dot + cents
@@ -264,9 +276,9 @@ class Sobeys(BaseParseClass):
                             logger.logDebug("NO DOLLAR SIGN IN DOLLARSIGN VAR: " + str(priceText[1].get_attribute("innerHTML")))
                         
                             
-                        findQuantity = re.search("[0-9]+/", prePriceText)
+                        findQuantity = re.search("[0-9]+(/|.*for)", prePriceText.lower())
                         if findQuantity is not None:
-                            quantity = prePriceText[findQuantity.start():findQuantity.end()].replace("/", "")
+                            quantity = prePriceText[findQuantity.start():findQuantity.end()].lower().replace("/", "").replace("for", "").strip()
                             
                         findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
                         if findPoints is not None:
@@ -280,7 +292,8 @@ class Sobeys(BaseParseClass):
                         if findWeight is not None:
                             weight = additional_info[findWeight.start():findWeight.end()].replace("/", "").strip()
                             additional_info = additional_info.replace(additional_info[findWeight.start():findWeight.end()], "")
-                            
+
+
                         findEach = re.search("[Oo][Rr]( )* (\$)?[0-9]+(\.[0-9]+)?( )*[Ee][Aa]([Cc][Hh])?(\.)?", additional_info)
                         if findEach is not None:
                             findNum = re.search("(\$)?[0-9]+(\.[0-9]+)?", additional_info)
@@ -288,6 +301,14 @@ class Sobeys(BaseParseClass):
                             if "$" not in each:
                                 each = "$" + each
                             additional_info = additional_info.replace(additional_info[findEach.start():findEach.end()], "")
+
+                        findOrEach = re.search("(((\$)?[0-9]+(\.[0-9]+)?.*or.*each)|((\$)?[0-9]+(\.[0-9]+)?.*each.*or))", additional_info.lower())
+                        if findOrEach is not None:
+                            findNum = re.search("(\$)?[0-9]+(\.[0-9]+)?", additional_info)
+                            each = additional_info[findNum.start():findNum.end()]
+                            if "$" not in each:
+                                each = "$" + each
+                            additional_info = additional_info.replace(additional_info[findOrEach.start():findOrEach.end()], "")
                         
                         if len(additional_info.replace(" ", "").replace("each", "")) < 5: # remove any leftover junk (periods, commas, some leftover 'each's)
                             additional_info = ""
@@ -300,13 +321,6 @@ class Sobeys(BaseParseClass):
                     itemStoryText = itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore').replace("<span>", "").replace("</span>", "").strip()
                     if len(itemStoryText) < 3:
                         pass
-                        # commented out because took 10 extra seconds for this
-                        #try:
-                        #    logger.logDebug("First attempt failed, looking for others")
-                        #    additional_info += product.find_element_by_xpath(".//div[@class='item-story wishabi-offscreen']//span").get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        #except:
-                        #    print("text: " + itemStory.text.encode('utf-8', 'ignore'))
-                        #    print("html: " + itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore'))
                     else:
                         findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
                         if findPoints is not None:
@@ -316,12 +330,19 @@ class Sobeys(BaseParseClass):
                             promotion = additional_info[findPoints.start():findPoints.end()]
                             additional_info = additional_info.replace(promotion, "")
                         additional_info += itemStoryText
-                            
+
                     if price == "" and len(additional_info.strip()) == 0:
                         continue # ignore item
-                    logger.logDebug(name)
-                    logger.logDebug("price: " + price + "  each: " + each + "   quantity: " + quantity + "  limit: " + limit + "  weight: " + weight + "  points: " + points + "  promotion: " + promotion + "  additional info: " + additional_info + "\n")
+
+                    additional_info.replace("\n", "")
+                    item = Item(name, price, quantity, weight, limit, each, additional_info, points, promotion,
+                                storeName, storeAddress, storeCity, storeProvince, storePostalCode)
+                    items.append(item.toCSVFormat())
+                    logger.logDebug(str(item))
                     
+                
+                # write the store's items to the csv file
+                self.csv_writer.addItems(items)
                 logger.logInfo("Done getting items")
         except Exception as e:
             logger.logError(str(e))

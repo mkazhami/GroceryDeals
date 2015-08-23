@@ -25,7 +25,7 @@ class ZehrsLoblaws(BaseParseClass):
                                 "loblaws": "PCPlus"
                              }
     
-    def __init__(self, store_name, logger):
+    def __init__(self, store_name, logger, csv_writer):
         self.store_name = store_name
         self.storeNames = []
         self.storeAddresses = []
@@ -34,13 +34,11 @@ class ZehrsLoblaws(BaseParseClass):
         self.storePostalCodes = []
         self.storeNumbers = []
         self.log = logger
-    
+        self.csv_writer = csv_writer
+
     
     def parse(self):
         logger = self.log
-        csvFileName = "../CsvFiles/" + self.store_name + "-" + str(datetime.date.today()) + ".csv"
-        open(csvFileName, 'w').close() # create empty file
-        #csvFile = open("../CsvFiles/" + self.store_name + "-" + str(datetime.date.today()) + ".csv", "w")
         # opens phantom browser
         # phantomjs.exe is located in the root directory
         #self.driver = webdriver.PhantomJS(executable_path="/home/mikhail/Documents/htmlparse/phantomjs_linux")
@@ -375,9 +373,7 @@ class ZehrsLoblaws(BaseParseClass):
                                     logger.logDebug("\n")
                                 
                                 # write the store's items to the csv file
-                                with open(csvFileName, 'ab') as f:
-                                    csvWrite = csv.writer(f, delimiter=',')
-                                    csvWrite.writerows(items)
+                                self.csv_writer.addItems(items)
                         
                         logger.logInfo("Done getting product info for store: " + self.storeNames[storeCount])
                         storeCount += 1
