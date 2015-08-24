@@ -47,7 +47,7 @@ class Sobeys(BaseParseClass):
         try:
             logger.logInfo("Opening " + self.store_list_links[self.store_name])
             driver.get(self.store_list_links[self.store_name])
-            time.sleep(mediumSleep)
+            time.sleep(longSleep)
 
             logger.logDebug("Zooming out of map...")
             tries = 0
@@ -61,9 +61,9 @@ class Sobeys(BaseParseClass):
                 except Exception as e:
                     logger.logDebug("Failed to zoom out. Retrying... " + str(tries) + " of 10.")
                     driver.get(self.store_list_links[self.store_name])
-                    time.sleep(mediumSleep)
+                    time.sleep(longSleep)
                     tries += 1
-            if tries >= 5:
+            if tries >= 10:
                 raise Exception("Unable to zoom out. Exiting program.")
 
 
@@ -90,6 +90,9 @@ class Sobeys(BaseParseClass):
                 saveMyStoreLinks.append(saveStoreLink)
 
             for link in saveMyStoreLinks:
+                if link != "http://www.sobeys.com/en/stores/sobeys-danforth/":
+                    continue
+
                 logger.logInfo("Opening new store's page at: " + link)
                 if link == "https://www.sobeys.com/en/stores/test-preview-on/": # random test link/store that they didn't clean up i'm guessing - doesn't go anywhere
                     logger.logInfo("Skipping [test] store")
@@ -241,104 +244,106 @@ class Sobeys(BaseParseClass):
                 logger.logDebug("Parsing products information...")
                 items = []
                 for product in products:
-                    #print(str(product.get_attribute("innerHTML").encode('ascii', 'ignore')))
-                    name = product.find_element_by_xpath(".//div[@class='item-name']").get_attribute("innerHTML").encode('utf-8', 'ignore')
-                    if name == "Sobeys" or name == "Facebook" or name == "Twitter": # terrible design decisions by sobeys - put their info into product cards
-                        continue
-                    price = ""
-                    quantity = "1"
-                    weight = ""
-                    limit = ""
-                    each = ""
-                    additional_info = ""
-                    points = ""
-                    promotion = ""
-                    
-                    fullPrice = product.find_element_by_xpath(".//div[@class='item-price']")
-                    # sobeys divides the price into '$' 'x' '.' 'xx' '¢ (but usually hidden)' 'rest of text (i.e. OR $1.99 EACH)'
-                    priceText = fullPrice.find_elements_by_xpath(".//span")
-                    if len(priceText) >= 7:
-                        prePriceText = priceText[0].get_attribute("innerHTML").encode('utf-8', 'ignore').replace('\n', '')
-                        dollarSign = priceText[1].get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        dollar = priceText[2].get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        dot = priceText[3].get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        cents = priceText[4].get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        centSign = priceText[5].get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        # sometimes the price text is embedded in child elements (i.e. <price-text> <span> ...)
-                        for elem in fullPrice.find_elements_by_xpath(".//span[@class='price-text']//span"):
-                            if elem.get_attribute("style") is None or elem.get_attribute("style") == "":
-                                additional_info += elem.get_attribute("innerHTML").encode('utf-8', 'ignore')
-                        additional_info += fullPrice.find_element_by_xpath(".//span[@class='price-text']").text.encode('utf-8', 'ignore')
-                        additional_info = repr(additional_info).replace(r'\xc2\xae', '').replace("\'", "")
-                        if "$" in dollarSign:
-                            price = dollarSign + dollar + dot + cents
+                    try:
+                        name = product.find_element_by_xpath(".//div[@class='item-name']").get_attribute("innerHTML").encode('utf-8', 'ignore')
+                        if name == "Sobeys" or name == "Facebook" or name == "Twitter": # terrible design decisions by sobeys - put their info into product cards
+                            continue
+                        price = ""
+                        quantity = "1"
+                        weight = ""
+                        limit = ""
+                        each = ""
+                        additional_info = ""
+                        points = ""
+                        promotion = ""
+                        
+                        fullPrice = product.find_element_by_xpath(".//div[@class='item-price']")
+                        # sobeys divides the price into '$' 'x' '.' 'xx' '¢ (but usually hidden)' 'rest of text (i.e. OR $1.99 EACH)'
+                        priceText = fullPrice.find_elements_by_xpath(".//span")
+                        if len(priceText) >= 7:
+                            prePriceText = priceText[0].get_attribute("innerHTML").encode('utf-8', 'ignore').replace('\n', '')
+                            dollarSign = priceText[1].get_attribute("innerHTML").encode('utf-8', 'ignore')
+                            dollar = priceText[2].get_attribute("innerHTML").encode('utf-8', 'ignore')
+                            dot = priceText[3].get_attribute("innerHTML").encode('utf-8', 'ignore')
+                            cents = priceText[4].get_attribute("innerHTML").encode('utf-8', 'ignore')
+                            centSign = priceText[5].get_attribute("innerHTML").encode('utf-8', 'ignore')
+                            # sometimes the price text is embedded in child elements (i.e. <price-text> <span> ...)
+                            for elem in fullPrice.find_elements_by_xpath(".//span[@class='price-text']//span"):
+                                if elem.get_attribute("style") is None or elem.get_attribute("style") == "":
+                                    additional_info += elem.get_attribute("innerHTML").encode('utf-8', 'ignore')
+                            additional_info += fullPrice.find_element_by_xpath(".//span[@class='price-text']").text.encode('utf-8', 'ignore')
+                            additional_info = repr(additional_info).replace(r'\xc2\xae', '').replace("\'", "")
+                            if "$" in dollarSign:
+                                price = dollarSign + dollar + dot + cents
+                            else:
+                                logger.logDebug("NO DOLLAR SIGN IN DOLLARSIGN VAR: " + str(priceText[1].get_attribute("innerHTML")))
+                            
+                                
+                            findQuantity = re.search("[0-9]+(/|.*for)", prePriceText.lower())
+                            if findQuantity is not None:
+                                quantity = prePriceText[findQuantity.start():findQuantity.end()].lower().replace("/", "").replace("for", "").strip()
+                                
+                            findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
+                            if findPoints is not None:
+                                points = additional_info[findPoints.start():findPoints.end()].upper().split("EARN")[1]
+                                findNum = re.search("[0-9]+", points)
+                                points = points[findNum.start():findNum.end()]
+                                promotion = additional_info[findPoints.start():findPoints.end()]
+                                additional_info = additional_info.replace(promotion, "")
+                                
+                            findWeight = re.search("/( )*(kg|lb|([0-9]+( )*g))", additional_info.lower())
+                            if findWeight is not None:
+                                weight = additional_info[findWeight.start():findWeight.end()].replace("/", "").strip()
+                                additional_info = additional_info.replace(additional_info[findWeight.start():findWeight.end()], "")
+
+
+                            findEach = re.search("[Oo][Rr]( )* (\$)?[0-9]+(\.[0-9]+)?( )*[Ee][Aa]([Cc][Hh])?(\.)?", additional_info)
+                            if findEach is not None:
+                                findNum = re.search("(\$)?[0-9]+(\.[0-9]+)?", additional_info)
+                                each = additional_info[findNum.start():findNum.end()]
+                                if "$" not in each:
+                                    each = "$" + each
+                                additional_info = additional_info.replace(additional_info[findEach.start():findEach.end()], "")
+
+                            findOrEach = re.search("(((\$)?[0-9]+(\.[0-9]+)?.*or.*each)|((\$)?[0-9]+(\.[0-9]+)?.*each.*or))", additional_info.lower())
+                            if findOrEach is not None:
+                                findNum = re.search("(\$)?[0-9]+(\.[0-9]+)?", additional_info)
+                                each = additional_info[findNum.start():findNum.end()]
+                                if "$" not in each:
+                                    each = "$" + each
+                                additional_info = additional_info.replace(additional_info[findOrEach.start():findOrEach.end()], "")
+                            
+                            if len(additional_info.replace(" ", "").replace("each", "")) < 5: # remove any leftover junk (periods, commas, some leftover 'each's)
+                                additional_info = ""
                         else:
-                            logger.logDebug("NO DOLLAR SIGN IN DOLLARSIGN VAR: " + str(priceText[1].get_attribute("innerHTML")))
-                        
-                            
-                        findQuantity = re.search("[0-9]+(/|.*for)", prePriceText.lower())
-                        if findQuantity is not None:
-                            quantity = prePriceText[findQuantity.start():findQuantity.end()].lower().replace("/", "").replace("for", "").strip()
-                            
-                        findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
-                        if findPoints is not None:
-                            points = additional_info[findPoints.start():findPoints.end()].upper().split("EARN")[1]
-                            findNum = re.search("[0-9]+", points)
-                            points = points[findNum.start():findNum.end()]
-                            promotion = additional_info[findPoints.start():findPoints.end()]
-                            additional_info = additional_info.replace(promotion, "")
-                            
-                        findWeight = re.search("/( )*(kg|lb|([0-9]+( )*g))", additional_info.lower())
-                        if findWeight is not None:
-                            weight = additional_info[findWeight.start():findWeight.end()].replace("/", "").strip()
-                            additional_info = additional_info.replace(additional_info[findWeight.start():findWeight.end()], "")
+                            logger.logDebug("using uneven price")
+                            #print(name)
+                            for i in range(len(priceText)):
+                                logger.logDebug(priceText[i].text.encode('utf-8', 'ignore'))
+                        itemStory = product.find_element_by_xpath(".//div[@class='item-story wishabi-offscreen']")
+                        itemStoryText = itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore').replace("<span>", "").replace("</span>", "").strip()
+                        if len(itemStoryText) < 3:
+                            pass
+                        else:
+                            findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
+                            if findPoints is not None:
+                                points = additional_info[findPoints.start():findPoints.end()].upper().split("EARN")[1]
+                                findNum = re.search("[0-9]+", points)
+                                points = points[findNum.start():findNum.end()]
+                                promotion = additional_info[findPoints.start():findPoints.end()]
+                                additional_info = additional_info.replace(promotion, "")
+                            additional_info += itemStoryText
 
+                        if price == "" and len(additional_info.strip()) == 0:
+                            continue # ignore item
 
-                        findEach = re.search("[Oo][Rr]( )* (\$)?[0-9]+(\.[0-9]+)?( )*[Ee][Aa]([Cc][Hh])?(\.)?", additional_info)
-                        if findEach is not None:
-                            findNum = re.search("(\$)?[0-9]+(\.[0-9]+)?", additional_info)
-                            each = additional_info[findNum.start():findNum.end()]
-                            if "$" not in each:
-                                each = "$" + each
-                            additional_info = additional_info.replace(additional_info[findEach.start():findEach.end()], "")
-
-                        findOrEach = re.search("(((\$)?[0-9]+(\.[0-9]+)?.*or.*each)|((\$)?[0-9]+(\.[0-9]+)?.*each.*or))", additional_info.lower())
-                        if findOrEach is not None:
-                            findNum = re.search("(\$)?[0-9]+(\.[0-9]+)?", additional_info)
-                            each = additional_info[findNum.start():findNum.end()]
-                            if "$" not in each:
-                                each = "$" + each
-                            additional_info = additional_info.replace(additional_info[findOrEach.start():findOrEach.end()], "")
-                        
-                        if len(additional_info.replace(" ", "").replace("each", "")) < 5: # remove any leftover junk (periods, commas, some leftover 'each's)
-                            additional_info = ""
-                    else:
-                        logger.logDebug("using uneven price")
-                        #print(name)
-                        for i in range(len(priceText)):
-                            logger.logDebug(priceText[i].text.encode('utf-8', 'ignore'))
-                    itemStory = product.find_element_by_xpath(".//div[@class='item-story wishabi-offscreen']")
-                    itemStoryText = itemStory.get_attribute("innerHTML").encode('utf-8', 'ignore').replace("<span>", "").replace("</span>", "").strip()
-                    if len(itemStoryText) < 3:
-                        pass
-                    else:
-                        findPoints = re.search("(BUY|SPEND)[A-Z ]*[0-9]+.*EARN.*[0-9]+.*MILES", additional_info.upper())
-                        if findPoints is not None:
-                            points = additional_info[findPoints.start():findPoints.end()].upper().split("EARN")[1]
-                            findNum = re.search("[0-9]+", points)
-                            points = points[findNum.start():findNum.end()]
-                            promotion = additional_info[findPoints.start():findPoints.end()]
-                            additional_info = additional_info.replace(promotion, "")
-                        additional_info += itemStoryText
-
-                    if price == "" and len(additional_info.strip()) == 0:
-                        continue # ignore item
-
-                    additional_info.replace("\n", "")
-                    item = Item(name, price, quantity, weight, limit, each, additional_info, points, promotion,
-                                storeName, storeAddress, storeCity, storeProvince, storePostalCode)
-                    items.append(item.toCSVFormat())
-                    logger.logDebug(str(item))
+                        logger.logDebug(str(item))
+                        item = Item(name, price, quantity, weight, limit, each, additional_info, points, promotion,
+                                    storeName, storeAddress, storeCity, storeProvince, storePostalCode)
+                        items.append(item.toCSVFormat())
+                    except Exception as e:
+                        logger.logError(str(e))
+                        logger.logError("Unable to get item info, skipping item.")
                     
                 
                 # write the store's items to the csv file
