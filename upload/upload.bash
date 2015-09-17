@@ -3,6 +3,7 @@
 # takes all files in CsvFiles/ directory and creates a table with the same name as the file
 
 rm -f ~/GroceryDeals/LogFiles/.mysqlerror
+echo "" > ~/GroceryDeals/LogFiles/.mysqlerror
 
 #credentials file
 MYSQL_ACCESS="~/mysql_access"
@@ -31,7 +32,7 @@ for csvfile in ../CsvFiles/*; do
                   StoreCity varchar(255),
                   StoreProvince varchar(255),
                   StorePostalCode varchar(10)
-              );" > ~/GroceryDeals/LogFiles/.mysqlerror 2>&1
+              );" >> ~/GroceryDeals/LogFiles/.mysqlerror 2>&1
 
     if [ $? -ne 0 ]; then
         ERROR=1
